@@ -1294,7 +1294,7 @@
    "engineer",
    "safety_owner"
   ],
-  "latency_ms": 5365.1,
+  "latency_ms": 5340.6,
   "model_calls": 5,
   "cost_eur": 0.01598,
   "spans": [
@@ -1358,15 +1358,15 @@
     "name": "documents.search_documents",
     "kind": "tool",
     "start": 3009.44741263624,
-    "end": 3120.5930229978694,
+    "end": 3096.128496290362,
     "status": "ok",
     "detail": "{\"query\": \"internal crash target roof crush US maximum intrusion\", \"load_case\": "
    },
    {
     "name": "plm.get_material",
     "kind": "tool",
-    "start": 3120.5930229978694,
-    "end": 3314.061076368175,
+    "start": 3096.128496290362,
+    "end": 3289.5965496606673,
     "status": "ok",
     "detail": "{\"material_id\": \"DC04\"}"
    },
@@ -1374,7 +1374,7 @@
     "name": "compliance agent",
     "kind": "agent",
     "start": 1578.7645220203156,
-    "end": 3314.061076368175,
+    "end": 3289.5965496606673,
     "status": "ok",
     "detail": ""
    },
@@ -1398,7 +1398,7 @@
     "name": "plm.get_material",
     "kind": "tool",
     "start": 2602.560447515959,
-    "end": 2689.2415311700806,
+    "end": 2713.706057877588,
     "status": "ok",
     "detail": "{\"material_id\": \"DC04\"}"
    },
@@ -1406,55 +1406,55 @@
     "name": "tooling agent",
     "kind": "agent",
     "start": 1578.7645220203156,
-    "end": 2689.2415311700806,
+    "end": 2713.706057877588,
     "status": "ok",
     "detail": ""
    },
    {
     "name": "crash agent",
     "kind": "model",
-    "start": 3314.061076368175,
-    "end": 4211.2628375237,
+    "start": 3289.5965496606673,
+    "end": 4186.7983108161925,
     "status": "ok",
     "detail": ""
    },
    {
     "name": "simulation.predict_intrusion",
     "kind": "tool",
-    "start": 4211.2628375237,
-    "end": 4285.823486337134,
+    "start": 4186.7983108161925,
+    "end": 4261.358959629627,
     "status": "ok",
     "detail": "{\"load_case\": \"roof\", \"thickness_mm\": 1.55, \"material_id\": \"DC04\", \"mass_kg\": 21"
    },
    {
     "name": "simulation.predict_intrusion",
     "kind": "tool",
-    "start": 4285.823486337134,
-    "end": 4426.218297749954,
+    "start": 4261.358959629627,
+    "end": 4401.753771042447,
     "status": "ok",
     "detail": "{\"load_case\": \"roof\", \"thickness_mm\": 1.55, \"material_id\": \"DC04\", \"mass_kg\": 22"
    },
    {
     "name": "simulation.predict_intrusion",
     "kind": "tool",
-    "start": 4426.218297749954,
-    "end": 4551.780658568354,
+    "start": 4401.753771042447,
+    "end": 4527.316131860846,
     "status": "ok",
     "detail": "{\"load_case\": \"roof\", \"thickness_mm\": 1.55, \"material_id\": \"DC04\", \"mass_kg\": 25"
    },
    {
     "name": "crash agent",
     "kind": "agent",
-    "start": 3314.061076368175,
-    "end": 4551.780658568354,
+    "start": 3289.5965496606673,
+    "end": 4527.316131860846,
     "status": "ok",
     "detail": ""
    },
    {
     "name": "write summary",
     "kind": "model",
-    "start": 4551.780658568354,
-    "end": 5365.057318672744,
+    "start": 4527.316131860846,
+    "end": 5340.592791965237,
     "status": "ok",
     "detail": ""
    }
@@ -1706,43 +1706,6 @@
    {
     "id": "R009",
     "kind": "tool",
-    "name": "plm.get_material",
-    "args": {
-     "material_id": "DC04"
-    },
-    "output": {
-     "id": "DC04",
-     "yield_mpa": 210,
-     "density": 7.85,
-     "class": "cold_formed_steel",
-     "approved": true
-    },
-    "status": "ok",
-    "sources": []
-   },
-   {
-    "id": "R010",
-    "kind": "derived",
-    "name": "tooling impact",
-    "args": {},
-    "output": {
-     "tools": {
-      "WZ-3038-1": "rework",
-      "WZ-3038-2": "rework"
-     },
-     "tooling_cost_eur": 231500.0,
-     "tooling_cost_keur": 231.5,
-     "lead_weeks": 4,
-     "new_tools": 0,
-     "reworked_tools": 2,
-     "transferred_tools": 0
-    },
-    "status": "ok",
-    "sources": []
-   },
-   {
-    "id": "R011",
-    "kind": "tool",
     "name": "documents.search_documents",
     "args": {
      "query": "internal crash target roof crush US maximum intrusion",
@@ -1771,6 +1734,43 @@
        "text": "Every engineering change request lists affected variants, special tools, suppliers and applicable crash targets. Crash-relevant changes are signed by the responsible engineer and the passive safety owner."
       }
      ]
+    },
+    "status": "ok",
+    "sources": []
+   },
+   {
+    "id": "R010",
+    "kind": "tool",
+    "name": "plm.get_material",
+    "args": {
+     "material_id": "DC04"
+    },
+    "output": {
+     "id": "DC04",
+     "yield_mpa": 210,
+     "density": 7.85,
+     "class": "cold_formed_steel",
+     "approved": true
+    },
+    "status": "ok",
+    "sources": []
+   },
+   {
+    "id": "R011",
+    "kind": "derived",
+    "name": "tooling impact",
+    "args": {},
+    "output": {
+     "tools": {
+      "WZ-3038-1": "rework",
+      "WZ-3038-2": "rework"
+     },
+     "tooling_cost_eur": 231500.0,
+     "tooling_cost_keur": 231.5,
+     "lead_weeks": 4,
+     "new_tools": 0,
+     "reworked_tools": 2,
+     "transferred_tools": 0
     },
     "status": "ok",
     "sources": []
@@ -4556,7 +4556,7 @@
    "engineer",
    "safety_owner"
   ],
-  "latency_ms": 6038.0,
+  "latency_ms": 6018.8,
   "model_calls": 5,
   "cost_eur": 0.016002,
   "spans": [
@@ -4604,15 +4604,15 @@
     "name": "documents.search_documents",
     "kind": "tool",
     "start": 2996.6514741798514,
-    "end": 3112.8535141492125,
+    "end": 3093.6899441215046,
     "status": "ok",
     "detail": "{\"query\": \"internal crash target rear impact fuel system CN maximum intrusion\", "
    },
    {
     "name": "documents.search_documents",
     "kind": "tool",
-    "start": 3112.8535141492125,
-    "end": 3210.6418489826056,
+    "start": 3093.6899441215046,
+    "end": 3191.4782789548976,
     "status": "ok",
     "detail": "{\"query\": \"internal crash target rear impact fuel system EU maximum intrusion\", "
    },
@@ -4620,7 +4620,7 @@
     "name": "compliance agent",
     "kind": "agent",
     "start": 1905.2417688482728,
-    "end": 3210.6418489826056,
+    "end": 3191.4782789548976,
     "status": "ok",
     "detail": ""
    },
@@ -4636,7 +4636,7 @@
     "name": "tooling.tools_for_part",
     "kind": "tool",
     "start": 3149.2761492288128,
-    "end": 3246.314619170466,
+    "end": 3265.478189198174,
     "status": "ok",
     "detail": "{\"part_no\": \"7249009\"}"
    },
@@ -4644,47 +4644,47 @@
     "name": "tooling agent",
     "kind": "agent",
     "start": 1905.2417688482728,
-    "end": 3246.314619170466,
+    "end": 3265.478189198174,
     "status": "ok",
     "detail": ""
    },
    {
     "name": "crash agent",
     "kind": "model",
-    "start": 3210.6418489826056,
-    "end": 4456.965351459064,
+    "start": 3191.4782789548976,
+    "end": 4437.801781431355,
     "status": "ok",
     "detail": ""
    },
    {
     "name": "simulation.predict_intrusion",
     "kind": "tool",
-    "start": 4456.965351459064,
-    "end": 4584.550475706774,
+    "start": 4437.801781431355,
+    "end": 4565.386905679065,
     "status": "ok",
     "detail": "{\"load_case\": \"rear\", \"thickness_mm\": 1.45, \"material_id\": \"CR700Y980T-CP\", \"mas"
    },
    {
     "name": "simulation.request_fe_simulation",
     "kind": "tool",
-    "start": 4584.550475706774,
-    "end": 4701.067097710302,
+    "start": 4565.386905679065,
+    "end": 4681.903527682593,
     "status": "ok",
     "detail": "{\"part_no\": \"7249009\", \"load_case\": \"rear\", \"reason\": \"prediction interval or in"
    },
    {
     "name": "crash agent",
     "kind": "agent",
-    "start": 3210.6418489826056,
-    "end": 4701.067097710302,
+    "start": 3191.4782789548976,
+    "end": 4681.903527682593,
     "status": "ok",
     "detail": ""
    },
    {
     "name": "write summary",
     "kind": "model",
-    "start": 4701.067097710302,
-    "end": 6038.003650106958,
+    "start": 4681.903527682593,
+    "end": 6018.84008007925,
     "status": "ok",
     "detail": ""
    }
@@ -4793,41 +4793,6 @@
    {
     "id": "R006",
     "kind": "tool",
-    "name": "documents.search_documents",
-    "args": {
-     "query": "internal crash target rear impact fuel system CN maximum intrusion",
-     "load_case": "rear",
-     "market": "CN",
-     "k": 2,
-     "method": "hybrid",
-     "current_only": true
-    },
-    "output": {
-     "documents": [
-      {
-       "id": "CT-rear-CN-2025",
-       "status": "current",
-       "load_case": "rear",
-       "market": "CN",
-       "title": "Internal crash target: rear impact and fuel system integrity, CN (GB 20072)",
-       "text": "For the rear impact and fuel system integrity load case, homologation in CN under GB 20072 is secured by the internal target: maximum intrusion 68 mm at the reference measurement point. A structural change that may exceed 68 mm needs a full finite-element simulation and sign-off by the passive safety owner. Version 2025, current."
-      },
-      {
-       "id": "PROC-ECR-01",
-       "status": "current",
-       "load_case": null,
-       "market": null,
-       "title": "Engineering change process: impact analysis",
-       "text": "Every engineering change request lists affected variants, special tools, suppliers and applicable crash targets. Crash-relevant changes are signed by the responsible engineer and the passive safety owner."
-      }
-     ]
-    },
-    "status": "ok",
-    "sources": []
-   },
-   {
-    "id": "R007",
-    "kind": "tool",
     "name": "tooling.tools_for_part",
     "args": {
      "part_no": "7249009"
@@ -4872,7 +4837,7 @@
     "sources": []
    },
    {
-    "id": "R008",
+    "id": "R007",
     "kind": "derived",
     "name": "tooling impact",
     "args": {},
@@ -4887,6 +4852,41 @@
      "new_tools": 0,
      "reworked_tools": 2,
      "transferred_tools": 0
+    },
+    "status": "ok",
+    "sources": []
+   },
+   {
+    "id": "R008",
+    "kind": "tool",
+    "name": "documents.search_documents",
+    "args": {
+     "query": "internal crash target rear impact fuel system CN maximum intrusion",
+     "load_case": "rear",
+     "market": "CN",
+     "k": 2,
+     "method": "hybrid",
+     "current_only": true
+    },
+    "output": {
+     "documents": [
+      {
+       "id": "CT-rear-CN-2025",
+       "status": "current",
+       "load_case": "rear",
+       "market": "CN",
+       "title": "Internal crash target: rear impact and fuel system integrity, CN (GB 20072)",
+       "text": "For the rear impact and fuel system integrity load case, homologation in CN under GB 20072 is secured by the internal target: maximum intrusion 68 mm at the reference measurement point. A structural change that may exceed 68 mm needs a full finite-element simulation and sign-off by the passive safety owner. Version 2025, current."
+      },
+      {
+       "id": "PROC-ECR-01",
+       "status": "current",
+       "load_case": null,
+       "market": null,
+       "title": "Engineering change process: impact analysis",
+       "text": "Every engineering change request lists affected variants, special tools, suppliers and applicable crash targets. Crash-relevant changes are signed by the responsible engineer and the passive safety owner."
+      }
+     ]
     },
     "status": "ok",
     "sources": []
@@ -5107,7 +5107,7 @@
    "engineer",
    "safety_owner"
   ],
-  "latency_ms": 5788.3,
+  "latency_ms": 5824.4,
   "model_calls": 5,
   "cost_eur": 0.01599,
   "spans": [
@@ -5155,23 +5155,23 @@
     "name": "documents.search_documents",
     "kind": "tool",
     "start": 2611.177682850773,
-    "end": 2753.2616412891134,
+    "end": 2789.352194208347,
     "status": "ok",
     "detail": "{\"query\": \"internal crash target offset frontal impact CN maximum intrusion\", \"l"
    },
    {
     "name": "documents.search_documents",
     "kind": "tool",
-    "start": 2753.2616412891134,
-    "end": 2873.2881448281755,
+    "start": 2789.352194208347,
+    "end": 2909.378697747409,
     "status": "ok",
     "detail": "{\"query\": \"internal crash target offset frontal impact EU maximum intrusion\", \"l"
    },
    {
     "name": "documents.search_documents",
     "kind": "tool",
-    "start": 2873.2881448281755,
-    "end": 3122.218141615583,
+    "start": 2909.378697747409,
+    "end": 3158.308694534817,
     "status": "ok",
     "detail": "{\"query\": \"internal crash target offset frontal impact US maximum intrusion\", \"l"
    },
@@ -5179,7 +5179,7 @@
     "name": "compliance agent",
     "kind": "agent",
     "start": 1500.525918010411,
-    "end": 3122.218141615583,
+    "end": 3158.308694534817,
     "status": "ok",
     "detail": ""
    },
@@ -5195,7 +5195,7 @@
     "name": "tooling.tools_for_part",
     "kind": "tool",
     "start": 2250.048169357803,
-    "end": 2428.222680715377,
+    "end": 2392.1321277961433,
     "status": "ok",
     "detail": "{\"part_no\": \"7431033\"}"
    },
@@ -5203,55 +5203,55 @@
     "name": "tooling agent",
     "kind": "agent",
     "start": 1500.525918010411,
-    "end": 2428.222680715377,
+    "end": 2392.1321277961433,
     "status": "ok",
     "detail": ""
    },
    {
     "name": "crash agent",
     "kind": "model",
-    "start": 3122.218141615583,
-    "end": 3803.853100259609,
+    "start": 3158.308694534817,
+    "end": 3839.943653178843,
     "status": "ok",
     "detail": ""
    },
    {
     "name": "simulation.predict_intrusion",
     "kind": "tool",
-    "start": 3803.853100259609,
-    "end": 3929.791419620618,
+    "start": 3839.943653178843,
+    "end": 3965.8819725398516,
     "status": "ok",
     "detail": "{\"load_case\": \"frontal_odb\", \"thickness_mm\": 1.75, \"material_id\": \"CR700Y980T-CP"
    },
    {
     "name": "simulation.predict_intrusion",
     "kind": "tool",
-    "start": 3929.791419620618,
-    "end": 4041.455913155228,
+    "start": 3965.8819725398516,
+    "end": 4077.546466074461,
     "status": "ok",
     "detail": "{\"load_case\": \"frontal_odb\", \"thickness_mm\": 1.75, \"material_id\": \"CR700Y980T-CP"
    },
    {
     "name": "simulation.predict_intrusion",
     "kind": "tool",
-    "start": 4041.455913155228,
-    "end": 4200.788845726954,
+    "start": 4077.546466074461,
+    "end": 4236.879398646187,
     "status": "ok",
     "detail": "{\"load_case\": \"frontal_odb\", \"thickness_mm\": 1.75, \"material_id\": \"CR700Y980T-CP"
    },
    {
     "name": "crash agent",
     "kind": "agent",
-    "start": 3122.218141615583,
-    "end": 4200.788845726954,
+    "start": 3158.308694534817,
+    "end": 4236.879398646187,
     "status": "ok",
     "detail": ""
    },
    {
     "name": "write summary",
     "kind": "model",
-    "start": 4200.788845726954,
-    "end": 5788.273930404232,
+    "start": 4236.879398646187,
+    "end": 5824.364483323465,
     "status": "ok",
     "detail": ""
    }
@@ -5387,41 +5387,6 @@
    {
     "id": "R006",
     "kind": "tool",
-    "name": "documents.search_documents",
-    "args": {
-     "query": "internal crash target offset frontal impact CN maximum intrusion",
-     "load_case": "frontal_odb",
-     "market": "CN",
-     "k": 2,
-     "method": "hybrid",
-     "current_only": true
-    },
-    "output": {
-     "documents": [
-      {
-       "id": "CT-frontal_odb-CN-2025",
-       "status": "current",
-       "load_case": "frontal_odb",
-       "market": "CN",
-       "title": "Internal crash target: offset frontal impact, CN (GB/T 20913)",
-       "text": "For the offset frontal impact load case, homologation in CN under GB/T 20913 is secured by the internal target: maximum intrusion 148 mm at the reference measurement point. A structural change that may exceed 148 mm needs a full finite-element simulation and sign-off by the passive safety owner. Version 2025, current."
-      },
-      {
-       "id": "PROC-ECR-01",
-       "status": "current",
-       "load_case": null,
-       "market": null,
-       "title": "Engineering change process: impact analysis",
-       "text": "Every engineering change request lists affected variants, special tools, suppliers and applicable crash targets. Crash-relevant changes are signed by the responsible engineer and the passive safety owner."
-      }
-     ]
-    },
-    "status": "ok",
-    "sources": []
-   },
-   {
-    "id": "R007",
-    "kind": "tool",
     "name": "tooling.tools_for_part",
     "args": {
      "part_no": "7431033"
@@ -5466,7 +5431,7 @@
     "sources": []
    },
    {
-    "id": "R008",
+    "id": "R007",
     "kind": "derived",
     "name": "tooling impact",
     "args": {},
@@ -5481,6 +5446,41 @@
      "new_tools": 0,
      "reworked_tools": 2,
      "transferred_tools": 0
+    },
+    "status": "ok",
+    "sources": []
+   },
+   {
+    "id": "R008",
+    "kind": "tool",
+    "name": "documents.search_documents",
+    "args": {
+     "query": "internal crash target offset frontal impact CN maximum intrusion",
+     "load_case": "frontal_odb",
+     "market": "CN",
+     "k": 2,
+     "method": "hybrid",
+     "current_only": true
+    },
+    "output": {
+     "documents": [
+      {
+       "id": "CT-frontal_odb-CN-2025",
+       "status": "current",
+       "load_case": "frontal_odb",
+       "market": "CN",
+       "title": "Internal crash target: offset frontal impact, CN (GB/T 20913)",
+       "text": "For the offset frontal impact load case, homologation in CN under GB/T 20913 is secured by the internal target: maximum intrusion 148 mm at the reference measurement point. A structural change that may exceed 148 mm needs a full finite-element simulation and sign-off by the passive safety owner. Version 2025, current."
+      },
+      {
+       "id": "PROC-ECR-01",
+       "status": "current",
+       "load_case": null,
+       "market": null,
+       "title": "Engineering change process: impact analysis",
+       "text": "Every engineering change request lists affected variants, special tools, suppliers and applicable crash targets. Crash-relevant changes are signed by the responsible engineer and the passive safety owner."
+      }
+     ]
     },
     "status": "ok",
     "sources": []
@@ -6333,7 +6333,7 @@
   "approval_roles": [
    "engineer"
   ],
-  "latency_ms": 4448.8,
+  "latency_ms": 4397.5,
   "model_calls": 4,
   "cost_eur": 0.012963,
   "spans": [
@@ -6381,7 +6381,7 @@
     "name": "documents.search_documents",
     "kind": "tool",
     "start": 3210.8305109594157,
-    "end": 3458.2719703251205,
+    "end": 3406.9906728806113,
     "status": "ok",
     "detail": "{\"query\": \"supplier change production part approval\", \"k\": 1, \"method\": \"hybrid\""
    },
@@ -6389,7 +6389,7 @@
     "name": "compliance agent",
     "kind": "agent",
     "start": 1623.919911350175,
-    "end": 3458.2719703251205,
+    "end": 3406.9906728806113,
     "status": "ok",
     "detail": ""
    },
@@ -6405,7 +6405,7 @@
     "name": "tooling.tools_for_part",
     "kind": "tool",
     "start": 2644.5709224331936,
-    "end": 2840.731084354389,
+    "end": 2892.012381798898,
     "status": "ok",
     "detail": "{\"part_no\": \"7903021\"}"
    },
@@ -6413,15 +6413,15 @@
     "name": "tooling agent",
     "kind": "agent",
     "start": 1623.919911350175,
-    "end": 2840.731084354389,
+    "end": 2892.012381798898,
     "status": "ok",
     "detail": ""
    },
    {
     "name": "write summary",
     "kind": "model",
-    "start": 3458.2719703251205,
-    "end": 4448.812582359648,
+    "start": 3406.9906728806113,
+    "end": 4397.531284915139,
     "status": "ok",
     "detail": ""
    }
@@ -6535,47 +6535,6 @@
    {
     "id": "R006",
     "kind": "tool",
-    "name": "documents.search_documents",
-    "args": {
-     "query": "supplier change production part approval",
-     "k": 1,
-     "method": "hybrid",
-     "current_only": true
-    },
-    "output": {
-     "documents": [
-      {
-       "id": "PROC-PPAP-03",
-       "status": "current",
-       "load_case": null,
-       "market": null,
-       "title": "Supplier change: production part approval",
-       "text": "A change of supplier for a series part requires a production part approval at level 3 and the transfer of OEM-owned special tools to the new supplier. Tool transfer takes about six weeks."
-      }
-     ]
-    },
-    "status": "ok",
-    "sources": []
-   },
-   {
-    "id": "R007",
-    "kind": "derived",
-    "name": "compliance",
-    "args": {},
-    "output": {
-     "regulations": [
-      "PROC-PPAP-03"
-     ],
-     "limits": {},
-     "limit_mm": null,
-     "material_approved": true
-    },
-    "status": "ok",
-    "sources": []
-   },
-   {
-    "id": "R008",
-    "kind": "tool",
     "name": "tooling.tools_for_part",
     "args": {
      "part_no": "7903021"
@@ -6620,7 +6579,7 @@
     "sources": []
    },
    {
-    "id": "R009",
+    "id": "R007",
     "kind": "derived",
     "name": "tooling impact",
     "args": {},
@@ -6635,6 +6594,47 @@
      "new_tools": 0,
      "reworked_tools": 0,
      "transferred_tools": 2
+    },
+    "status": "ok",
+    "sources": []
+   },
+   {
+    "id": "R008",
+    "kind": "tool",
+    "name": "documents.search_documents",
+    "args": {
+     "query": "supplier change production part approval",
+     "k": 1,
+     "method": "hybrid",
+     "current_only": true
+    },
+    "output": {
+     "documents": [
+      {
+       "id": "PROC-PPAP-03",
+       "status": "current",
+       "load_case": null,
+       "market": null,
+       "title": "Supplier change: production part approval",
+       "text": "A change of supplier for a series part requires a production part approval at level 3 and the transfer of OEM-owned special tools to the new supplier. Tool transfer takes about six weeks."
+      }
+     ]
+    },
+    "status": "ok",
+    "sources": []
+   },
+   {
+    "id": "R009",
+    "kind": "derived",
+    "name": "compliance",
+    "args": {},
+    "output": {
+     "regulations": [
+      "PROC-PPAP-03"
+     ],
+     "limits": {},
+     "limit_mm": null,
+     "material_approved": true
     },
     "status": "ok",
     "sources": []
@@ -8785,7 +8785,7 @@
   "approval_roles": [
    "engineer"
   ],
-  "latency_ms": 3791.1,
+  "latency_ms": 3758.6,
   "model_calls": 4,
   "cost_eur": 0.012958,
   "spans": [
@@ -8833,7 +8833,7 @@
     "name": "documents.search_documents",
     "kind": "tool",
     "start": 2508.805389312339,
-    "end": 2624.545297381979,
+    "end": 2657.071462021807,
     "status": "ok",
     "detail": "{\"query\": \"supplier change production part approval\", \"k\": 1, \"method\": \"hybrid\""
    },
@@ -8841,7 +8841,7 @@
     "name": "compliance agent",
     "kind": "agent",
     "start": 1507.8734820212335,
-    "end": 2624.545297381979,
+    "end": 2657.071462021807,
     "status": "ok",
     "detail": ""
    },
@@ -8857,7 +8857,7 @@
     "name": "tooling.tools_for_part",
     "kind": "tool",
     "start": 2568.657642284314,
-    "end": 2716.923714993782,
+    "end": 2684.397550353954,
     "status": "ok",
     "detail": "{\"part_no\": \"7903021\"}"
    },
@@ -8865,15 +8865,15 @@
     "name": "tooling agent",
     "kind": "agent",
     "start": 1507.8734820212335,
-    "end": 2716.923714993782,
+    "end": 2684.397550353954,
     "status": "ok",
     "detail": ""
    },
    {
     "name": "write summary",
     "kind": "model",
-    "start": 2716.923714993782,
-    "end": 3791.137672673131,
+    "start": 2684.397550353954,
+    "end": 3758.611508033303,
     "status": "ok",
     "detail": ""
    }
@@ -9010,47 +9010,6 @@
    {
     "id": "R006",
     "kind": "tool",
-    "name": "documents.search_documents",
-    "args": {
-     "query": "supplier change production part approval",
-     "k": 1,
-     "method": "hybrid",
-     "current_only": true
-    },
-    "output": {
-     "documents": [
-      {
-       "id": "PROC-PPAP-03",
-       "status": "current",
-       "load_case": null,
-       "market": null,
-       "title": "Supplier change: production part approval",
-       "text": "A change of supplier for a series part requires a production part approval at level 3 and the transfer of OEM-owned special tools to the new supplier. Tool transfer takes about six weeks."
-      }
-     ]
-    },
-    "status": "ok",
-    "sources": []
-   },
-   {
-    "id": "R007",
-    "kind": "derived",
-    "name": "compliance",
-    "args": {},
-    "output": {
-     "regulations": [
-      "PROC-PPAP-03"
-     ],
-     "limits": {},
-     "limit_mm": null,
-     "material_approved": true
-    },
-    "status": "ok",
-    "sources": []
-   },
-   {
-    "id": "R008",
-    "kind": "tool",
     "name": "tooling.tools_for_part",
     "args": {
      "part_no": "7903021"
@@ -9095,7 +9054,7 @@
     "sources": []
    },
    {
-    "id": "R009",
+    "id": "R007",
     "kind": "derived",
     "name": "tooling impact",
     "args": {},
@@ -9110,6 +9069,47 @@
      "new_tools": 0,
      "reworked_tools": 0,
      "transferred_tools": 2
+    },
+    "status": "ok",
+    "sources": []
+   },
+   {
+    "id": "R008",
+    "kind": "tool",
+    "name": "documents.search_documents",
+    "args": {
+     "query": "supplier change production part approval",
+     "k": 1,
+     "method": "hybrid",
+     "current_only": true
+    },
+    "output": {
+     "documents": [
+      {
+       "id": "PROC-PPAP-03",
+       "status": "current",
+       "load_case": null,
+       "market": null,
+       "title": "Supplier change: production part approval",
+       "text": "A change of supplier for a series part requires a production part approval at level 3 and the transfer of OEM-owned special tools to the new supplier. Tool transfer takes about six weeks."
+      }
+     ]
+    },
+    "status": "ok",
+    "sources": []
+   },
+   {
+    "id": "R009",
+    "kind": "derived",
+    "name": "compliance",
+    "args": {},
+    "output": {
+     "regulations": [
+      "PROC-PPAP-03"
+     ],
+     "limits": {},
+     "limit_mm": null,
+     "material_approved": true
     },
     "status": "ok",
     "sources": []
@@ -9876,7 +9876,7 @@
    "engineer",
    "safety_owner"
   ],
-  "latency_ms": 6787.7,
+  "latency_ms": 6726.8,
   "model_calls": 5,
   "cost_eur": 0.01602,
   "spans": [
@@ -9924,31 +9924,31 @@
     "name": "documents.search_documents",
     "kind": "tool",
     "start": 3533.4269706074183,
-    "end": 3733.473812321621,
+    "end": 3600.3682641190517,
     "status": "ok",
     "detail": "{\"query\": \"internal crash target moving-barrier side impact CN maximum intrusion"
    },
    {
     "name": "documents.search_documents",
     "kind": "tool",
-    "start": 3733.473812321621,
-    "end": 3825.181645242682,
+    "start": 3600.3682641190517,
+    "end": 3764.307014736502,
     "status": "ok",
     "detail": "{\"query\": \"internal crash target moving-barrier side impact EU maximum intrusion"
    },
    {
     "name": "documents.search_documents",
     "kind": "tool",
-    "start": 3825.181645242682,
-    "end": 3882.7521742907843,
+    "start": 3764.307014736502,
+    "end": 3821.8775437846043,
     "status": "ok",
     "detail": "{\"query\": \"internal crash target moving-barrier side impact US maximum intrusion"
    },
    {
     "name": "plm.get_material",
     "kind": "tool",
-    "start": 3882.7521742907843,
-    "end": 3984.9065133629424,
+    "start": 3821.8775437846043,
+    "end": 3924.0318828567624,
     "status": "ok",
     "detail": "{\"material_id\": \"EN AW-6082-T6\"}"
    },
@@ -9956,7 +9956,7 @@
     "name": "compliance agent",
     "kind": "agent",
     "start": 2487.9449164278994,
-    "end": 3984.9065133629424,
+    "end": 3924.0318828567624,
     "status": "ok",
     "detail": ""
    },
@@ -9972,15 +9972,15 @@
     "name": "tooling.tools_for_part",
     "kind": "tool",
     "start": 3630.2805996708303,
-    "end": 3697.2218931824636,
+    "end": 3830.327441385033,
     "status": "ok",
     "detail": "{\"part_no\": \"7156032\"}"
    },
    {
     "name": "plm.get_material",
     "kind": "tool",
-    "start": 3697.2218931824636,
-    "end": 3861.160643799914,
+    "start": 3830.327441385033,
+    "end": 3922.035274306094,
     "status": "ok",
     "detail": "{\"material_id\": \"EN AW-6082-T6\"}"
    },
@@ -9988,55 +9988,55 @@
     "name": "tooling agent",
     "kind": "agent",
     "start": 2487.9449164278994,
-    "end": 3861.160643799914,
+    "end": 3922.035274306094,
     "status": "ok",
     "detail": ""
    },
    {
     "name": "crash agent",
     "kind": "model",
-    "start": 3984.9065133629424,
-    "end": 5020.507550390695,
+    "start": 3924.0318828567624,
+    "end": 4959.632919884514,
     "status": "ok",
     "detail": ""
    },
    {
     "name": "simulation.predict_intrusion",
     "kind": "tool",
-    "start": 5020.507550390695,
-    "end": 5139.844377378391,
+    "start": 4959.632919884514,
+    "end": 5078.969746872211,
     "status": "ok",
     "detail": "{\"load_case\": \"side_mdb\", \"thickness_mm\": 1.2, \"material_id\": \"EN AW-6082-T6\", \""
    },
    {
     "name": "simulation.predict_intrusion",
     "kind": "tool",
-    "start": 5139.844377378391,
-    "end": 5240.849112531283,
+    "start": 5078.969746872211,
+    "end": 5179.974482025103,
     "status": "ok",
     "detail": "{\"load_case\": \"side_mdb\", \"thickness_mm\": 1.2, \"material_id\": \"EN AW-6082-T6\", \""
    },
    {
     "name": "simulation.predict_intrusion",
     "kind": "tool",
-    "start": 5240.849112531283,
-    "end": 5402.326572469698,
+    "start": 5179.974482025103,
+    "end": 5341.451941963517,
     "status": "ok",
     "detail": "{\"load_case\": \"side_mdb\", \"thickness_mm\": 1.2, \"material_id\": \"EN AW-6082-T6\", \""
    },
    {
     "name": "crash agent",
     "kind": "agent",
-    "start": 3984.9065133629424,
-    "end": 5402.326572469698,
+    "start": 3924.0318828567624,
+    "end": 5341.451941963517,
     "status": "ok",
     "detail": ""
    },
    {
     "name": "write summary",
     "kind": "model",
-    "start": 5402.326572469698,
-    "end": 6787.661904107174,
+    "start": 5341.451941963517,
+    "end": 6726.787273600994,
     "status": "ok",
     "detail": ""
    }
@@ -10172,6 +10172,41 @@
    {
     "id": "R006",
     "kind": "tool",
+    "name": "documents.search_documents",
+    "args": {
+     "query": "internal crash target moving-barrier side impact CN maximum intrusion",
+     "load_case": "side_mdb",
+     "market": "CN",
+     "k": 2,
+     "method": "hybrid",
+     "current_only": true
+    },
+    "output": {
+     "documents": [
+      {
+       "id": "CT-side_mdb-CN-2025",
+       "status": "current",
+       "load_case": "side_mdb",
+       "market": "CN",
+       "title": "Internal crash target: moving-barrier side impact, CN (GB 20071)",
+       "text": "For the moving-barrier side impact load case, homologation in CN under GB 20071 is secured by the internal target: maximum intrusion 102 mm at the reference measurement point. A structural change that may exceed 102 mm needs a full finite-element simulation and sign-off by the passive safety owner. Version 2025, current."
+      },
+      {
+       "id": "PROC-ECR-01",
+       "status": "current",
+       "load_case": null,
+       "market": null,
+       "title": "Engineering change process: impact analysis",
+       "text": "Every engineering change request lists affected variants, special tools, suppliers and applicable crash targets. Crash-relevant changes are signed by the responsible engineer and the passive safety owner."
+      }
+     ]
+    },
+    "status": "ok",
+    "sources": []
+   },
+   {
+    "id": "R007",
+    "kind": "tool",
     "name": "tooling.tools_for_part",
     "args": {
      "part_no": "7156032"
@@ -10232,79 +10267,7 @@
     "sources": []
    },
    {
-    "id": "R007",
-    "kind": "tool",
-    "name": "documents.search_documents",
-    "args": {
-     "query": "internal crash target moving-barrier side impact CN maximum intrusion",
-     "load_case": "side_mdb",
-     "market": "CN",
-     "k": 2,
-     "method": "hybrid",
-     "current_only": true
-    },
-    "output": {
-     "documents": [
-      {
-       "id": "CT-side_mdb-CN-2025",
-       "status": "current",
-       "load_case": "side_mdb",
-       "market": "CN",
-       "title": "Internal crash target: moving-barrier side impact, CN (GB 20071)",
-       "text": "For the moving-barrier side impact load case, homologation in CN under GB 20071 is secured by the internal target: maximum intrusion 102 mm at the reference measurement point. A structural change that may exceed 102 mm needs a full finite-element simulation and sign-off by the passive safety owner. Version 2025, current."
-      },
-      {
-       "id": "PROC-ECR-01",
-       "status": "current",
-       "load_case": null,
-       "market": null,
-       "title": "Engineering change process: impact analysis",
-       "text": "Every engineering change request lists affected variants, special tools, suppliers and applicable crash targets. Crash-relevant changes are signed by the responsible engineer and the passive safety owner."
-      }
-     ]
-    },
-    "status": "ok",
-    "sources": []
-   },
-   {
     "id": "R008",
-    "kind": "tool",
-    "name": "plm.get_material",
-    "args": {
-     "material_id": "EN AW-6082-T6"
-    },
-    "output": {
-     "id": "EN AW-6082-T6",
-     "yield_mpa": 260,
-     "density": 2.7,
-     "class": "aluminium",
-     "approved": true
-    },
-    "status": "ok",
-    "sources": []
-   },
-   {
-    "id": "R009",
-    "kind": "derived",
-    "name": "tooling impact",
-    "args": {},
-    "output": {
-     "tools": {
-      "WZ-6032-1": "new",
-      "WZ-6032-2": "new"
-     },
-     "tooling_cost_eur": 1485500.0,
-     "tooling_cost_keur": 1485.5,
-     "lead_weeks": 33,
-     "new_tools": 2,
-     "reworked_tools": 0,
-     "transferred_tools": 0
-    },
-    "status": "ok",
-    "sources": []
-   },
-   {
-    "id": "R010",
     "kind": "tool",
     "name": "documents.search_documents",
     "args": {
@@ -10334,6 +10297,43 @@
        "text": "Every engineering change request lists affected variants, special tools, suppliers and applicable crash targets. Crash-relevant changes are signed by the responsible engineer and the passive safety owner."
       }
      ]
+    },
+    "status": "ok",
+    "sources": []
+   },
+   {
+    "id": "R009",
+    "kind": "tool",
+    "name": "plm.get_material",
+    "args": {
+     "material_id": "EN AW-6082-T6"
+    },
+    "output": {
+     "id": "EN AW-6082-T6",
+     "yield_mpa": 260,
+     "density": 2.7,
+     "class": "aluminium",
+     "approved": true
+    },
+    "status": "ok",
+    "sources": []
+   },
+   {
+    "id": "R010",
+    "kind": "derived",
+    "name": "tooling impact",
+    "args": {},
+    "output": {
+     "tools": {
+      "WZ-6032-1": "new",
+      "WZ-6032-2": "new"
+     },
+     "tooling_cost_eur": 1485500.0,
+     "tooling_cost_keur": 1485.5,
+     "lead_weeks": 33,
+     "new_tools": 2,
+     "reworked_tools": 0,
+     "transferred_tools": 0
     },
     "status": "ok",
     "sources": []
@@ -11266,7 +11266,7 @@
    "engineer",
    "safety_owner"
   ],
-  "latency_ms": 5818.9,
+  "latency_ms": 5808.3,
   "model_calls": 5,
   "cost_eur": 0.015988,
   "spans": [
@@ -11314,23 +11314,23 @@
     "name": "documents.search_documents",
     "kind": "tool",
     "start": 3182.034203290469,
-    "end": 3325.828963020653,
+    "end": 3315.214463596685,
     "status": "ok",
     "detail": "{\"query\": \"internal crash target pole side impact CN maximum intrusion\", \"load_c"
    },
    {
     "name": "documents.search_documents",
     "kind": "tool",
-    "start": 3325.828963020653,
-    "end": 3466.996199497046,
+    "start": 3315.214463596685,
+    "end": 3456.381700073078,
     "status": "ok",
     "detail": "{\"query\": \"internal crash target pole side impact EU maximum intrusion\", \"load_c"
    },
    {
     "name": "documents.search_documents",
     "kind": "tool",
-    "start": 3466.996199497046,
-    "end": 3565.565530824716,
+    "start": 3456.381700073078,
+    "end": 3554.951031400748,
     "status": "ok",
     "detail": "{\"query\": \"internal crash target pole side impact US maximum intrusion\", \"load_c"
    },
@@ -11338,7 +11338,7 @@
     "name": "compliance agent",
     "kind": "agent",
     "start": 1264.4694139051273,
-    "end": 3565.565530824716,
+    "end": 3554.951031400748,
     "status": "ok",
     "detail": ""
    },
@@ -11354,7 +11354,7 @@
     "name": "tooling.tools_for_part",
     "kind": "tool",
     "start": 2359.8379998810938,
-    "end": 2493.01826018731,
+    "end": 2503.632759611278,
     "status": "ok",
     "detail": "{\"part_no\": \"7511017\"}"
    },
@@ -11362,47 +11362,47 @@
     "name": "tooling agent",
     "kind": "agent",
     "start": 1264.4694139051273,
-    "end": 2493.01826018731,
+    "end": 2503.632759611278,
     "status": "ok",
     "detail": ""
    },
    {
     "name": "crash agent",
     "kind": "model",
-    "start": 3565.565530824716,
-    "end": 4469.241679915462,
+    "start": 3554.951031400748,
+    "end": 4458.627180491493,
     "status": "ok",
     "detail": ""
    },
    {
     "name": "simulation.predict_intrusion",
     "kind": "tool",
-    "start": 4469.241679915462,
-    "end": 4555.380698956383,
+    "start": 4458.627180491493,
+    "end": 4544.766199532414,
     "status": "ok",
     "detail": "{\"load_case\": \"side_pole\", \"thickness_mm\": 1.4, \"material_id\": \"CR980Y1180T-DH\","
    },
    {
     "name": "simulation.request_fe_simulation",
     "kind": "tool",
-    "start": 4555.380698956383,
-    "end": 4727.729092481473,
+    "start": 4544.766199532414,
+    "end": 4717.114593057505,
     "status": "ok",
     "detail": "{\"part_no\": \"7511017\", \"load_case\": \"side_pole\", \"reason\": \"prediction interval "
    },
    {
     "name": "crash agent",
     "kind": "agent",
-    "start": 3565.565530824716,
-    "end": 4727.729092481473,
+    "start": 3554.951031400748,
+    "end": 4717.114593057505,
     "status": "ok",
     "detail": ""
    },
    {
     "name": "write summary",
     "kind": "model",
-    "start": 4727.729092481473,
-    "end": 5818.912908973579,
+    "start": 4717.114593057505,
+    "end": 5808.29840954961,
     "status": "ok",
     "detail": ""
    }
@@ -11512,41 +11512,6 @@
    {
     "id": "R006",
     "kind": "tool",
-    "name": "documents.search_documents",
-    "args": {
-     "query": "internal crash target pole side impact CN maximum intrusion",
-     "load_case": "side_pole",
-     "market": "CN",
-     "k": 2,
-     "method": "hybrid",
-     "current_only": true
-    },
-    "output": {
-     "documents": [
-      {
-       "id": "CT-side_pole-CN-2025",
-       "status": "current",
-       "load_case": "side_pole",
-       "market": "CN",
-       "title": "Internal crash target: pole side impact, CN (GB/T 37337)",
-       "text": "For the pole side impact load case, homologation in CN under GB/T 37337 is secured by the internal target: maximum intrusion 116 mm at the reference measurement point. A structural change that may exceed 116 mm needs a full finite-element simulation and sign-off by the passive safety owner. Version 2025, current."
-      },
-      {
-       "id": "PROC-ECR-01",
-       "status": "current",
-       "load_case": null,
-       "market": null,
-       "title": "Engineering change process: impact analysis",
-       "text": "Every engineering change request lists affected variants, special tools, suppliers and applicable crash targets. Crash-relevant changes are signed by the responsible engineer and the passive safety owner."
-      }
-     ]
-    },
-    "status": "ok",
-    "sources": []
-   },
-   {
-    "id": "R007",
-    "kind": "tool",
     "name": "tooling.tools_for_part",
     "args": {
      "part_no": "7511017"
@@ -11591,7 +11556,7 @@
     "sources": []
    },
    {
-    "id": "R008",
+    "id": "R007",
     "kind": "derived",
     "name": "tooling impact",
     "args": {},
@@ -11606,6 +11571,41 @@
      "new_tools": 0,
      "reworked_tools": 2,
      "transferred_tools": 0
+    },
+    "status": "ok",
+    "sources": []
+   },
+   {
+    "id": "R008",
+    "kind": "tool",
+    "name": "documents.search_documents",
+    "args": {
+     "query": "internal crash target pole side impact CN maximum intrusion",
+     "load_case": "side_pole",
+     "market": "CN",
+     "k": 2,
+     "method": "hybrid",
+     "current_only": true
+    },
+    "output": {
+     "documents": [
+      {
+       "id": "CT-side_pole-CN-2025",
+       "status": "current",
+       "load_case": "side_pole",
+       "market": "CN",
+       "title": "Internal crash target: pole side impact, CN (GB/T 37337)",
+       "text": "For the pole side impact load case, homologation in CN under GB/T 37337 is secured by the internal target: maximum intrusion 116 mm at the reference measurement point. A structural change that may exceed 116 mm needs a full finite-element simulation and sign-off by the passive safety owner. Version 2025, current."
+      },
+      {
+       "id": "PROC-ECR-01",
+       "status": "current",
+       "load_case": null,
+       "market": null,
+       "title": "Engineering change process: impact analysis",
+       "text": "Every engineering change request lists affected variants, special tools, suppliers and applicable crash targets. Crash-relevant changes are signed by the responsible engineer and the passive safety owner."
+      }
+     ]
     },
     "status": "ok",
     "sources": []
@@ -14132,7 +14132,7 @@
   "approval_roles": [
    "engineer"
   ],
-  "latency_ms": 4144.3,
+  "latency_ms": 4087.6,
   "model_calls": 4,
   "cost_eur": 0.012963,
   "spans": [
@@ -14180,7 +14180,7 @@
     "name": "documents.search_documents",
     "kind": "tool",
     "start": 3112.1783568858427,
-    "end": 3320.9089429918963,
+    "end": 3264.1932962085793,
     "status": "ok",
     "detail": "{\"query\": \"supplier change production part approval\", \"k\": 1, \"method\": \"hybrid\""
    },
@@ -14188,7 +14188,7 @@
     "name": "compliance agent",
     "kind": "agent",
     "start": 2031.4576732179266,
-    "end": 3320.9089429918963,
+    "end": 3264.1932962085793,
     "status": "ok",
     "detail": ""
    },
@@ -14204,7 +14204,7 @@
     "name": "tooling.tools_for_part",
     "kind": "tool",
     "start": 2933.7250104626137,
-    "end": 3085.7399497853503,
+    "end": 3142.4555965686673,
     "status": "ok",
     "detail": "{\"part_no\": \"7918016\"}"
    },
@@ -14212,15 +14212,15 @@
     "name": "tooling agent",
     "kind": "agent",
     "start": 2031.4576732179266,
-    "end": 3085.7399497853503,
+    "end": 3142.4555965686673,
     "status": "ok",
     "detail": ""
    },
    {
     "name": "write summary",
     "kind": "model",
-    "start": 3320.9089429918963,
-    "end": 4144.29086494883,
+    "start": 3264.1932962085793,
+    "end": 4087.575218165513,
     "status": "ok",
     "detail": ""
    }
@@ -14343,47 +14343,6 @@
    {
     "id": "R006",
     "kind": "tool",
-    "name": "documents.search_documents",
-    "args": {
-     "query": "supplier change production part approval",
-     "k": 1,
-     "method": "hybrid",
-     "current_only": true
-    },
-    "output": {
-     "documents": [
-      {
-       "id": "PROC-PPAP-03",
-       "status": "current",
-       "load_case": null,
-       "market": null,
-       "title": "Supplier change: production part approval",
-       "text": "A change of supplier for a series part requires a production part approval at level 3 and the transfer of OEM-owned special tools to the new supplier. Tool transfer takes about six weeks."
-      }
-     ]
-    },
-    "status": "ok",
-    "sources": []
-   },
-   {
-    "id": "R007",
-    "kind": "derived",
-    "name": "compliance",
-    "args": {},
-    "output": {
-     "regulations": [
-      "PROC-PPAP-03"
-     ],
-     "limits": {},
-     "limit_mm": null,
-     "material_approved": true
-    },
-    "status": "ok",
-    "sources": []
-   },
-   {
-    "id": "R008",
-    "kind": "tool",
     "name": "tooling.tools_for_part",
     "args": {
      "part_no": "7918016"
@@ -14428,7 +14387,7 @@
     "sources": []
    },
    {
-    "id": "R009",
+    "id": "R007",
     "kind": "derived",
     "name": "tooling impact",
     "args": {},
@@ -14446,6 +14405,47 @@
     },
     "status": "ok",
     "sources": []
+   },
+   {
+    "id": "R008",
+    "kind": "tool",
+    "name": "documents.search_documents",
+    "args": {
+     "query": "supplier change production part approval",
+     "k": 1,
+     "method": "hybrid",
+     "current_only": true
+    },
+    "output": {
+     "documents": [
+      {
+       "id": "PROC-PPAP-03",
+       "status": "current",
+       "load_case": null,
+       "market": null,
+       "title": "Supplier change: production part approval",
+       "text": "A change of supplier for a series part requires a production part approval at level 3 and the transfer of OEM-owned special tools to the new supplier. Tool transfer takes about six weeks."
+      }
+     ]
+    },
+    "status": "ok",
+    "sources": []
+   },
+   {
+    "id": "R009",
+    "kind": "derived",
+    "name": "compliance",
+    "args": {},
+    "output": {
+     "regulations": [
+      "PROC-PPAP-03"
+     ],
+     "limits": {},
+     "limit_mm": null,
+     "material_approved": true
+    },
+    "status": "ok",
+    "sources": []
    }
   ],
   "guard_removed": [],
@@ -14454,10 +14454,8 @@
  {
   "id": "DEV-026",
   "request": "ECR for part 7918016 (side sill inner): thickness 1.45 mm -> 1,35 mm on P2 sedan only. Reason: cost reduction.",
-  "recommendation": "reject",
-  "flags": [
-   "schedule risk: new tooling needs 29 weeks"
-  ],
+  "recommendation": "engineer_review",
+  "flags": [],
   "change": {
    "part_no": "7918016",
    "thickness_from": 1.45,
@@ -14467,72 +14465,35 @@
    "supplier_to": null,
    "scope": "all",
    "skip_simulation": false,
-   "unresolved": null
+   "unresolved": "thickness to 1.05 mm does not appear in the request"
   },
-  "part_no": "7918016",
-  "crash_relevant": true,
-  "variants": [
-   "P2-sedan",
-   "P2-touring"
-  ],
-  "tools": {
-   "WZ-8016-1": "new",
-   "WZ-8016-2": "new"
-  },
-  "tooling_cost_eur": 1327400.0,
-  "lead_weeks": 29,
-  "regulations": [
-   "CT-side_pole-CN-2025",
-   "CT-side_pole-EU-2025",
-   "CT-side_pole-US-2025"
-  ],
-  "crash": {
-   "gate": "fail",
-   "limit_mm": 116,
-   "fe_ticket": null,
-   "predictions": [
-    {
-     "intrusion_mm": 149.78,
-     "low_mm": 132.04,
-     "high_mm": 161.96,
-     "in_distribution": true,
-     "reasons": [],
-     "model_version": "lim-crash-23cbb8c4",
-     "variant": "P2-sedan"
-    },
-    {
-     "intrusion_mm": 150.75,
-     "low_mm": 138.6,
-     "high_mm": 166.3,
-     "in_distribution": true,
-     "reasons": [],
-     "model_version": "lim-crash-23cbb8c4",
-     "variant": "P2-touring"
-    }
-   ],
-   "worst": {
-    "variant": "P2-touring",
-    "intrusion_mm": 150.75,
-    "low_mm": 138.6,
-    "high_mm": 166.3,
-    "in_distribution": true,
-    "reasons": [],
-    "model_version": "lim-crash-23cbb8c4"
+  "part_no": null,
+  "crash_relevant": false,
+  "variants": [],
+  "tools": {},
+  "tooling_cost_eur": 0.0,
+  "lead_weeks": 0,
+  "regulations": [],
+  "crash": null,
+  "summary": "An engineer needs to review it.",
+  "removed": [
+   {
+    "sentence": "The request could not be resolved: thickness to 1.05 mm does not appear in the request.",
+    "reason": "figures without a source: 1.05"
    }
-  },
-  "summary": "Part 7918016 (side sill inner) on 2 variants: P2-sedan, P2-touring. Special tools: 2 new, 0 reworked, 0 transferred; 1327.4 thousand EUR, longest lead time 29 weeks. Worst-case predicted intrusion 150.8 mm on P2-touring (interval 138.6 to 166.3 mm) against a target of 116 mm. Documents: CT-side_pole-CN-2025, CT-side_pole-EU-2025, CT-side_pole-US-2025. Recommendation: reject.",
-  "removed": [],
+  ],
   "notes": [
    "model misread thickness_to",
-   "model missed the scope restriction"
+   "model missed the scope restriction",
+   "validation: thickness to 1.05 mm does not appear in the request",
+   "validation: thickness to 1.05 mm does not appear in the request"
   ],
   "approval_roles": [
-   "engineer",
-   "safety_owner"
+   "engineer"
   ],
-  "latency_ms": 5113.5,
-  "model_calls": 5,
-  "cost_eur": 0.015983,
+  "latency_ms": 3671.7,
+  "model_calls": 3,
+  "cost_eur": 0.009623,
   "spans": [
    {
     "name": "intake: read request",
@@ -14551,122 +14512,26 @@
     "detail": "{\"part_no\": \"7918016\"}"
    },
    {
+    "name": "intake: re-read request",
+    "kind": "model",
+    "start": 1146.2582703148662,
+    "end": 1927.4854431610722,
+    "status": "ok",
+    "detail": ""
+   },
+   {
     "name": "plm.get_part",
     "kind": "tool",
-    "start": 1146.2582703148662,
-    "end": 1292.8481990623602,
+    "start": 1927.4854431610722,
+    "end": 2074.0753719085665,
     "status": "ok",
     "detail": "{\"part_no\": \"7918016\"}"
-   },
-   {
-    "name": "plm.get_variants",
-    "kind": "tool",
-    "start": 1292.8481990623602,
-    "end": 1406.468321176334,
-    "status": "ok",
-    "detail": "{\"variant_ids\": [\"P2-sedan\", \"P2-touring\"]}"
-   },
-   {
-    "name": "compliance agent",
-    "kind": "model",
-    "start": 1406.468321176334,
-    "end": 2220.1862011202556,
-    "status": "ok",
-    "detail": ""
-   },
-   {
-    "name": "documents.search_documents",
-    "kind": "tool",
-    "start": 2220.1862011202556,
-    "end": 2363.2896007463837,
-    "status": "ok",
-    "detail": "{\"query\": \"internal crash target pole side impact CN maximum intrusion\", \"load_c"
-   },
-   {
-    "name": "documents.search_documents",
-    "kind": "tool",
-    "start": 2363.2896007463837,
-    "end": 2488.2798436685493,
-    "status": "ok",
-    "detail": "{\"query\": \"internal crash target pole side impact EU maximum intrusion\", \"load_c"
-   },
-   {
-    "name": "documents.search_documents",
-    "kind": "tool",
-    "start": 2488.2798436685493,
-    "end": 2557.267699437389,
-    "status": "ok",
-    "detail": "{\"query\": \"internal crash target pole side impact US maximum intrusion\", \"load_c"
-   },
-   {
-    "name": "compliance agent",
-    "kind": "agent",
-    "start": 1406.468321176334,
-    "end": 2557.267699437389,
-    "status": "ok",
-    "detail": ""
-   },
-   {
-    "name": "tooling agent",
-    "kind": "model",
-    "start": 1406.468321176334,
-    "end": 2572.331407767519,
-    "status": "ok",
-    "detail": ""
-   },
-   {
-    "name": "tooling.tools_for_part",
-    "kind": "tool",
-    "start": 2572.331407767519,
-    "end": 2774.349619320918,
-    "status": "ok",
-    "detail": "{\"part_no\": \"7918016\"}"
-   },
-   {
-    "name": "tooling agent",
-    "kind": "agent",
-    "start": 1406.468321176334,
-    "end": 2774.349619320918,
-    "status": "ok",
-    "detail": ""
-   },
-   {
-    "name": "crash agent",
-    "kind": "model",
-    "start": 2557.267699437389,
-    "end": 3623.0812878914544,
-    "status": "ok",
-    "detail": ""
-   },
-   {
-    "name": "simulation.predict_intrusion",
-    "kind": "tool",
-    "start": 3623.0812878914544,
-    "end": 3847.7909440472354,
-    "status": "ok",
-    "detail": "{\"load_case\": \"side_pole\", \"thickness_mm\": 1.05, \"material_id\": \"CR980Y1180T-DH\""
-   },
-   {
-    "name": "simulation.predict_intrusion",
-    "kind": "tool",
-    "start": 3847.7909440472354,
-    "end": 4071.6847029223527,
-    "status": "ok",
-    "detail": "{\"load_case\": \"side_pole\", \"thickness_mm\": 1.05, \"material_id\": \"CR980Y1180T-DH\""
-   },
-   {
-    "name": "crash agent",
-    "kind": "agent",
-    "start": 2557.267699437389,
-    "end": 4071.6847029223527,
-    "status": "ok",
-    "detail": ""
    },
    {
     "name": "write summary",
     "kind": "model",
-    "start": 4071.6847029223527,
-    "end": 5113.453968137851,
+    "start": 2074.0753719085665,
+    "end": 3671.7364532957286,
     "status": "ok",
     "detail": ""
    }
@@ -14733,334 +14598,6 @@
       "P2-touring"
      ],
      "assembly": "BIW-P2-SIDE"
-    },
-    "status": "ok",
-    "sources": []
-   },
-   {
-    "id": "R004",
-    "kind": "tool",
-    "name": "plm.get_variants",
-    "args": {
-     "variant_ids": [
-      "P2-sedan",
-      "P2-touring"
-     ]
-    },
-    "output": {
-     "variants": [
-      {
-       "variant": "P2-sedan",
-       "platform": "P2",
-       "derivative": "sedan",
-       "mass_kg": 1820,
-       "markets": [
-        "EU",
-        "US",
-        "CN"
-       ]
-      },
-      {
-       "variant": "P2-touring",
-       "platform": "P2",
-       "derivative": "touring",
-       "mass_kg": 1890,
-       "markets": [
-        "EU",
-        "US"
-       ]
-      }
-     ]
-    },
-    "status": "ok",
-    "sources": []
-   },
-   {
-    "id": "R005",
-    "kind": "derived",
-    "name": "scope",
-    "args": {},
-    "output": {
-     "variants": 2
-    },
-    "status": "ok",
-    "sources": []
-   },
-   {
-    "id": "R006",
-    "kind": "tool",
-    "name": "documents.search_documents",
-    "args": {
-     "query": "internal crash target pole side impact CN maximum intrusion",
-     "load_case": "side_pole",
-     "market": "CN",
-     "k": 2,
-     "method": "hybrid",
-     "current_only": true
-    },
-    "output": {
-     "documents": [
-      {
-       "id": "CT-side_pole-CN-2025",
-       "status": "current",
-       "load_case": "side_pole",
-       "market": "CN",
-       "title": "Internal crash target: pole side impact, CN (GB/T 37337)",
-       "text": "For the pole side impact load case, homologation in CN under GB/T 37337 is secured by the internal target: maximum intrusion 116 mm at the reference measurement point. A structural change that may exceed 116 mm needs a full finite-element simulation and sign-off by the passive safety owner. Version 2025, current."
-      },
-      {
-       "id": "PROC-ECR-01",
-       "status": "current",
-       "load_case": null,
-       "market": null,
-       "title": "Engineering change process: impact analysis",
-       "text": "Every engineering change request lists affected variants, special tools, suppliers and applicable crash targets. Crash-relevant changes are signed by the responsible engineer and the passive safety owner."
-      }
-     ]
-    },
-    "status": "ok",
-    "sources": []
-   },
-   {
-    "id": "R007",
-    "kind": "tool",
-    "name": "tooling.tools_for_part",
-    "args": {
-     "part_no": "7918016"
-    },
-    "output": {
-     "tools": [
-      {
-       "tool_id": "WZ-8016-1",
-       "kind": "press_die",
-       "part_no": "7918016",
-       "supplier_id": "S-6630",
-       "owner": "OEM",
-       "tolerance_mm": 0.25,
-       "material_classes": [
-        "cold_formed_steel"
-       ],
-       "new_cost_eur": 835000.0,
-       "rework_cost_eur": 142000.0,
-       "new_lead_weeks": 29,
-       "rework_lead_weeks": 4,
-       "status": "active"
-      },
-      {
-       "tool_id": "WZ-8016-2",
-       "kind": "trim_die",
-       "part_no": "7918016",
-       "supplier_id": "S-6630",
-       "owner": "OEM",
-       "tolerance_mm": 0.25,
-       "material_classes": [
-        "cold_formed_steel"
-       ],
-       "new_cost_eur": 492400.0,
-       "rework_cost_eur": 59000.0,
-       "new_lead_weeks": 26,
-       "rework_lead_weeks": 6,
-       "status": "active"
-      }
-     ]
-    },
-    "status": "ok",
-    "sources": []
-   },
-   {
-    "id": "R008",
-    "kind": "derived",
-    "name": "tooling impact",
-    "args": {},
-    "output": {
-     "tools": {
-      "WZ-8016-1": "new",
-      "WZ-8016-2": "new"
-     },
-     "tooling_cost_eur": 1327400.0,
-     "tooling_cost_keur": 1327.4,
-     "lead_weeks": 29,
-     "new_tools": 2,
-     "reworked_tools": 0,
-     "transferred_tools": 0
-    },
-    "status": "ok",
-    "sources": []
-   },
-   {
-    "id": "R009",
-    "kind": "tool",
-    "name": "documents.search_documents",
-    "args": {
-     "query": "internal crash target pole side impact EU maximum intrusion",
-     "load_case": "side_pole",
-     "market": "EU",
-     "k": 2,
-     "method": "hybrid",
-     "current_only": true
-    },
-    "output": {
-     "documents": [
-      {
-       "id": "CT-side_pole-EU-2025",
-       "status": "current",
-       "load_case": "side_pole",
-       "market": "EU",
-       "title": "Internal crash target: pole side impact, EU (UN R135)",
-       "text": "For the pole side impact load case, homologation in EU under UN R135 is secured by the internal target: maximum intrusion 120 mm at the reference measurement point. A structural change that may exceed 120 mm needs a full finite-element simulation and sign-off by the passive safety owner. Version 2025, current."
-      },
-      {
-       "id": "PROC-ECR-01",
-       "status": "current",
-       "load_case": null,
-       "market": null,
-       "title": "Engineering change process: impact analysis",
-       "text": "Every engineering change request lists affected variants, special tools, suppliers and applicable crash targets. Crash-relevant changes are signed by the responsible engineer and the passive safety owner."
-      }
-     ]
-    },
-    "status": "ok",
-    "sources": []
-   },
-   {
-    "id": "R010",
-    "kind": "tool",
-    "name": "documents.search_documents",
-    "args": {
-     "query": "internal crash target pole side impact US maximum intrusion",
-     "load_case": "side_pole",
-     "market": "US",
-     "k": 2,
-     "method": "hybrid",
-     "current_only": true
-    },
-    "output": {
-     "documents": [
-      {
-       "id": "CT-side_pole-US-2025",
-       "status": "current",
-       "load_case": "side_pole",
-       "market": "US",
-       "title": "Internal crash target: pole side impact, US (FMVSS 214 pole)",
-       "text": "For the pole side impact load case, homologation in US under FMVSS 214 pole is secured by the internal target: maximum intrusion 125 mm at the reference measurement point. A structural change that may exceed 125 mm needs a full finite-element simulation and sign-off by the passive safety owner. Version 2025, current."
-      },
-      {
-       "id": "PROC-ECR-01",
-       "status": "current",
-       "load_case": null,
-       "market": null,
-       "title": "Engineering change process: impact analysis",
-       "text": "Every engineering change request lists affected variants, special tools, suppliers and applicable crash targets. Crash-relevant changes are signed by the responsible engineer and the passive safety owner."
-      }
-     ]
-    },
-    "status": "ok",
-    "sources": []
-   },
-   {
-    "id": "R011",
-    "kind": "derived",
-    "name": "compliance",
-    "args": {},
-    "output": {
-     "regulations": [
-      "CT-side_pole-CN-2025",
-      "CT-side_pole-EU-2025",
-      "CT-side_pole-US-2025"
-     ],
-     "limits": {
-      "CN": 116,
-      "EU": 120,
-      "US": 125
-     },
-     "limit_mm": 116,
-     "material_approved": true
-    },
-    "status": "ok",
-    "sources": []
-   },
-   {
-    "id": "R012",
-    "kind": "tool",
-    "name": "simulation.predict_intrusion",
-    "args": {
-     "load_case": "side_pole",
-     "thickness_mm": 1.05,
-     "material_id": "CR980Y1180T-DH",
-     "mass_kg": 1820,
-     "reinforced": false
-    },
-    "output": {
-     "intrusion_mm": 149.78,
-     "low_mm": 132.04,
-     "high_mm": 161.96,
-     "in_distribution": true,
-     "reasons": [],
-     "model_version": "lim-crash-23cbb8c4"
-    },
-    "status": "ok",
-    "sources": []
-   },
-   {
-    "id": "R013",
-    "kind": "tool",
-    "name": "simulation.predict_intrusion",
-    "args": {
-     "load_case": "side_pole",
-     "thickness_mm": 1.05,
-     "material_id": "CR980Y1180T-DH",
-     "mass_kg": 1890,
-     "reinforced": false
-    },
-    "output": {
-     "intrusion_mm": 150.75,
-     "low_mm": 138.6,
-     "high_mm": 166.3,
-     "in_distribution": true,
-     "reasons": [],
-     "model_version": "lim-crash-23cbb8c4"
-    },
-    "status": "ok",
-    "sources": []
-   },
-   {
-    "id": "R014",
-    "kind": "derived",
-    "name": "crash gate",
-    "args": {},
-    "output": {
-     "gate": "fail",
-     "limit_mm": 116,
-     "fe_ticket": null,
-     "predictions": [
-      {
-       "intrusion_mm": 149.78,
-       "low_mm": 132.04,
-       "high_mm": 161.96,
-       "in_distribution": true,
-       "reasons": [],
-       "model_version": "lim-crash-23cbb8c4",
-       "variant": "P2-sedan"
-      },
-      {
-       "intrusion_mm": 150.75,
-       "low_mm": 138.6,
-       "high_mm": 166.3,
-       "in_distribution": true,
-       "reasons": [],
-       "model_version": "lim-crash-23cbb8c4",
-       "variant": "P2-touring"
-      }
-     ],
-     "worst": {
-      "variant": "P2-touring",
-      "intrusion_mm": 150.75,
-      "low_mm": 138.6,
-      "high_mm": 166.3,
-      "in_distribution": true,
-      "reasons": [],
-      "model_version": "lim-crash-23cbb8c4"
-     }
     },
     "status": "ok",
     "sources": []
@@ -15132,7 +14669,7 @@
    "engineer",
    "safety_owner"
   ],
-  "latency_ms": 5008.8,
+  "latency_ms": 5119.6,
   "model_calls": 5,
   "cost_eur": 0.015988,
   "spans": [
@@ -15180,23 +14717,23 @@
     "name": "documents.search_documents",
     "kind": "tool",
     "start": 2143.0599682982556,
-    "end": 2255.136430931381,
+    "end": 2251.848153969341,
     "status": "ok",
     "detail": "{\"query\": \"internal crash target pole side impact CN maximum intrusion\", \"load_c"
    },
    {
     "name": "documents.search_documents",
     "kind": "tool",
-    "start": 2255.136430931381,
-    "end": 2416.8026927220126,
+    "start": 2251.848153969341,
+    "end": 2527.5801874753456,
     "status": "ok",
     "detail": "{\"query\": \"internal crash target pole side impact EU maximum intrusion\", \"load_c"
    },
    {
     "name": "plm.get_material",
     "kind": "tool",
-    "start": 2416.8026927220126,
-    "end": 2504.7125296620993,
+    "start": 2527.5801874753456,
+    "end": 2615.4900244154323,
     "status": "ok",
     "detail": "{\"material_id\": \"HC340LA\"}"
    },
@@ -15204,7 +14741,7 @@
     "name": "compliance agent",
     "kind": "agent",
     "start": 1018.481789764236,
-    "end": 2504.7125296620993,
+    "end": 2615.4900244154323,
     "status": "ok",
     "detail": ""
    },
@@ -15220,15 +14757,15 @@
     "name": "tooling.tools_for_part",
     "kind": "tool",
     "start": 1895.0618056334001,
-    "end": 2003.849991304486,
+    "end": 2007.1382682665253,
     "status": "ok",
     "detail": "{\"part_no\": \"7979003\"}"
    },
    {
     "name": "plm.get_material",
     "kind": "tool",
-    "start": 2003.849991304486,
-    "end": 2279.58202481049,
+    "start": 2007.1382682665253,
+    "end": 2168.804530057157,
     "status": "ok",
     "detail": "{\"material_id\": \"HC340LA\"}"
    },
@@ -15236,39 +14773,39 @@
     "name": "tooling agent",
     "kind": "agent",
     "start": 1018.481789764236,
-    "end": 2279.58202481049,
+    "end": 2168.804530057157,
     "status": "ok",
     "detail": ""
    },
    {
     "name": "crash agent",
     "kind": "model",
-    "start": 2504.7125296620993,
-    "end": 3759.726043807647,
+    "start": 2615.4900244154323,
+    "end": 3870.50353856098,
     "status": "ok",
     "detail": ""
    },
    {
     "name": "simulation.predict_intrusion",
     "kind": "tool",
-    "start": 3759.726043807647,
-    "end": 3912.02080226323,
+    "start": 3870.50353856098,
+    "end": 4022.798297016563,
     "status": "ok",
     "detail": "{\"load_case\": \"side_pole\", \"thickness_mm\": 1.45, \"material_id\": \"HC340LA\", \"mass"
    },
    {
     "name": "crash agent",
     "kind": "agent",
-    "start": 2504.7125296620993,
-    "end": 3912.02080226323,
+    "start": 2615.4900244154323,
+    "end": 4022.798297016563,
     "status": "ok",
     "detail": ""
    },
    {
     "name": "write summary",
     "kind": "model",
-    "start": 3912.02080226323,
-    "end": 5008.835299914499,
+    "start": 4022.798297016563,
+    "end": 5119.6127946678325,
     "status": "ok",
     "detail": ""
    }
@@ -15377,41 +14914,6 @@
    {
     "id": "R006",
     "kind": "tool",
-    "name": "documents.search_documents",
-    "args": {
-     "query": "internal crash target pole side impact CN maximum intrusion",
-     "load_case": "side_pole",
-     "market": "CN",
-     "k": 2,
-     "method": "hybrid",
-     "current_only": true
-    },
-    "output": {
-     "documents": [
-      {
-       "id": "CT-side_pole-CN-2025",
-       "status": "current",
-       "load_case": "side_pole",
-       "market": "CN",
-       "title": "Internal crash target: pole side impact, CN (GB/T 37337)",
-       "text": "For the pole side impact load case, homologation in CN under GB/T 37337 is secured by the internal target: maximum intrusion 116 mm at the reference measurement point. A structural change that may exceed 116 mm needs a full finite-element simulation and sign-off by the passive safety owner. Version 2025, current."
-      },
-      {
-       "id": "PROC-ECR-01",
-       "status": "current",
-       "load_case": null,
-       "market": null,
-       "title": "Engineering change process: impact analysis",
-       "text": "Every engineering change request lists affected variants, special tools, suppliers and applicable crash targets. Crash-relevant changes are signed by the responsible engineer and the passive safety owner."
-      }
-     ]
-    },
-    "status": "ok",
-    "sources": []
-   },
-   {
-    "id": "R007",
-    "kind": "tool",
     "name": "tooling.tools_for_part",
     "args": {
      "part_no": "7979003"
@@ -15472,7 +14974,79 @@
     "sources": []
    },
    {
+    "id": "R007",
+    "kind": "tool",
+    "name": "documents.search_documents",
+    "args": {
+     "query": "internal crash target pole side impact CN maximum intrusion",
+     "load_case": "side_pole",
+     "market": "CN",
+     "k": 2,
+     "method": "hybrid",
+     "current_only": true
+    },
+    "output": {
+     "documents": [
+      {
+       "id": "CT-side_pole-CN-2025",
+       "status": "current",
+       "load_case": "side_pole",
+       "market": "CN",
+       "title": "Internal crash target: pole side impact, CN (GB/T 37337)",
+       "text": "For the pole side impact load case, homologation in CN under GB/T 37337 is secured by the internal target: maximum intrusion 116 mm at the reference measurement point. A structural change that may exceed 116 mm needs a full finite-element simulation and sign-off by the passive safety owner. Version 2025, current."
+      },
+      {
+       "id": "PROC-ECR-01",
+       "status": "current",
+       "load_case": null,
+       "market": null,
+       "title": "Engineering change process: impact analysis",
+       "text": "Every engineering change request lists affected variants, special tools, suppliers and applicable crash targets. Crash-relevant changes are signed by the responsible engineer and the passive safety owner."
+      }
+     ]
+    },
+    "status": "ok",
+    "sources": []
+   },
+   {
     "id": "R008",
+    "kind": "tool",
+    "name": "plm.get_material",
+    "args": {
+     "material_id": "HC340LA"
+    },
+    "output": {
+     "id": "HC340LA",
+     "yield_mpa": 340,
+     "density": 7.85,
+     "class": "cold_formed_steel",
+     "approved": true
+    },
+    "status": "ok",
+    "sources": []
+   },
+   {
+    "id": "R009",
+    "kind": "derived",
+    "name": "tooling impact",
+    "args": {},
+    "output": {
+     "tools": {
+      "WZ-9003-1": "rework",
+      "WZ-9003-2": "rework"
+     },
+     "tooling_cost_eur": 118000.0,
+     "tooling_cost_keur": 118.0,
+     "lead_weeks": 7,
+     "new_tools": 0,
+     "reworked_tools": 2,
+     "transferred_tools": 0
+    },
+    "status": "ok",
+    "sources": []
+   },
+   {
+    "id": "R010",
     "kind": "tool",
     "name": "documents.search_documents",
     "args": {
@@ -15502,43 +15076,6 @@
        "text": "Every engineering change request lists affected variants, special tools, suppliers and applicable crash targets. Crash-relevant changes are signed by the responsible engineer and the passive safety owner."
       }
      ]
-    },
-    "status": "ok",
-    "sources": []
-   },
-   {
-    "id": "R009",
-    "kind": "tool",
-    "name": "plm.get_material",
-    "args": {
-     "material_id": "HC340LA"
-    },
-    "output": {
-     "id": "HC340LA",
-     "yield_mpa": 340,
-     "density": 7.85,
-     "class": "cold_formed_steel",
-     "approved": true
-    },
-    "status": "ok",
-    "sources": []
-   },
-   {
-    "id": "R010",
-    "kind": "derived",
-    "name": "tooling impact",
-    "args": {},
-    "output": {
-     "tools": {
-      "WZ-9003-1": "rework",
-      "WZ-9003-2": "rework"
-     },
-     "tooling_cost_eur": 118000.0,
-     "tooling_cost_keur": 118.0,
-     "lead_weeks": 7,
-     "new_tools": 0,
-     "reworked_tools": 2,
-     "transferred_tools": 0
     },
     "status": "ok",
     "sources": []
@@ -16241,7 +15778,7 @@
    "engineer",
    "safety_owner"
   ],
-  "latency_ms": 6979.8,
+  "latency_ms": 6935.0,
   "model_calls": 6,
   "cost_eur": 0.018293,
   "spans": [
@@ -16313,15 +15850,15 @@
     "name": "documents.search_documents",
     "kind": "tool",
     "start": 3923.675416073282,
-    "end": 4068.987636230127,
+    "end": 4024.2299913160386,
     "status": "ok",
     "detail": "{\"query\": \"internal crash target offset frontal impact EU maximum intrusion\", \"l"
    },
    {
     "name": "plm.get_material",
     "kind": "tool",
-    "start": 4068.987636230127,
-    "end": 4177.171179119623,
+    "start": 4024.2299913160386,
+    "end": 4132.413534205535,
     "status": "ok",
     "detail": "{\"material_id\": \"CR1180Y1500T-MS\"}"
    },
@@ -16329,7 +15866,7 @@
     "name": "compliance agent",
     "kind": "agent",
     "start": 3004.4777106302117,
-    "end": 4177.171179119623,
+    "end": 4132.413534205535,
     "status": "ok",
     "detail": ""
    },
@@ -16353,7 +15890,7 @@
     "name": "plm.get_material",
     "kind": "tool",
     "start": 4618.655966786402,
-    "end": 4719.210542029158,
+    "end": 4763.968186943247,
     "status": "ok",
     "detail": "{\"material_id\": \"CR1180Y1500T-MS\"}"
    },
@@ -16361,47 +15898,47 @@
     "name": "tooling agent",
     "kind": "agent",
     "start": 3004.4777106302117,
-    "end": 4719.210542029158,
+    "end": 4763.968186943247,
     "status": "ok",
     "detail": ""
    },
    {
     "name": "crash agent",
     "kind": "model",
-    "start": 4177.171179119623,
-    "end": 5526.89637913147,
+    "start": 4132.413534205535,
+    "end": 5482.138734217382,
     "status": "ok",
     "detail": ""
    },
    {
     "name": "simulation.predict_intrusion",
     "kind": "tool",
-    "start": 5526.89637913147,
-    "end": 5808.502518980965,
+    "start": 5482.138734217382,
+    "end": 5763.744874066877,
     "status": "ok",
     "detail": "{\"load_case\": \"frontal_odb\", \"thickness_mm\": 1.3, \"material_id\": \"CR1180Y1500T-M"
    },
    {
     "name": "simulation.request_fe_simulation",
     "kind": "tool",
-    "start": 5808.502518980965,
-    "end": 5856.156723849601,
+    "start": 5763.744874066877,
+    "end": 5811.399078935513,
     "status": "ok",
     "detail": "{\"part_no\": \"7624005\", \"load_case\": \"frontal_odb\", \"reason\": \"prediction interva"
    },
    {
     "name": "crash agent",
     "kind": "agent",
-    "start": 4177.171179119623,
-    "end": 5856.156723849601,
+    "start": 4132.413534205535,
+    "end": 5811.399078935513,
     "status": "ok",
     "detail": ""
    },
    {
     "name": "write summary",
     "kind": "model",
-    "start": 5856.156723849601,
-    "end": 6979.76108012865,
+    "start": 5811.399078935513,
+    "end": 6935.003435214562,
     "status": "ok",
     "detail": ""
    }
@@ -16639,43 +16176,6 @@
    {
     "id": "R009",
     "kind": "tool",
-    "name": "plm.get_material",
-    "args": {
-     "material_id": "CR1180Y1500T-MS"
-    },
-    "output": {
-     "id": "CR1180Y1500T-MS",
-     "yield_mpa": 1180,
-     "density": 7.85,
-     "class": "cold_formed_steel",
-     "approved": true
-    },
-    "status": "ok",
-    "sources": []
-   },
-   {
-    "id": "R010",
-    "kind": "derived",
-    "name": "tooling impact",
-    "args": {},
-    "output": {
-     "tools": {
-      "WZ-4005-1": "rework",
-      "WZ-4005-2": "rework"
-     },
-     "tooling_cost_eur": 109000.0,
-     "tooling_cost_keur": 109.0,
-     "lead_weeks": 7,
-     "new_tools": 0,
-     "reworked_tools": 2,
-     "transferred_tools": 0
-    },
-    "status": "ok",
-    "sources": []
-   },
-   {
-    "id": "R011",
-    "kind": "tool",
     "name": "documents.search_documents",
     "args": {
      "query": "internal crash target offset frontal impact EU maximum intrusion",
@@ -16704,6 +16204,43 @@
        "text": "Every engineering change request lists affected variants, special tools, suppliers and applicable crash targets. Crash-relevant changes are signed by the responsible engineer and the passive safety owner."
       }
      ]
+    },
+    "status": "ok",
+    "sources": []
+   },
+   {
+    "id": "R010",
+    "kind": "tool",
+    "name": "plm.get_material",
+    "args": {
+     "material_id": "CR1180Y1500T-MS"
+    },
+    "output": {
+     "id": "CR1180Y1500T-MS",
+     "yield_mpa": 1180,
+     "density": 7.85,
+     "class": "cold_formed_steel",
+     "approved": true
+    },
+    "status": "ok",
+    "sources": []
+   },
+   {
+    "id": "R011",
+    "kind": "derived",
+    "name": "tooling impact",
+    "args": {},
+    "output": {
+     "tools": {
+      "WZ-4005-1": "rework",
+      "WZ-4005-2": "rework"
+     },
+     "tooling_cost_eur": 109000.0,
+     "tooling_cost_keur": 109.0,
+     "lead_weeks": 7,
+     "new_tools": 0,
+     "reworked_tools": 2,
+     "transferred_tools": 0
     },
     "status": "ok",
     "sources": []
@@ -17243,7 +16780,7 @@
    "engineer",
    "safety_owner"
   ],
-  "latency_ms": 6301.1,
+  "latency_ms": 6185.7,
   "model_calls": 5,
   "cost_eur": 0.015983,
   "spans": [
@@ -17291,23 +16828,23 @@
     "name": "documents.search_documents",
     "kind": "tool",
     "start": 3389.5367066061344,
-    "end": 3569.9473628403102,
+    "end": 3454.5559148194943,
     "status": "ok",
     "detail": "{\"query\": \"internal crash target pole side impact CN maximum intrusion\", \"load_c"
    },
    {
     "name": "documents.search_documents",
     "kind": "tool",
-    "start": 3569.9473628403102,
-    "end": 3739.1733836957737,
+    "start": 3454.5559148194943,
+    "end": 3623.781935674958,
     "status": "ok",
     "detail": "{\"query\": \"internal crash target pole side impact EU maximum intrusion\", \"load_c"
    },
    {
     "name": "documents.search_documents",
     "kind": "tool",
-    "start": 3739.1733836957737,
-    "end": 3866.621102891463,
+    "start": 3623.781935674958,
+    "end": 3751.229654870647,
     "status": "ok",
     "detail": "{\"query\": \"internal crash target pole side impact US maximum intrusion\", \"load_c"
    },
@@ -17315,7 +16852,7 @@
     "name": "compliance agent",
     "kind": "agent",
     "start": 1666.360486433723,
-    "end": 3866.621102891463,
+    "end": 3751.229654870647,
     "status": "ok",
     "detail": ""
    },
@@ -17331,7 +16868,7 @@
     "name": "tooling.tools_for_part",
     "kind": "tool",
     "start": 2657.3688436917328,
-    "end": 2722.3880519050927,
+    "end": 2837.7794999259086,
     "status": "ok",
     "detail": "{\"part_no\": \"7586030\"}"
    },
@@ -17339,47 +16876,47 @@
     "name": "tooling agent",
     "kind": "agent",
     "start": 1666.360486433723,
-    "end": 2722.3880519050927,
+    "end": 2837.7794999259086,
     "status": "ok",
     "detail": ""
    },
    {
     "name": "crash agent",
     "kind": "model",
-    "start": 3866.621102891463,
-    "end": 4937.907713489418,
+    "start": 3751.229654870647,
+    "end": 4822.516265468603,
     "status": "ok",
     "detail": ""
    },
    {
     "name": "simulation.predict_intrusion",
     "kind": "tool",
-    "start": 4937.907713489418,
-    "end": 5041.041161024746,
+    "start": 4822.516265468603,
+    "end": 4925.649713003931,
     "status": "ok",
     "detail": "{\"load_case\": \"side_pole\", \"thickness_mm\": 1.25, \"material_id\": \"CR980Y1180T-DH\""
    },
    {
     "name": "simulation.predict_intrusion",
     "kind": "tool",
-    "start": 5041.041161024746,
-    "end": 5221.847130876221,
+    "start": 4925.649713003931,
+    "end": 5106.455682855406,
     "status": "ok",
     "detail": "{\"load_case\": \"side_pole\", \"thickness_mm\": 1.25, \"material_id\": \"CR980Y1180T-DH\""
    },
    {
     "name": "crash agent",
     "kind": "agent",
-    "start": 3866.621102891463,
-    "end": 5221.847130876221,
+    "start": 3751.229654870647,
+    "end": 5106.455682855406,
     "status": "ok",
     "detail": ""
    },
    {
     "name": "write summary",
     "kind": "model",
-    "start": 5221.847130876221,
-    "end": 6301.072659981692,
+    "start": 5106.455682855406,
+    "end": 6185.681211960877,
     "status": "ok",
     "detail": ""
    }
@@ -17501,41 +17038,6 @@
    {
     "id": "R006",
     "kind": "tool",
-    "name": "documents.search_documents",
-    "args": {
-     "query": "internal crash target pole side impact CN maximum intrusion",
-     "load_case": "side_pole",
-     "market": "CN",
-     "k": 2,
-     "method": "hybrid",
-     "current_only": true
-    },
-    "output": {
-     "documents": [
-      {
-       "id": "CT-side_pole-CN-2025",
-       "status": "current",
-       "load_case": "side_pole",
-       "market": "CN",
-       "title": "Internal crash target: pole side impact, CN (GB/T 37337)",
-       "text": "For the pole side impact load case, homologation in CN under GB/T 37337 is secured by the internal target: maximum intrusion 116 mm at the reference measurement point. A structural change that may exceed 116 mm needs a full finite-element simulation and sign-off by the passive safety owner. Version 2025, current."
-      },
-      {
-       "id": "PROC-ECR-01",
-       "status": "current",
-       "load_case": null,
-       "market": null,
-       "title": "Engineering change process: impact analysis",
-       "text": "Every engineering change request lists affected variants, special tools, suppliers and applicable crash targets. Crash-relevant changes are signed by the responsible engineer and the passive safety owner."
-      }
-     ]
-    },
-    "status": "ok",
-    "sources": []
-   },
-   {
-    "id": "R007",
-    "kind": "tool",
     "name": "tooling.tools_for_part",
     "args": {
      "part_no": "7586030"
@@ -17580,7 +17082,7 @@
     "sources": []
    },
    {
-    "id": "R008",
+    "id": "R007",
     "kind": "derived",
     "name": "tooling impact",
     "args": {},
@@ -17595,6 +17097,41 @@
      "new_tools": 0,
      "reworked_tools": 2,
      "transferred_tools": 0
+    },
+    "status": "ok",
+    "sources": []
+   },
+   {
+    "id": "R008",
+    "kind": "tool",
+    "name": "documents.search_documents",
+    "args": {
+     "query": "internal crash target pole side impact CN maximum intrusion",
+     "load_case": "side_pole",
+     "market": "CN",
+     "k": 2,
+     "method": "hybrid",
+     "current_only": true
+    },
+    "output": {
+     "documents": [
+      {
+       "id": "CT-side_pole-CN-2025",
+       "status": "current",
+       "load_case": "side_pole",
+       "market": "CN",
+       "title": "Internal crash target: pole side impact, CN (GB/T 37337)",
+       "text": "For the pole side impact load case, homologation in CN under GB/T 37337 is secured by the internal target: maximum intrusion 116 mm at the reference measurement point. A structural change that may exceed 116 mm needs a full finite-element simulation and sign-off by the passive safety owner. Version 2025, current."
+      },
+      {
+       "id": "PROC-ECR-01",
+       "status": "current",
+       "load_case": null,
+       "market": null,
+       "title": "Engineering change process: impact analysis",
+       "text": "Every engineering change request lists affected variants, special tools, suppliers and applicable crash targets. Crash-relevant changes are signed by the responsible engineer and the passive safety owner."
+      }
+     ]
     },
     "status": "ok",
     "sources": []
@@ -18155,7 +17692,7 @@
    "engineer",
    "safety_owner"
   ],
-  "latency_ms": 6056.4,
+  "latency_ms": 6078.3,
   "model_calls": 5,
   "cost_eur": 0.01599,
   "spans": [
@@ -18203,15 +17740,15 @@
     "name": "documents.search_documents",
     "kind": "tool",
     "start": 2474.5382804592346,
-    "end": 2616.7646368585147,
+    "end": 2638.623650511298,
     "status": "ok",
     "detail": "{\"query\": \"internal crash target offset frontal impact CN maximum intrusion\", \"l"
    },
    {
     "name": "documents.search_documents",
     "kind": "tool",
-    "start": 2616.7646368585147,
-    "end": 2842.1970016626924,
+    "start": 2638.623650511298,
+    "end": 2864.0560153154756,
     "status": "ok",
     "detail": "{\"query\": \"internal crash target offset frontal impact EU maximum intrusion\", \"l"
    },
@@ -18219,7 +17756,7 @@
     "name": "compliance agent",
     "kind": "agent",
     "start": 1327.4500950836602,
-    "end": 2842.1970016626924,
+    "end": 2864.0560153154756,
     "status": "ok",
     "detail": ""
    },
@@ -18235,7 +17772,7 @@
     "name": "tooling.tools_for_part",
     "kind": "tool",
     "start": 2152.1162835061455,
-    "end": 2316.201653558209,
+    "end": 2294.3426399054256,
     "status": "ok",
     "detail": "{\"part_no\": \"7376006\"}"
    },
@@ -18243,55 +17780,55 @@
     "name": "tooling agent",
     "kind": "agent",
     "start": 1327.4500950836602,
-    "end": 2316.201653558209,
+    "end": 2294.3426399054256,
     "status": "ok",
     "detail": ""
    },
    {
     "name": "crash agent",
     "kind": "model",
-    "start": 2842.1970016626924,
-    "end": 4247.7033270003685,
+    "start": 2864.0560153154756,
+    "end": 4269.562340653152,
     "status": "ok",
     "detail": ""
    },
    {
     "name": "simulation.predict_intrusion",
     "kind": "tool",
-    "start": 4247.7033270003685,
-    "end": 4458.6376781292465,
+    "start": 4269.562340653152,
+    "end": 4480.49669178203,
     "status": "ok",
     "detail": "{\"load_case\": \"frontal_odb\", \"thickness_mm\": 2.05, \"material_id\": \"HC340LA\", \"ma"
    },
    {
     "name": "simulation.predict_intrusion",
     "kind": "tool",
-    "start": 4458.6376781292465,
-    "end": 4628.267294295471,
+    "start": 4480.49669178203,
+    "end": 4650.126307948255,
     "status": "ok",
     "detail": "{\"load_case\": \"frontal_odb\", \"thickness_mm\": 2.05, \"material_id\": \"HC340LA\", \"ma"
    },
    {
     "name": "simulation.predict_intrusion",
     "kind": "tool",
-    "start": 4628.267294295471,
-    "end": 4722.927151093153,
+    "start": 4650.126307948255,
+    "end": 4744.786164745937,
     "status": "ok",
     "detail": "{\"load_case\": \"frontal_odb\", \"thickness_mm\": 2.05, \"material_id\": \"HC340LA\", \"ma"
    },
    {
     "name": "crash agent",
     "kind": "agent",
-    "start": 2842.1970016626924,
-    "end": 4722.927151093153,
+    "start": 2864.0560153154756,
+    "end": 4744.786164745937,
     "status": "ok",
     "detail": ""
    },
    {
     "name": "write summary",
     "kind": "model",
-    "start": 4722.927151093153,
-    "end": 6056.4130418033965,
+    "start": 4744.786164745937,
+    "end": 6078.27205545618,
     "status": "ok",
     "detail": ""
    }
@@ -18425,41 +17962,6 @@
    {
     "id": "R006",
     "kind": "tool",
-    "name": "documents.search_documents",
-    "args": {
-     "query": "internal crash target offset frontal impact CN maximum intrusion",
-     "load_case": "frontal_odb",
-     "market": "CN",
-     "k": 2,
-     "method": "hybrid",
-     "current_only": true
-    },
-    "output": {
-     "documents": [
-      {
-       "id": "CT-frontal_odb-CN-2025",
-       "status": "current",
-       "load_case": "frontal_odb",
-       "market": "CN",
-       "title": "Internal crash target: offset frontal impact, CN (GB/T 20913)",
-       "text": "For the offset frontal impact load case, homologation in CN under GB/T 20913 is secured by the internal target: maximum intrusion 148 mm at the reference measurement point. A structural change that may exceed 148 mm needs a full finite-element simulation and sign-off by the passive safety owner. Version 2025, current."
-      },
-      {
-       "id": "PROC-ECR-01",
-       "status": "current",
-       "load_case": null,
-       "market": null,
-       "title": "Engineering change process: impact analysis",
-       "text": "Every engineering change request lists affected variants, special tools, suppliers and applicable crash targets. Crash-relevant changes are signed by the responsible engineer and the passive safety owner."
-      }
-     ]
-    },
-    "status": "ok",
-    "sources": []
-   },
-   {
-    "id": "R007",
-    "kind": "tool",
     "name": "tooling.tools_for_part",
     "args": {
      "part_no": "7376006"
@@ -18504,7 +18006,7 @@
     "sources": []
    },
    {
-    "id": "R008",
+    "id": "R007",
     "kind": "derived",
     "name": "tooling impact",
     "args": {},
@@ -18519,6 +18021,41 @@
      "new_tools": 0,
      "reworked_tools": 2,
      "transferred_tools": 0
+    },
+    "status": "ok",
+    "sources": []
+   },
+   {
+    "id": "R008",
+    "kind": "tool",
+    "name": "documents.search_documents",
+    "args": {
+     "query": "internal crash target offset frontal impact CN maximum intrusion",
+     "load_case": "frontal_odb",
+     "market": "CN",
+     "k": 2,
+     "method": "hybrid",
+     "current_only": true
+    },
+    "output": {
+     "documents": [
+      {
+       "id": "CT-frontal_odb-CN-2025",
+       "status": "current",
+       "load_case": "frontal_odb",
+       "market": "CN",
+       "title": "Internal crash target: offset frontal impact, CN (GB/T 20913)",
+       "text": "For the offset frontal impact load case, homologation in CN under GB/T 20913 is secured by the internal target: maximum intrusion 148 mm at the reference measurement point. A structural change that may exceed 148 mm needs a full finite-element simulation and sign-off by the passive safety owner. Version 2025, current."
+      },
+      {
+       "id": "PROC-ECR-01",
+       "status": "current",
+       "load_case": null,
+       "market": null,
+       "title": "Engineering change process: impact analysis",
+       "text": "Every engineering change request lists affected variants, special tools, suppliers and applicable crash targets. Crash-relevant changes are signed by the responsible engineer and the passive safety owner."
+      }
+     ]
     },
     "status": "ok",
     "sources": []
@@ -19378,7 +18915,7 @@
   "approval_roles": [
    "engineer"
   ],
-  "latency_ms": 3644.5,
+  "latency_ms": 3640.2,
   "model_calls": 4,
   "cost_eur": 0.012958,
   "spans": [
@@ -19426,7 +18963,7 @@
     "name": "documents.search_documents",
     "kind": "tool",
     "start": 2937.071946358762,
-    "end": 3134.1171309092238,
+    "end": 3129.8207406531774,
     "status": "ok",
     "detail": "{\"query\": \"supplier change production part approval\", \"k\": 1, \"method\": \"hybrid\""
    },
@@ -19434,7 +18971,7 @@
     "name": "compliance agent",
     "kind": "agent",
     "start": 1964.793298786416,
-    "end": 3134.1171309092238,
+    "end": 3129.8207406531774,
     "status": "ok",
     "detail": ""
    },
@@ -19450,7 +18987,7 @@
     "name": "tooling.tools_for_part",
     "kind": "tool",
     "start": 2712.56934588026,
-    "end": 2905.318140174675,
+    "end": 2909.6145304307215,
     "status": "ok",
     "detail": "{\"part_no\": \"7863038\"}"
    },
@@ -19458,15 +18995,15 @@
     "name": "tooling agent",
     "kind": "agent",
     "start": 1964.793298786416,
-    "end": 2905.318140174675,
+    "end": 2909.6145304307215,
     "status": "ok",
     "detail": ""
    },
    {
     "name": "write summary",
     "kind": "model",
-    "start": 3134.1171309092238,
-    "end": 3644.5079067643414,
+    "start": 3129.8207406531774,
+    "end": 3640.211516508295,
     "status": "ok",
     "detail": ""
    }
@@ -19579,47 +19116,6 @@
    {
     "id": "R006",
     "kind": "tool",
-    "name": "documents.search_documents",
-    "args": {
-     "query": "supplier change production part approval",
-     "k": 1,
-     "method": "hybrid",
-     "current_only": true
-    },
-    "output": {
-     "documents": [
-      {
-       "id": "PROC-PPAP-03",
-       "status": "current",
-       "load_case": null,
-       "market": null,
-       "title": "Supplier change: production part approval",
-       "text": "A change of supplier for a series part requires a production part approval at level 3 and the transfer of OEM-owned special tools to the new supplier. Tool transfer takes about six weeks."
-      }
-     ]
-    },
-    "status": "ok",
-    "sources": []
-   },
-   {
-    "id": "R007",
-    "kind": "derived",
-    "name": "compliance",
-    "args": {},
-    "output": {
-     "regulations": [
-      "PROC-PPAP-03"
-     ],
-     "limits": {},
-     "limit_mm": null,
-     "material_approved": true
-    },
-    "status": "ok",
-    "sources": []
-   },
-   {
-    "id": "R008",
-    "kind": "tool",
     "name": "tooling.tools_for_part",
     "args": {
      "part_no": "7863038"
@@ -19664,7 +19160,7 @@
     "sources": []
    },
    {
-    "id": "R009",
+    "id": "R007",
     "kind": "derived",
     "name": "tooling impact",
     "args": {},
@@ -19682,6 +19178,47 @@
     },
     "status": "ok",
     "sources": []
+   },
+   {
+    "id": "R008",
+    "kind": "tool",
+    "name": "documents.search_documents",
+    "args": {
+     "query": "supplier change production part approval",
+     "k": 1,
+     "method": "hybrid",
+     "current_only": true
+    },
+    "output": {
+     "documents": [
+      {
+       "id": "PROC-PPAP-03",
+       "status": "current",
+       "load_case": null,
+       "market": null,
+       "title": "Supplier change: production part approval",
+       "text": "A change of supplier for a series part requires a production part approval at level 3 and the transfer of OEM-owned special tools to the new supplier. Tool transfer takes about six weeks."
+      }
+     ]
+    },
+    "status": "ok",
+    "sources": []
+   },
+   {
+    "id": "R009",
+    "kind": "derived",
+    "name": "compliance",
+    "args": {},
+    "output": {
+     "regulations": [
+      "PROC-PPAP-03"
+     ],
+     "limits": {},
+     "limit_mm": null,
+     "material_approved": true
+    },
+    "status": "ok",
+    "sources": []
    }
   ],
   "guard_removed": [],
@@ -19690,7 +19227,7 @@
  {
   "id": "DEV-036",
   "request": "ECR for part 7412029 (B-pillar reinforcement): thickness 1.35 mm -> 1.25 mm on all P3 derivatives. Reason: supplier capacity.",
-  "recommendation": "reject",
+  "recommendation": "engineer_review",
   "flags": [],
   "change": {
    "part_no": "7412029",
@@ -19701,81 +19238,34 @@
    "supplier_to": null,
    "scope": "all",
    "skip_simulation": false,
-   "unresolved": null
+   "unresolved": "thickness to 0.95 mm does not appear in the request"
   },
-  "part_no": "7412029",
-  "crash_relevant": true,
-  "variants": [
-   "P3-ev",
-   "P3-sedan",
-   "P3-touring"
-  ],
-  "tools": {
-   "WZ-2029-1": "new",
-   "WZ-2029-2": "new"
-  },
-  "tooling_cost_eur": 568100.0,
-  "lead_weeks": 20,
-  "regulations": [
-   "CT-side_pole-CN-2025",
-   "CT-side_pole-EU-2025",
-   "CT-side_pole-US-2025"
-  ],
-  "crash": {
-   "gate": "fail",
-   "limit_mm": 116,
-   "fe_ticket": null,
-   "predictions": [
-    {
-     "intrusion_mm": 160.96,
-     "low_mm": 123.74,
-     "high_mm": 169.07,
-     "in_distribution": true,
-     "reasons": [],
-     "model_version": "lim-crash-23cbb8c4",
-     "variant": "P3-sedan"
-    },
-    {
-     "intrusion_mm": 163.88,
-     "low_mm": 124.05,
-     "high_mm": 175.37,
-     "in_distribution": true,
-     "reasons": [],
-     "model_version": "lim-crash-23cbb8c4",
-     "variant": "P3-touring"
-    },
-    {
-     "intrusion_mm": 187.34,
-     "low_mm": 134.61,
-     "high_mm": 200.37,
-     "in_distribution": true,
-     "reasons": [],
-     "model_version": "lim-crash-23cbb8c4",
-     "variant": "P3-ev"
-    }
-   ],
-   "worst": {
-    "variant": "P3-ev",
-    "intrusion_mm": 187.34,
-    "low_mm": 134.61,
-    "high_mm": 200.37,
-    "in_distribution": true,
-    "reasons": [],
-    "model_version": "lim-crash-23cbb8c4"
+  "part_no": null,
+  "crash_relevant": false,
+  "variants": [],
+  "tools": {},
+  "tooling_cost_eur": 0.0,
+  "lead_weeks": 0,
+  "regulations": [],
+  "crash": null,
+  "summary": "An engineer needs to review it.",
+  "removed": [
+   {
+    "sentence": "The request could not be resolved: thickness to 0.95 mm does not appear in the request.",
+    "reason": "figures without a source: 0.95"
    }
-  },
-  "summary": "Part 7412029 (B-pillar reinforcement) on 3 variants: P3-sedan, P3-touring, P3-ev. Special tools: 2 new, 0 reworked, 0 transferred; 568.1 thousand EUR, longest lead time 20 weeks. Worst-case predicted intrusion 187.3 mm on P3-ev (interval 134.6 to 200.4 mm) against a target of 116 mm. Documents: CT-side_pole-CN-2025, CT-side_pole-EU-2025, CT-side_pole-US-2025. Recommendation: reject.",
-  "removed": [],
+  ],
   "notes": [
-   "model misread thickness_to"
+   "model misread thickness_to",
+   "validation: thickness to 0.95 mm does not appear in the request",
+   "validation: thickness to 0.95 mm does not appear in the request"
   ],
   "approval_roles": [
-   "engineer",
-   "safety_owner"
+   "engineer"
   ],
-  "latency_ms": 5527.8,
-  "model_calls": 5,
-  "cost_eur": 0.01598,
+  "latency_ms": 3359.2,
+  "model_calls": 3,
+  "cost_eur": 0.009615,
   "spans": [
    {
     "name": "intake: read request",
@@ -19794,130 +19284,26 @@
     "detail": "{\"part_no\": \"7412029\"}"
    },
    {
+    "name": "intake: re-read request",
+    "kind": "model",
+    "start": 888.822736757035,
+    "end": 2239.3092454955067,
+    "status": "ok",
+    "detail": ""
+   },
+   {
     "name": "plm.get_part",
     "kind": "tool",
-    "start": 888.822736757035,
-    "end": 1035.2658946376632,
+    "start": 2239.3092454955067,
+    "end": 2385.7524033761347,
     "status": "ok",
     "detail": "{\"part_no\": \"7412029\"}"
-   },
-   {
-    "name": "plm.get_variants",
-    "kind": "tool",
-    "start": 1035.2658946376632,
-    "end": 1205.8811510772618,
-    "status": "ok",
-    "detail": "{\"variant_ids\": [\"P3-sedan\", \"P3-touring\", \"P3-ev\"]}"
-   },
-   {
-    "name": "compliance agent",
-    "kind": "model",
-    "start": 1205.8811510772618,
-    "end": 2613.256090160917,
-    "status": "ok",
-    "detail": ""
-   },
-   {
-    "name": "documents.search_documents",
-    "kind": "tool",
-    "start": 2613.256090160917,
-    "end": 2687.34707472807,
-    "status": "ok",
-    "detail": "{\"query\": \"internal crash target pole side impact CN maximum intrusion\", \"load_c"
-   },
-   {
-    "name": "documents.search_documents",
-    "kind": "tool",
-    "start": 2687.34707472807,
-    "end": 2784.836771930434,
-    "status": "ok",
-    "detail": "{\"query\": \"internal crash target pole side impact EU maximum intrusion\", \"load_c"
-   },
-   {
-    "name": "documents.search_documents",
-    "kind": "tool",
-    "start": 2784.836771930434,
-    "end": 2857.0832272458033,
-    "status": "ok",
-    "detail": "{\"query\": \"internal crash target pole side impact US maximum intrusion\", \"load_c"
-   },
-   {
-    "name": "compliance agent",
-    "kind": "agent",
-    "start": 1205.8811510772618,
-    "end": 2857.0832272458033,
-    "status": "ok",
-    "detail": ""
-   },
-   {
-    "name": "tooling agent",
-    "kind": "model",
-    "start": 1205.8811510772618,
-    "end": 2550.576785579433,
-    "status": "ok",
-    "detail": ""
-   },
-   {
-    "name": "tooling.tools_for_part",
-    "kind": "tool",
-    "start": 2550.576785579433,
-    "end": 2636.90540975395,
-    "status": "ok",
-    "detail": "{\"part_no\": \"7412029\"}"
-   },
-   {
-    "name": "tooling agent",
-    "kind": "agent",
-    "start": 1205.8811510772618,
-    "end": 2636.90540975395,
-    "status": "ok",
-    "detail": ""
-   },
-   {
-    "name": "crash agent",
-    "kind": "model",
-    "start": 2857.0832272458033,
-    "end": 3822.767485691471,
-    "status": "ok",
-    "detail": ""
-   },
-   {
-    "name": "simulation.predict_intrusion",
-    "kind": "tool",
-    "start": 3822.767485691471,
-    "end": 4022.1482779638627,
-    "status": "ok",
-    "detail": "{\"load_case\": \"side_pole\", \"thickness_mm\": 0.95, \"material_id\": \"22MnB5\", \"mass_"
-   },
-   {
-    "name": "simulation.predict_intrusion",
-    "kind": "tool",
-    "start": 4022.1482779638627,
-    "end": 4177.6367971354075,
-    "status": "ok",
-    "detail": "{\"load_case\": \"side_pole\", \"thickness_mm\": 0.95, \"material_id\": \"22MnB5\", \"mass_"
-   },
-   {
-    "name": "simulation.predict_intrusion",
-    "kind": "tool",
-    "start": 4177.6367971354075,
-    "end": 4309.249391378994,
-    "status": "ok",
-    "detail": "{\"load_case\": \"side_pole\", \"thickness_mm\": 0.95, \"material_id\": \"22MnB5\", \"mass_"
-   },
-   {
-    "name": "crash agent",
-    "kind": "agent",
-    "start": 2857.0832272458033,
-    "end": 4309.249391378994,
-    "status": "ok",
-    "detail": ""
    },
    {
     "name": "write summary",
     "kind": "model",
-    "start": 4309.249391378994,
-    "end": 5527.773231344854,
+    "start": 2385.7524033761347,
+    "end": 3359.228432656081,
     "status": "ok",
     "detail": ""
    }
@@ -19986,376 +19372,6 @@
       "P3-ev"
      ],
      "assembly": "BIW-P3-SIDE"
-    },
-    "status": "ok",
-    "sources": []
-   },
-   {
-    "id": "R004",
-    "kind": "tool",
-    "name": "plm.get_variants",
-    "args": {
-     "variant_ids": [
-      "P3-sedan",
-      "P3-touring",
-      "P3-ev"
-     ]
-    },
-    "output": {
-     "variants": [
-      {
-       "variant": "P3-sedan",
-       "platform": "P3",
-       "derivative": "sedan",
-       "mass_kg": 2180,
-       "markets": [
-        "US",
-        "CN"
-       ]
-      },
-      {
-       "variant": "P3-touring",
-       "platform": "P3",
-       "derivative": "touring",
-       "mass_kg": 2250,
-       "markets": [
-        "EU",
-        "US"
-       ]
-      },
-      {
-       "variant": "P3-ev",
-       "platform": "P3",
-       "derivative": "ev",
-       "mass_kg": 2520,
-       "markets": [
-        "US",
-        "CN",
-        "EU"
-       ]
-      }
-     ]
-    },
-    "status": "ok",
-    "sources": []
-   },
-   {
-    "id": "R005",
-    "kind": "derived",
-    "name": "scope",
-    "args": {},
-    "output": {
-     "variants": 3
-    },
-    "status": "ok",
-    "sources": []
-   },
-   {
-    "id": "R006",
-    "kind": "tool",
-    "name": "tooling.tools_for_part",
-    "args": {
-     "part_no": "7412029"
-    },
-    "output": {
-     "tools": [
-      {
-       "tool_id": "WZ-2029-1",
-       "kind": "hot_forming_die",
-       "part_no": "7412029",
-       "supplier_id": "S-5501",
-       "owner": "OEM",
-       "tolerance_mm": 0.15,
-       "material_classes": [
-        "press_hardened"
-       ],
-       "new_cost_eur": 374800.0,
-       "rework_cost_eur": 74700.0,
-       "new_lead_weeks": 15,
-       "rework_lead_weeks": 3,
-       "status": "active"
-      },
-      {
-       "tool_id": "WZ-2029-2",
-       "kind": "trim_die",
-       "part_no": "7412029",
-       "supplier_id": "S-5501",
-       "owner": "OEM",
-       "tolerance_mm": 0.25,
-       "material_classes": [
-        "cold_formed_steel"
-       ],
-       "new_cost_eur": 193300.0,
-       "rework_cost_eur": 28200.0,
-       "new_lead_weeks": 20,
-       "rework_lead_weeks": 7,
-       "status": "active"
-      }
-     ]
-    },
-    "status": "ok",
-    "sources": []
-   },
-   {
-    "id": "R007",
-    "kind": "derived",
-    "name": "tooling impact",
-    "args": {},
-    "output": {
-     "tools": {
-      "WZ-2029-1": "new",
-      "WZ-2029-2": "new"
-     },
-     "tooling_cost_eur": 568100.0,
-     "tooling_cost_keur": 568.1,
-     "lead_weeks": 20,
-     "new_tools": 2,
-     "reworked_tools": 0,
-     "transferred_tools": 0
-    },
-    "status": "ok",
-    "sources": []
-   },
-   {
-    "id": "R008",
-    "kind": "tool",
-    "name": "documents.search_documents",
-    "args": {
-     "query": "internal crash target pole side impact CN maximum intrusion",
-     "load_case": "side_pole",
-     "market": "CN",
-     "k": 2,
-     "method": "hybrid",
-     "current_only": true
-    },
-    "output": {
-     "documents": [
-      {
-       "id": "CT-side_pole-CN-2025",
-       "status": "current",
-       "load_case": "side_pole",
-       "market": "CN",
-       "title": "Internal crash target: pole side impact, CN (GB/T 37337)",
-       "text": "For the pole side impact load case, homologation in CN under GB/T 37337 is secured by the internal target: maximum intrusion 116 mm at the reference measurement point. A structural change that may exceed 116 mm needs a full finite-element simulation and sign-off by the passive safety owner. Version 2025, current."
-      },
-      {
-       "id": "PROC-ECR-01",
-       "status": "current",
-       "load_case": null,
-       "market": null,
-       "title": "Engineering change process: impact analysis",
-       "text": "Every engineering change request lists affected variants, special tools, suppliers and applicable crash targets. Crash-relevant changes are signed by the responsible engineer and the passive safety owner."
-      }
-     ]
-    },
-    "status": "ok",
-    "sources": []
-   },
-   {
-    "id": "R009",
-    "kind": "tool",
-    "name": "documents.search_documents",
-    "args": {
-     "query": "internal crash target pole side impact EU maximum intrusion",
-     "load_case": "side_pole",
-     "market": "EU",
-     "k": 2,
-     "method": "hybrid",
-     "current_only": true
-    },
-    "output": {
-     "documents": [
-      {
-       "id": "CT-side_pole-EU-2025",
-       "status": "current",
-       "load_case": "side_pole",
-       "market": "EU",
-       "title": "Internal crash target: pole side impact, EU (UN R135)",
-       "text": "For the pole side impact load case, homologation in EU under UN R135 is secured by the internal target: maximum intrusion 120 mm at the reference measurement point. A structural change that may exceed 120 mm needs a full finite-element simulation and sign-off by the passive safety owner. Version 2025, current."
-      },
-      {
-       "id": "PROC-ECR-01",
-       "status": "current",
-       "load_case": null,
-       "market": null,
-       "title": "Engineering change process: impact analysis",
-       "text": "Every engineering change request lists affected variants, special tools, suppliers and applicable crash targets. Crash-relevant changes are signed by the responsible engineer and the passive safety owner."
-      }
-     ]
-    },
-    "status": "ok",
-    "sources": []
-   },
-   {
-    "id": "R010",
-    "kind": "tool",
-    "name": "documents.search_documents",
-    "args": {
-     "query": "internal crash target pole side impact US maximum intrusion",
-     "load_case": "side_pole",
-     "market": "US",
-     "k": 2,
-     "method": "hybrid",
-     "current_only": true
-    },
-    "output": {
-     "documents": [
-      {
-       "id": "CT-side_pole-US-2025",
-       "status": "current",
-       "load_case": "side_pole",
-       "market": "US",
-       "title": "Internal crash target: pole side impact, US (FMVSS 214 pole)",
-       "text": "For the pole side impact load case, homologation in US under FMVSS 214 pole is secured by the internal target: maximum intrusion 125 mm at the reference measurement point. A structural change that may exceed 125 mm needs a full finite-element simulation and sign-off by the passive safety owner. Version 2025, current."
-      },
-      {
-       "id": "PROC-ECR-01",
-       "status": "current",
-       "load_case": null,
-       "market": null,
-       "title": "Engineering change process: impact analysis",
-       "text": "Every engineering change request lists affected variants, special tools, suppliers and applicable crash targets. Crash-relevant changes are signed by the responsible engineer and the passive safety owner."
-      }
-     ]
-    },
-    "status": "ok",
-    "sources": []
-   },
-   {
-    "id": "R011",
-    "kind": "derived",
-    "name": "compliance",
-    "args": {},
-    "output": {
-     "regulations": [
-      "CT-side_pole-CN-2025",
-      "CT-side_pole-EU-2025",
-      "CT-side_pole-US-2025"
-     ],
-     "limits": {
-      "CN": 116,
-      "EU": 120,
-      "US": 125
-     },
-     "limit_mm": 116,
-     "material_approved": true
-    },
-    "status": "ok",
-    "sources": []
-   },
-   {
-    "id": "R012",
-    "kind": "tool",
-    "name": "simulation.predict_intrusion",
-    "args": {
-     "load_case": "side_pole",
-     "thickness_mm": 0.95,
-     "material_id": "22MnB5",
-     "mass_kg": 2180,
-     "reinforced": true
-    },
-    "output": {
-     "intrusion_mm": 160.96,
-     "low_mm": 123.74,
-     "high_mm": 169.07,
-     "in_distribution": true,
-     "reasons": [],
-     "model_version": "lim-crash-23cbb8c4"
-    },
-    "status": "ok",
-    "sources": []
-   },
-   {
-    "id": "R013",
-    "kind": "tool",
-    "name": "simulation.predict_intrusion",
-    "args": {
-     "load_case": "side_pole",
-     "thickness_mm": 0.95,
-     "material_id": "22MnB5",
-     "mass_kg": 2250,
-     "reinforced": true
-    },
-    "output": {
-     "intrusion_mm": 163.88,
-     "low_mm": 124.05,
-     "high_mm": 175.37,
-     "in_distribution": true,
-     "reasons": [],
-     "model_version": "lim-crash-23cbb8c4"
-    },
-    "status": "ok",
-    "sources": []
-   },
-   {
-    "id": "R014",
-    "kind": "tool",
-    "name": "simulation.predict_intrusion",
-    "args": {
-     "load_case": "side_pole",
-     "thickness_mm": 0.95,
-     "material_id": "22MnB5",
-     "mass_kg": 2520,
-     "reinforced": true
-    },
-    "output": {
-     "intrusion_mm": 187.34,
-     "low_mm": 134.61,
-     "high_mm": 200.37,
-     "in_distribution": true,
-     "reasons": [],
-     "model_version": "lim-crash-23cbb8c4"
-    },
-    "status": "ok",
-    "sources": []
-   },
-   {
-    "id": "R015",
-    "kind": "derived",
-    "name": "crash gate",
-    "args": {},
-    "output": {
-     "gate": "fail",
-     "limit_mm": 116,
-     "fe_ticket": null,
-     "predictions": [
-      {
-       "intrusion_mm": 160.96,
-       "low_mm": 123.74,
-       "high_mm": 169.07,
-       "in_distribution": true,
-       "reasons": [],
-       "model_version": "lim-crash-23cbb8c4",
-       "variant": "P3-sedan"
-      },
-      {
-       "intrusion_mm": 163.88,
-       "low_mm": 124.05,
-       "high_mm": 175.37,
-       "in_distribution": true,
-       "reasons": [],
-       "model_version": "lim-crash-23cbb8c4",
-       "variant": "P3-touring"
-      },
-      {
-       "intrusion_mm": 187.34,
-       "low_mm": 134.61,
-       "high_mm": 200.37,
-       "in_distribution": true,
-       "reasons": [],
-       "model_version": "lim-crash-23cbb8c4",
-       "variant": "P3-ev"
-      }
-     ],
-     "worst": {
-      "variant": "P3-ev",
-      "intrusion_mm": 187.34,
-      "low_mm": 134.61,
-      "high_mm": 200.37,
-      "in_distribution": true,
-      "reasons": [],
-      "model_version": "lim-crash-23cbb8c4"
-     }
     },
     "status": "ok",
     "sources": []
@@ -20808,7 +19824,7 @@
    "engineer",
    "safety_owner"
   ],
-  "latency_ms": 6392.4,
+  "latency_ms": 6407.8,
   "model_calls": 5,
   "cost_eur": 0.01599,
   "spans": [
@@ -20856,23 +19872,23 @@
     "name": "documents.search_documents",
     "kind": "tool",
     "start": 2486.9882649497285,
-    "end": 2665.888296027368,
+    "end": 2681.2767743535564,
     "status": "ok",
     "detail": "{\"query\": \"internal crash target roof crush CN maximum intrusion\", \"load_case\": "
    },
    {
     "name": "documents.search_documents",
     "kind": "tool",
-    "start": 2665.888296027368,
-    "end": 2808.315370120017,
+    "start": 2681.2767743535564,
+    "end": 2823.7038484462055,
     "status": "ok",
     "detail": "{\"query\": \"internal crash target roof crush EU maximum intrusion\", \"load_case\": "
    },
    {
     "name": "documents.search_documents",
     "kind": "tool",
-    "start": 2808.315370120017,
-    "end": 2983.5149315996055,
+    "start": 2823.7038484462055,
+    "end": 2998.9034099257938,
     "status": "ok",
     "detail": "{\"query\": \"internal crash target roof crush US maximum intrusion\", \"load_case\": "
    },
@@ -20880,7 +19896,7 @@
     "name": "compliance agent",
     "kind": "agent",
     "start": 1113.6078197918634,
-    "end": 2983.5149315996055,
+    "end": 2998.9034099257938,
     "status": "ok",
     "detail": ""
    },
@@ -20896,7 +19912,7 @@
     "name": "tooling.tools_for_part",
     "kind": "tool",
     "start": 1985.2233066192077,
-    "end": 2179.5118160230354,
+    "end": 2164.123337696847,
     "status": "ok",
     "detail": "{\"part_no\": \"7598024\"}"
    },
@@ -20904,55 +19920,55 @@
     "name": "tooling agent",
     "kind": "agent",
     "start": 1113.6078197918634,
-    "end": 2179.5118160230354,
+    "end": 2164.123337696847,
     "status": "ok",
     "detail": ""
    },
    {
     "name": "crash agent",
     "kind": "model",
-    "start": 2983.5149315996055,
-    "end": 4098.856280515147,
+    "start": 2998.9034099257938,
+    "end": 4114.244758841335,
     "status": "ok",
     "detail": ""
    },
    {
     "name": "simulation.predict_intrusion",
     "kind": "tool",
-    "start": 4098.856280515147,
-    "end": 4283.256829286711,
+    "start": 4114.244758841335,
+    "end": 4298.645307612899,
     "status": "ok",
     "detail": "{\"load_case\": \"roof\", \"thickness_mm\": 1.1, \"material_id\": \"CR980Y1180T-DH\", \"mas"
    },
    {
     "name": "simulation.predict_intrusion",
     "kind": "tool",
-    "start": 4283.256829286711,
-    "end": 4388.9128955076285,
+    "start": 4298.645307612899,
+    "end": 4404.301373833817,
     "status": "ok",
     "detail": "{\"load_case\": \"roof\", \"thickness_mm\": 1.1, \"material_id\": \"CR980Y1180T-DH\", \"mas"
    },
    {
     "name": "simulation.predict_intrusion",
     "kind": "tool",
-    "start": 4388.9128955076285,
-    "end": 4521.283572222446,
+    "start": 4404.301373833817,
+    "end": 4536.672050548635,
     "status": "ok",
     "detail": "{\"load_case\": \"roof\", \"thickness_mm\": 1.1, \"material_id\": \"CR980Y1180T-DH\", \"mas"
    },
    {
     "name": "crash agent",
     "kind": "agent",
-    "start": 2983.5149315996055,
-    "end": 4521.283572222446,
+    "start": 2998.9034099257938,
+    "end": 4536.672050548635,
     "status": "ok",
     "detail": ""
    },
    {
     "name": "write summary",
     "kind": "model",
-    "start": 4521.283572222446,
-    "end": 6392.442776288949,
+    "start": 4536.672050548635,
+    "end": 6407.831254615137,
     "status": "ok",
     "detail": ""
    }
@@ -21089,41 +20105,6 @@
    {
     "id": "R006",
     "kind": "tool",
-    "name": "documents.search_documents",
-    "args": {
-     "query": "internal crash target roof crush CN maximum intrusion",
-     "load_case": "roof",
-     "market": "CN",
-     "k": 2,
-     "method": "hybrid",
-     "current_only": true
-    },
-    "output": {
-     "documents": [
-      {
-       "id": "CT-roof-CN-2025",
-       "status": "current",
-       "load_case": "roof",
-       "market": "CN",
-       "title": "Internal crash target: roof crush, CN (GB 26134)",
-       "text": "For the roof crush load case, homologation in CN under GB 26134 is secured by the internal target: maximum intrusion 78 mm at the reference measurement point. A structural change that may exceed 78 mm needs a full finite-element simulation and sign-off by the passive safety owner. Version 2025, current."
-      },
-      {
-       "id": "PROC-ECR-01",
-       "status": "current",
-       "load_case": null,
-       "market": null,
-       "title": "Engineering change process: impact analysis",
-       "text": "Every engineering change request lists affected variants, special tools, suppliers and applicable crash targets. Crash-relevant changes are signed by the responsible engineer and the passive safety owner."
-      }
-     ]
-    },
-    "status": "ok",
-    "sources": []
-   },
-   {
-    "id": "R007",
-    "kind": "tool",
     "name": "tooling.tools_for_part",
     "args": {
      "part_no": "7598024"
@@ -21168,7 +20149,7 @@
     "sources": []
    },
    {
-    "id": "R008",
+    "id": "R007",
     "kind": "derived",
     "name": "tooling impact",
     "args": {},
@@ -21183,6 +20164,41 @@
      "new_tools": 2,
      "reworked_tools": 0,
      "transferred_tools": 0
+    },
+    "status": "ok",
+    "sources": []
+   },
+   {
+    "id": "R008",
+    "kind": "tool",
+    "name": "documents.search_documents",
+    "args": {
+     "query": "internal crash target roof crush CN maximum intrusion",
+     "load_case": "roof",
+     "market": "CN",
+     "k": 2,
+     "method": "hybrid",
+     "current_only": true
+    },
+    "output": {
+     "documents": [
+      {
+       "id": "CT-roof-CN-2025",
+       "status": "current",
+       "load_case": "roof",
+       "market": "CN",
+       "title": "Internal crash target: roof crush, CN (GB 26134)",
+       "text": "For the roof crush load case, homologation in CN under GB 26134 is secured by the internal target: maximum intrusion 78 mm at the reference measurement point. A structural change that may exceed 78 mm needs a full finite-element simulation and sign-off by the passive safety owner. Version 2025, current."
+      },
+      {
+       "id": "PROC-ECR-01",
+       "status": "current",
+       "load_case": null,
+       "market": null,
+       "title": "Engineering change process: impact analysis",
+       "text": "Every engineering change request lists affected variants, special tools, suppliers and applicable crash targets. Crash-relevant changes are signed by the responsible engineer and the passive safety owner."
+      }
+     ]
     },
     "status": "ok",
     "sources": []
@@ -23790,7 +22806,7 @@
    "engineer",
    "safety_owner"
   ],
-  "latency_ms": 6414.4,
+  "latency_ms": 6338.0,
   "model_calls": 5,
   "cost_eur": 0.016002,
   "spans": [
@@ -23846,15 +22862,15 @@
     "name": "documents.search_documents",
     "kind": "tool",
     "start": 3473.8482557870557,
-    "end": 3645.513734645125,
+    "end": 3569.190478643519,
     "status": "ok",
     "detail": "{\"query\": \"internal crash target roof crush EU maximum intrusion\", \"load_case\": "
    },
    {
     "name": "plm.get_material",
     "kind": "tool",
-    "start": 3645.513734645125,
-    "end": 3812.3183973671494,
+    "start": 3569.190478643519,
+    "end": 3735.995141365543,
     "status": "ok",
     "detail": "{\"material_id\": \"CR700Y980T-CP\"}"
    },
@@ -23862,7 +22878,7 @@
     "name": "compliance agent",
     "kind": "agent",
     "start": 1810.9909006288513,
-    "end": 3812.3183973671494,
+    "end": 3735.995141365543,
     "status": "ok",
     "detail": ""
    },
@@ -23886,7 +22902,7 @@
     "name": "plm.get_material",
     "kind": "tool",
     "start": 3103.514801798727,
-    "end": 3198.8570246551903,
+    "end": 3275.1802806567966,
     "status": "ok",
     "detail": "{\"material_id\": \"CR700Y980T-CP\"}"
    },
@@ -23894,55 +22910,55 @@
     "name": "tooling agent",
     "kind": "agent",
     "start": 1810.9909006288513,
-    "end": 3198.8570246551903,
+    "end": 3275.1802806567966,
     "status": "ok",
     "detail": ""
    },
    {
     "name": "crash agent",
     "kind": "model",
-    "start": 3812.3183973671494,
-    "end": 4739.979188889221,
+    "start": 3735.995141365543,
+    "end": 4663.655932887616,
     "status": "ok",
     "detail": ""
    },
    {
     "name": "simulation.predict_intrusion",
     "kind": "tool",
-    "start": 4739.979188889221,
-    "end": 4916.706639832418,
+    "start": 4663.655932887616,
+    "end": 4840.383383830812,
     "status": "ok",
     "detail": "{\"load_case\": \"roof\", \"thickness_mm\": 1.25, \"material_id\": \"CR700Y980T-CP\", \"mas"
    },
    {
     "name": "simulation.predict_intrusion",
     "kind": "tool",
-    "start": 4916.706639832418,
-    "end": 5066.6712455529605,
+    "start": 4840.383383830812,
+    "end": 4990.347989551355,
     "status": "ok",
     "detail": "{\"load_case\": \"roof\", \"thickness_mm\": 1.25, \"material_id\": \"CR700Y980T-CP\", \"mas"
    },
    {
     "name": "simulation.predict_intrusion",
     "kind": "tool",
-    "start": 5066.6712455529605,
-    "end": 5146.112384450412,
+    "start": 4990.347989551355,
+    "end": 5069.789128448806,
     "status": "ok",
     "detail": "{\"load_case\": \"roof\", \"thickness_mm\": 1.25, \"material_id\": \"CR700Y980T-CP\", \"mas"
    },
    {
     "name": "crash agent",
     "kind": "agent",
-    "start": 3812.3183973671494,
-    "end": 5146.112384450412,
+    "start": 3735.995141365543,
+    "end": 5069.789128448806,
     "status": "ok",
     "detail": ""
    },
    {
     "name": "write summary",
     "kind": "model",
-    "start": 5146.112384450412,
-    "end": 6414.365229790332,
+    "start": 5069.789128448806,
+    "end": 6338.041973788726,
     "status": "ok",
     "detail": ""
    }
@@ -24173,6 +23189,43 @@
    {
     "id": "R008",
     "kind": "tool",
+    "name": "plm.get_material",
+    "args": {
+     "material_id": "CR700Y980T-CP"
+    },
+    "output": {
+     "id": "CR700Y980T-CP",
+     "yield_mpa": 700,
+     "density": 7.85,
+     "class": "cold_formed_steel",
+     "approved": true
+    },
+    "status": "ok",
+    "sources": []
+   },
+   {
+    "id": "R009",
+    "kind": "derived",
+    "name": "tooling impact",
+    "args": {},
+    "output": {
+     "tools": {
+      "WZ-7010-1": "rework",
+      "WZ-7010-2": "rework"
+     },
+     "tooling_cost_eur": 110700.0,
+     "tooling_cost_keur": 110.7,
+     "lead_weeks": 6,
+     "new_tools": 0,
+     "reworked_tools": 2,
+     "transferred_tools": 0
+    },
+    "status": "ok",
+    "sources": []
+   },
+   {
+    "id": "R010",
+    "kind": "tool",
     "name": "documents.search_documents",
     "args": {
      "query": "internal crash target roof crush EU maximum intrusion",
@@ -24201,43 +23254,6 @@
        "text": "Every engineering change request lists affected variants, special tools, suppliers and applicable crash targets. Crash-relevant changes are signed by the responsible engineer and the passive safety owner."
       }
      ]
-    },
-    "status": "ok",
-    "sources": []
-   },
-   {
-    "id": "R009",
-    "kind": "tool",
-    "name": "plm.get_material",
-    "args": {
-     "material_id": "CR700Y980T-CP"
-    },
-    "output": {
-     "id": "CR700Y980T-CP",
-     "yield_mpa": 700,
-     "density": 7.85,
-     "class": "cold_formed_steel",
-     "approved": true
-    },
-    "status": "ok",
-    "sources": []
-   },
-   {
-    "id": "R010",
-    "kind": "derived",
-    "name": "tooling impact",
-    "args": {},
-    "output": {
-     "tools": {
-      "WZ-7010-1": "rework",
-      "WZ-7010-2": "rework"
-     },
-     "tooling_cost_eur": 110700.0,
-     "tooling_cost_keur": 110.7,
-     "lead_weeks": 6,
-     "new_tools": 0,
-     "reworked_tools": 2,
-     "transferred_tools": 0
     },
     "status": "ok",
     "sources": []
@@ -25161,7 +24177,7 @@
    "engineer",
    "safety_owner"
   ],
-  "latency_ms": 6279.7,
+  "latency_ms": 6247.4,
   "model_calls": 5,
   "cost_eur": 0.01599,
   "spans": [
@@ -25217,15 +24233,15 @@
     "name": "documents.search_documents",
     "kind": "tool",
     "start": 3147.133658560279,
-    "end": 3326.1237113584,
+    "end": 3293.860752142718,
     "status": "ok",
     "detail": "{\"query\": \"internal crash target full-width frontal impact EU maximum intrusion\""
    },
    {
     "name": "documents.search_documents",
     "kind": "tool",
-    "start": 3326.1237113584,
-    "end": 3488.23120326559,
+    "start": 3293.860752142718,
+    "end": 3455.9682440499078,
     "status": "ok",
     "detail": "{\"query\": \"internal crash target full-width frontal impact US maximum intrusion\""
    },
@@ -25233,7 +24249,7 @@
     "name": "compliance agent",
     "kind": "agent",
     "start": 2015.730541258596,
-    "end": 3488.23120326559,
+    "end": 3455.9682440499078,
     "status": "ok",
     "detail": ""
    },
@@ -25249,7 +24265,7 @@
     "name": "tooling.tools_for_part",
     "kind": "tool",
     "start": 3316.6820289801453,
-    "end": 3463.4091225625843,
+    "end": 3495.6720817782666,
     "status": "ok",
     "detail": "{\"part_no\": \"7903021\"}"
    },
@@ -25257,55 +24273,55 @@
     "name": "tooling agent",
     "kind": "agent",
     "start": 2015.730541258596,
-    "end": 3463.4091225625843,
+    "end": 3495.6720817782666,
     "status": "ok",
     "detail": ""
    },
    {
     "name": "crash agent",
     "kind": "model",
-    "start": 3488.23120326559,
-    "end": 4007.6155382329616,
+    "start": 3455.9682440499078,
+    "end": 3975.3525790172794,
     "status": "ok",
     "detail": ""
    },
    {
     "name": "simulation.predict_intrusion",
     "kind": "tool",
-    "start": 4007.6155382329616,
-    "end": 4151.632880846581,
+    "start": 3975.3525790172794,
+    "end": 4119.3699216309,
     "status": "ok",
     "detail": "{\"load_case\": \"frontal_full\", \"thickness_mm\": 2.2, \"material_id\": \"EN AW-6082-T6"
    },
    {
     "name": "simulation.predict_intrusion",
     "kind": "tool",
-    "start": 4151.632880846581,
-    "end": 4347.589216971615,
+    "start": 4119.3699216309,
+    "end": 4315.326257755933,
     "status": "ok",
     "detail": "{\"load_case\": \"frontal_full\", \"thickness_mm\": 2.2, \"material_id\": \"EN AW-6082-T6"
    },
    {
     "name": "simulation.predict_intrusion",
     "kind": "tool",
-    "start": 4347.589216971615,
-    "end": 4423.38721082096,
+    "start": 4315.326257755933,
+    "end": 4391.124251605277,
     "status": "ok",
     "detail": "{\"load_case\": \"frontal_full\", \"thickness_mm\": 2.2, \"material_id\": \"EN AW-6082-T6"
    },
    {
     "name": "crash agent",
     "kind": "agent",
-    "start": 3488.23120326559,
-    "end": 4423.38721082096,
+    "start": 3455.9682440499078,
+    "end": 4391.124251605277,
     "status": "ok",
     "detail": ""
    },
    {
     "name": "write summary",
     "kind": "model",
-    "start": 4423.38721082096,
-    "end": 6279.672973664678,
+    "start": 4391.124251605277,
+    "end": 6247.410014448995,
     "status": "ok",
     "detail": ""
    }
@@ -25477,41 +24493,6 @@
    {
     "id": "R007",
     "kind": "tool",
-    "name": "documents.search_documents",
-    "args": {
-     "query": "internal crash target full-width frontal impact EU maximum intrusion",
-     "load_case": "frontal_full",
-     "market": "EU",
-     "k": 2,
-     "method": "hybrid",
-     "current_only": true
-    },
-    "output": {
-     "documents": [
-      {
-       "id": "CT-frontal_full-EU-2025",
-       "status": "current",
-       "load_case": "frontal_full",
-       "market": "EU",
-       "title": "Internal crash target: full-width frontal impact, EU (UN R137)",
-       "text": "For the full-width frontal impact load case, homologation in EU under UN R137 is secured by the internal target: maximum intrusion 90 mm at the reference measurement point. A structural change that may exceed 90 mm needs a full finite-element simulation and sign-off by the passive safety owner. Version 2025, current."
-      },
-      {
-       "id": "PROC-ECR-01",
-       "status": "current",
-       "load_case": null,
-       "market": null,
-       "title": "Engineering change process: impact analysis",
-       "text": "Every engineering change request lists affected variants, special tools, suppliers and applicable crash targets. Crash-relevant changes are signed by the responsible engineer and the passive safety owner."
-      }
-     ]
-    },
-    "status": "ok",
-    "sources": []
-   },
-   {
-    "id": "R008",
-    "kind": "tool",
     "name": "tooling.tools_for_part",
     "args": {
      "part_no": "7903021"
@@ -25556,7 +24537,7 @@
     "sources": []
    },
    {
-    "id": "R009",
+    "id": "R008",
     "kind": "derived",
     "name": "tooling impact",
     "args": {},
@@ -25571,6 +24552,41 @@
      "new_tools": 2,
      "reworked_tools": 0,
      "transferred_tools": 0
+    },
+    "status": "ok",
+    "sources": []
+   },
+   {
+    "id": "R009",
+    "kind": "tool",
+    "name": "documents.search_documents",
+    "args": {
+     "query": "internal crash target full-width frontal impact EU maximum intrusion",
+     "load_case": "frontal_full",
+     "market": "EU",
+     "k": 2,
+     "method": "hybrid",
+     "current_only": true
+    },
+    "output": {
+     "documents": [
+      {
+       "id": "CT-frontal_full-EU-2025",
+       "status": "current",
+       "load_case": "frontal_full",
+       "market": "EU",
+       "title": "Internal crash target: full-width frontal impact, EU (UN R137)",
+       "text": "For the full-width frontal impact load case, homologation in EU under UN R137 is secured by the internal target: maximum intrusion 90 mm at the reference measurement point. A structural change that may exceed 90 mm needs a full finite-element simulation and sign-off by the passive safety owner. Version 2025, current."
+      },
+      {
+       "id": "PROC-ECR-01",
+       "status": "current",
+       "load_case": null,
+       "market": null,
+       "title": "Engineering change process: impact analysis",
+       "text": "Every engineering change request lists affected variants, special tools, suppliers and applicable crash targets. Crash-relevant changes are signed by the responsible engineer and the passive safety owner."
+      }
+     ]
     },
     "status": "ok",
     "sources": []
@@ -27120,7 +26136,7 @@
    "engineer",
    "safety_owner"
   ],
-  "latency_ms": 4912.1,
+  "latency_ms": 4990.6,
   "model_calls": 5,
   "cost_eur": 0.01598,
   "spans": [
@@ -27184,7 +26200,7 @@
     "name": "plm.get_material",
     "kind": "tool",
     "start": 2303.784112235672,
-    "end": 2444.9549687232025,
+    "end": 2523.4587443378277,
     "status": "ok",
     "detail": "{\"material_id\": \"CR980Y1180T-DH\"}"
    },
@@ -27192,7 +26208,7 @@
     "name": "compliance agent",
     "kind": "agent",
     "start": 1309.9131624289896,
-    "end": 2444.9549687232025,
+    "end": 2523.4587443378277,
     "status": "ok",
     "detail": ""
    },
@@ -27216,7 +26232,7 @@
     "name": "plm.get_material",
     "kind": "tool",
     "start": 2653.7989214545446,
-    "end": 2873.4735535567,
+    "end": 2794.969777942075,
     "status": "ok",
     "detail": "{\"material_id\": \"CR980Y1180T-DH\"}"
    },
@@ -27224,63 +26240,63 @@
     "name": "tooling agent",
     "kind": "agent",
     "start": 1309.9131624289896,
-    "end": 2873.4735535567,
+    "end": 2794.969777942075,
     "status": "ok",
     "detail": ""
    },
    {
     "name": "crash agent",
     "kind": "model",
-    "start": 2444.9549687232025,
-    "end": 3220.849024596926,
+    "start": 2523.4587443378277,
+    "end": 3299.3528002115513,
     "status": "ok",
     "detail": ""
    },
    {
     "name": "simulation.predict_intrusion",
     "kind": "tool",
-    "start": 3220.849024596926,
-    "end": 3417.345061915725,
+    "start": 3299.3528002115513,
+    "end": 3495.8488375303505,
     "status": "ok",
     "detail": "{\"load_case\": \"side_pole\", \"thickness_mm\": 1.1, \"material_id\": \"CR980Y1180T-DH\","
    },
    {
     "name": "simulation.predict_intrusion",
     "kind": "tool",
-    "start": 3417.345061915725,
-    "end": 3519.6088185487893,
+    "start": 3495.8488375303505,
+    "end": 3598.1125941634145,
     "status": "ok",
     "detail": "{\"load_case\": \"side_pole\", \"thickness_mm\": 1.1, \"material_id\": \"CR980Y1180T-DH\","
    },
    {
     "name": "simulation.predict_intrusion",
     "kind": "tool",
-    "start": 3519.6088185487893,
-    "end": 3678.4219665773753,
+    "start": 3598.1125941634145,
+    "end": 3756.9257421920006,
     "status": "ok",
     "detail": "{\"load_case\": \"side_pole\", \"thickness_mm\": 1.1, \"material_id\": \"CR980Y1180T-DH\","
    },
    {
     "name": "simulation.request_fe_simulation",
     "kind": "tool",
-    "start": 3678.4219665773753,
-    "end": 4019.087927698549,
+    "start": 3756.9257421920006,
+    "end": 4097.591703313174,
     "status": "ok",
     "detail": "{\"part_no\": \"7431001\", \"load_case\": \"side_pole\", \"reason\": \"prediction interval "
    },
    {
     "name": "crash agent",
     "kind": "agent",
-    "start": 2444.9549687232025,
-    "end": 4019.087927698549,
+    "start": 2523.4587443378277,
+    "end": 4097.591703313174,
     "status": "ok",
     "detail": ""
    },
    {
     "name": "write summary",
     "kind": "model",
-    "start": 4019.087927698549,
-    "end": 4912.088416032753,
+    "start": 4097.591703313174,
+    "end": 4990.592191647378,
     "status": "ok",
     "detail": ""
    }
@@ -27547,19 +26563,19 @@
    {
     "id": "R010",
     "kind": "derived",
-    "name": "tooling impact",
+    "name": "compliance",
     "args": {},
     "output": {
-     "tools": {
-      "WZ-1001-1": "new",
-      "WZ-1001-2": "rework"
+     "regulations": [
+      "CT-side_pole-CN-2025",
+      "CT-side_pole-EU-2025"
+     ],
+     "limits": {
+      "CN": 116,
+      "EU": 120
      },
-     "tooling_cost_eur": 464700.0,
-     "tooling_cost_keur": 464.7,
-     "lead_weeks": 20,
-     "new_tools": 1,
-     "reworked_tools": 1,
-     "transferred_tools": 0
+     "limit_mm": 116,
+     "material_approved": true
     },
     "status": "ok",
     "sources": []
@@ -27584,19 +26600,19 @@
    {
     "id": "R012",
     "kind": "derived",
-    "name": "compliance",
+    "name": "tooling impact",
     "args": {},
     "output": {
-     "regulations": [
-      "CT-side_pole-CN-2025",
-      "CT-side_pole-EU-2025"
-     ],
-     "limits": {
-      "CN": 116,
-      "EU": 120
+     "tools": {
+      "WZ-1001-1": "new",
+      "WZ-1001-2": "rework"
      },
-     "limit_mm": 116,
-     "material_approved": true
+     "tooling_cost_eur": 464700.0,
+     "tooling_cost_keur": 464.7,
+     "lead_weeks": 20,
+     "new_tools": 1,
+     "reworked_tools": 1,
+     "transferred_tools": 0
     },
     "status": "ok",
     "sources": []
@@ -28375,7 +27391,7 @@
    "engineer",
    "safety_owner"
   ],
-  "latency_ms": 5408.2,
+  "latency_ms": 5544.7,
   "model_calls": 5,
   "cost_eur": 0.015988,
   "spans": [
@@ -28423,23 +27439,23 @@
     "name": "documents.search_documents",
     "kind": "tool",
     "start": 1724.6765241287744,
-    "end": 1859.8102072443926,
+    "end": 1996.2703179383834,
     "status": "ok",
     "detail": "{\"query\": \"internal crash target pole side impact CN maximum intrusion\", \"load_c"
    },
    {
     "name": "documents.search_documents",
     "kind": "tool",
-    "start": 1859.8102072443926,
-    "end": 2094.1720465064677,
+    "start": 1996.2703179383834,
+    "end": 2230.6321572004586,
     "status": "ok",
     "detail": "{\"query\": \"internal crash target pole side impact EU maximum intrusion\", \"load_c"
    },
    {
     "name": "documents.search_documents",
     "kind": "tool",
-    "start": 2094.1720465064677,
-    "end": 2258.9612701245983,
+    "start": 2230.6321572004586,
+    "end": 2395.421380818589,
     "status": "ok",
     "detail": "{\"query\": \"internal crash target pole side impact US maximum intrusion\", \"load_c"
    },
@@ -28447,7 +27463,7 @@
     "name": "compliance agent",
     "kind": "agent",
     "start": 1287.8102255103083,
-    "end": 2258.9612701245983,
+    "end": 2395.421380818589,
     "status": "ok",
     "detail": ""
    },
@@ -28463,7 +27479,7 @@
     "name": "tooling.tools_for_part",
     "kind": "tool",
     "start": 2213.348407406144,
-    "end": 2484.942201215753,
+    "end": 2348.482090521762,
     "status": "ok",
     "detail": "{\"part_no\": \"7511017\"}"
    },
@@ -28471,47 +27487,47 @@
     "name": "tooling agent",
     "kind": "agent",
     "start": 1287.8102255103083,
-    "end": 2484.942201215753,
+    "end": 2348.482090521762,
     "status": "ok",
     "detail": ""
    },
    {
     "name": "crash agent",
     "kind": "model",
-    "start": 2258.9612701245983,
-    "end": 3898.98985241813,
+    "start": 2395.421380818589,
+    "end": 4035.4499631121207,
     "status": "ok",
     "detail": ""
    },
    {
     "name": "simulation.predict_intrusion",
     "kind": "tool",
-    "start": 3898.98985241813,
-    "end": 4063.967736114939,
+    "start": 4035.4499631121207,
+    "end": 4200.42784680893,
     "status": "ok",
     "detail": "{\"load_case\": \"side_pole\", \"thickness_mm\": 1.35, \"material_id\": \"CR980Y1180T-DH\""
    },
    {
     "name": "simulation.request_fe_simulation",
     "kind": "tool",
-    "start": 4063.967736114939,
-    "end": 4242.183350114676,
+    "start": 4200.42784680893,
+    "end": 4378.6434608086665,
     "status": "ok",
     "detail": "{\"part_no\": \"7511017\", \"load_case\": \"side_pole\", \"reason\": \"prediction interval "
    },
    {
     "name": "crash agent",
     "kind": "agent",
-    "start": 2258.9612701245983,
-    "end": 4242.183350114676,
+    "start": 2395.421380818589,
+    "end": 4378.6434608086665,
     "status": "ok",
     "detail": ""
    },
    {
     "name": "write summary",
     "kind": "model",
-    "start": 4242.183350114676,
-    "end": 5408.240063595096,
+    "start": 4378.6434608086665,
+    "end": 5544.700174289086,
     "status": "ok",
     "detail": ""
    }
@@ -28621,41 +27637,6 @@
    {
     "id": "R006",
     "kind": "tool",
-    "name": "documents.search_documents",
-    "args": {
-     "query": "internal crash target pole side impact CN maximum intrusion",
-     "load_case": "side_pole",
-     "market": "CN",
-     "k": 2,
-     "method": "hybrid",
-     "current_only": true
-    },
-    "output": {
-     "documents": [
-      {
-       "id": "CT-side_pole-CN-2025",
-       "status": "current",
-       "load_case": "side_pole",
-       "market": "CN",
-       "title": "Internal crash target: pole side impact, CN (GB/T 37337)",
-       "text": "For the pole side impact load case, homologation in CN under GB/T 37337 is secured by the internal target: maximum intrusion 116 mm at the reference measurement point. A structural change that may exceed 116 mm needs a full finite-element simulation and sign-off by the passive safety owner. Version 2025, current."
-      },
-      {
-       "id": "PROC-ECR-01",
-       "status": "current",
-       "load_case": null,
-       "market": null,
-       "title": "Engineering change process: impact analysis",
-       "text": "Every engineering change request lists affected variants, special tools, suppliers and applicable crash targets. Crash-relevant changes are signed by the responsible engineer and the passive safety owner."
-      }
-     ]
-    },
-    "status": "ok",
-    "sources": []
-   },
-   {
-    "id": "R007",
-    "kind": "tool",
     "name": "tooling.tools_for_part",
     "args": {
      "part_no": "7511017"
@@ -28700,7 +27681,7 @@
     "sources": []
    },
    {
-    "id": "R008",
+    "id": "R007",
     "kind": "derived",
     "name": "tooling impact",
     "args": {},
@@ -28715,6 +27696,41 @@
      "new_tools": 0,
      "reworked_tools": 2,
      "transferred_tools": 0
+    },
+    "status": "ok",
+    "sources": []
+   },
+   {
+    "id": "R008",
+    "kind": "tool",
+    "name": "documents.search_documents",
+    "args": {
+     "query": "internal crash target pole side impact CN maximum intrusion",
+     "load_case": "side_pole",
+     "market": "CN",
+     "k": 2,
+     "method": "hybrid",
+     "current_only": true
+    },
+    "output": {
+     "documents": [
+      {
+       "id": "CT-side_pole-CN-2025",
+       "status": "current",
+       "load_case": "side_pole",
+       "market": "CN",
+       "title": "Internal crash target: pole side impact, CN (GB/T 37337)",
+       "text": "For the pole side impact load case, homologation in CN under GB/T 37337 is secured by the internal target: maximum intrusion 116 mm at the reference measurement point. A structural change that may exceed 116 mm needs a full finite-element simulation and sign-off by the passive safety owner. Version 2025, current."
+      },
+      {
+       "id": "PROC-ECR-01",
+       "status": "current",
+       "load_case": null,
+       "market": null,
+       "title": "Engineering change process: impact analysis",
+       "text": "Every engineering change request lists affected variants, special tools, suppliers and applicable crash targets. Crash-relevant changes are signed by the responsible engineer and the passive safety owner."
+      }
+     ]
     },
     "status": "ok",
     "sources": []
@@ -29288,7 +28304,7 @@
    "engineer",
    "safety_owner"
   ],
-  "latency_ms": 5473.3,
+  "latency_ms": 5503.4,
   "model_calls": 5,
   "cost_eur": 0.016015,
   "spans": [
@@ -29344,23 +28360,23 @@
     "name": "documents.search_documents",
     "kind": "tool",
     "start": 2883.9864592949248,
-    "end": 2996.9716603853803,
+    "end": 3027.1181016236087,
     "status": "ok",
     "detail": "{\"query\": \"internal crash target moving-barrier side impact EU maximum intrusion"
    },
    {
     "name": "documents.search_documents",
     "kind": "tool",
-    "start": 2996.9716603853803,
-    "end": 3133.541041357561,
+    "start": 3027.1181016236087,
+    "end": 3163.6874825957893,
     "status": "ok",
     "detail": "{\"query\": \"internal crash target moving-barrier side impact US maximum intrusion"
    },
    {
     "name": "plm.get_material",
     "kind": "tool",
-    "start": 3133.541041357561,
-    "end": 3288.5277046354813,
+    "start": 3163.6874825957893,
+    "end": 3318.6741458737097,
     "status": "ok",
     "detail": "{\"material_id\": \"EN AW-6082-T6\"}"
    },
@@ -29368,7 +28384,7 @@
     "name": "compliance agent",
     "kind": "agent",
     "start": 1629.7719628849245,
-    "end": 3288.5277046354813,
+    "end": 3318.6741458737097,
     "status": "ok",
     "detail": ""
    },
@@ -29392,7 +28408,7 @@
     "name": "plm.get_material",
     "kind": "tool",
     "start": 2293.1993744543965,
-    "end": 2436.3310167830805,
+    "end": 2406.184575544852,
     "status": "ok",
     "detail": "{\"material_id\": \"EN AW-6082-T6\"}"
    },
@@ -29400,55 +28416,55 @@
     "name": "tooling agent",
     "kind": "agent",
     "start": 1629.7719628849245,
-    "end": 2436.3310167830805,
+    "end": 2406.184575544852,
     "status": "ok",
     "detail": ""
    },
    {
     "name": "crash agent",
     "kind": "model",
-    "start": 3288.5277046354813,
-    "end": 4356.159226777377,
+    "start": 3318.6741458737097,
+    "end": 4386.305668015605,
     "status": "ok",
     "detail": ""
    },
    {
     "name": "simulation.predict_intrusion",
     "kind": "tool",
-    "start": 4356.159226777377,
-    "end": 4433.296005874558,
+    "start": 4386.305668015605,
+    "end": 4463.442447112787,
     "status": "ok",
     "detail": "{\"load_case\": \"side_mdb\", \"thickness_mm\": 1.4, \"material_id\": \"EN AW-6082-T6\", \""
    },
    {
     "name": "simulation.predict_intrusion",
     "kind": "tool",
-    "start": 4433.296005874558,
-    "end": 4685.522299889281,
+    "start": 4463.442447112787,
+    "end": 4715.66874112751,
     "status": "ok",
     "detail": "{\"load_case\": \"side_mdb\", \"thickness_mm\": 1.4, \"material_id\": \"EN AW-6082-T6\", \""
    },
    {
     "name": "simulation.predict_intrusion",
     "kind": "tool",
-    "start": 4685.522299889281,
-    "end": 4820.102888163271,
+    "start": 4715.66874112751,
+    "end": 4850.249329401499,
     "status": "ok",
     "detail": "{\"load_case\": \"side_mdb\", \"thickness_mm\": 1.4, \"material_id\": \"EN AW-6082-T6\", \""
    },
    {
     "name": "crash agent",
     "kind": "agent",
-    "start": 3288.5277046354813,
-    "end": 4820.102888163271,
+    "start": 3318.6741458737097,
+    "end": 4850.249329401499,
     "status": "ok",
     "detail": ""
    },
    {
     "name": "write summary",
     "kind": "model",
-    "start": 4820.102888163271,
-    "end": 5473.289833208566,
+    "start": 4850.249329401499,
+    "end": 5503.436274446794,
     "status": "ok",
     "detail": ""
    }
@@ -29681,6 +28697,43 @@
    {
     "id": "R008",
     "kind": "tool",
+    "name": "plm.get_material",
+    "args": {
+     "material_id": "EN AW-6082-T6"
+    },
+    "output": {
+     "id": "EN AW-6082-T6",
+     "yield_mpa": 260,
+     "density": 2.7,
+     "class": "aluminium",
+     "approved": true
+    },
+    "status": "ok",
+    "sources": []
+   },
+   {
+    "id": "R009",
+    "kind": "derived",
+    "name": "tooling impact",
+    "args": {},
+    "output": {
+     "tools": {
+      "WZ-6032-1": "new",
+      "WZ-6032-2": "new"
+     },
+     "tooling_cost_eur": 1485500.0,
+     "tooling_cost_keur": 1485.5,
+     "lead_weeks": 33,
+     "new_tools": 2,
+     "reworked_tools": 0,
+     "transferred_tools": 0
+    },
+    "status": "ok",
+    "sources": []
+   },
+   {
+    "id": "R010",
+    "kind": "tool",
     "name": "documents.search_documents",
     "args": {
      "query": "internal crash target moving-barrier side impact EU maximum intrusion",
@@ -29709,43 +28762,6 @@
        "text": "Every engineering change request lists affected variants, special tools, suppliers and applicable crash targets. Crash-relevant changes are signed by the responsible engineer and the passive safety owner."
       }
      ]
-    },
-    "status": "ok",
-    "sources": []
-   },
-   {
-    "id": "R009",
-    "kind": "tool",
-    "name": "plm.get_material",
-    "args": {
-     "material_id": "EN AW-6082-T6"
-    },
-    "output": {
-     "id": "EN AW-6082-T6",
-     "yield_mpa": 260,
-     "density": 2.7,
-     "class": "aluminium",
-     "approved": true
-    },
-    "status": "ok",
-    "sources": []
-   },
-   {
-    "id": "R010",
-    "kind": "derived",
-    "name": "tooling impact",
-    "args": {},
-    "output": {
-     "tools": {
-      "WZ-6032-1": "new",
-      "WZ-6032-2": "new"
-     },
-     "tooling_cost_eur": 1485500.0,
-     "tooling_cost_keur": 1485.5,
-     "lead_weeks": 33,
-     "new_tools": 2,
-     "reworked_tools": 0,
-     "transferred_tools": 0
     },
     "status": "ok",
     "sources": []
@@ -30008,7 +29024,7 @@
    "engineer",
    "safety_owner"
   ],
-  "latency_ms": 5787.7,
+  "latency_ms": 5798.5,
   "model_calls": 5,
   "cost_eur": 0.015992,
   "spans": [
@@ -30056,23 +29072,23 @@
     "name": "documents.search_documents",
     "kind": "tool",
     "start": 2694.457816964199,
-    "end": 2820.6192020448357,
+    "end": 2834.532273799969,
     "status": "ok",
     "detail": "{\"query\": \"internal crash target rear impact fuel system CN maximum intrusion\", "
    },
    {
     "name": "documents.search_documents",
     "kind": "tool",
-    "start": 2820.6192020448357,
-    "end": 2960.6936588806057,
+    "start": 2834.532273799969,
+    "end": 2971.498148933978,
     "status": "ok",
     "detail": "{\"query\": \"internal crash target rear impact fuel system EU maximum intrusion\", "
    },
    {
     "name": "plm.get_material",
     "kind": "tool",
-    "start": 2960.6936588806057,
-    "end": 3037.3532724095007,
+    "start": 2971.498148933978,
+    "end": 3048.157762462873,
     "status": "ok",
     "detail": "{\"material_id\": \"HC340LA\"}"
    },
@@ -30080,7 +29096,7 @@
     "name": "compliance agent",
     "kind": "agent",
     "start": 1360.0968360671316,
-    "end": 3037.3532724095007,
+    "end": 3048.157762462873,
     "status": "ok",
     "detail": ""
    },
@@ -30096,15 +29112,15 @@
     "name": "tooling.tools_for_part",
     "kind": "tool",
     "start": 2130.54729073043,
-    "end": 2397.0194166261535,
+    "end": 2256.7086758110668,
     "status": "ok",
     "detail": "{\"part_no\": \"7249009\"}"
    },
    {
     "name": "plm.get_material",
     "kind": "tool",
-    "start": 2397.0194166261535,
-    "end": 2533.9852917601625,
+    "start": 2256.7086758110668,
+    "end": 2523.18080170679,
     "status": "ok",
     "detail": "{\"material_id\": \"HC340LA\"}"
    },
@@ -30112,39 +29128,39 @@
     "name": "tooling agent",
     "kind": "agent",
     "start": 1360.0968360671316,
-    "end": 2533.9852917601625,
+    "end": 2523.18080170679,
     "status": "ok",
     "detail": ""
    },
    {
     "name": "crash agent",
     "kind": "model",
-    "start": 3037.3532724095007,
-    "end": 4215.415510883608,
+    "start": 3048.157762462873,
+    "end": 4226.22000093698,
     "status": "ok",
     "detail": ""
    },
    {
     "name": "simulation.predict_intrusion",
     "kind": "tool",
-    "start": 4215.415510883608,
-    "end": 4446.285879030514,
+    "start": 4226.22000093698,
+    "end": 4457.090369083886,
     "status": "ok",
     "detail": "{\"load_case\": \"rear\", \"thickness_mm\": 1.5, \"material_id\": \"HC340LA\", \"mass_kg\": "
    },
    {
     "name": "crash agent",
     "kind": "agent",
-    "start": 3037.3532724095007,
-    "end": 4446.285879030514,
+    "start": 3048.157762462873,
+    "end": 4457.090369083886,
     "status": "ok",
     "detail": ""
    },
    {
     "name": "write summary",
     "kind": "model",
-    "start": 4446.285879030514,
-    "end": 5787.6875354098465,
+    "start": 4457.090369083886,
+    "end": 5798.492025463219,
     "status": "ok",
     "detail": ""
    }
@@ -30253,41 +29269,6 @@
    {
     "id": "R006",
     "kind": "tool",
-    "name": "documents.search_documents",
-    "args": {
-     "query": "internal crash target rear impact fuel system CN maximum intrusion",
-     "load_case": "rear",
-     "market": "CN",
-     "k": 2,
-     "method": "hybrid",
-     "current_only": true
-    },
-    "output": {
-     "documents": [
-      {
-       "id": "CT-rear-CN-2025",
-       "status": "current",
-       "load_case": "rear",
-       "market": "CN",
-       "title": "Internal crash target: rear impact and fuel system integrity, CN (GB 20072)",
-       "text": "For the rear impact and fuel system integrity load case, homologation in CN under GB 20072 is secured by the internal target: maximum intrusion 68 mm at the reference measurement point. A structural change that may exceed 68 mm needs a full finite-element simulation and sign-off by the passive safety owner. Version 2025, current."
-      },
-      {
-       "id": "PROC-ECR-01",
-       "status": "current",
-       "load_case": null,
-       "market": null,
-       "title": "Engineering change process: impact analysis",
-       "text": "Every engineering change request lists affected variants, special tools, suppliers and applicable crash targets. Crash-relevant changes are signed by the responsible engineer and the passive safety owner."
-      }
-     ]
-    },
-    "status": "ok",
-    "sources": []
-   },
-   {
-    "id": "R007",
-    "kind": "tool",
     "name": "tooling.tools_for_part",
     "args": {
      "part_no": "7249009"
@@ -30332,7 +29313,79 @@
     "sources": []
    },
    {
+    "id": "R007",
+    "kind": "tool",
+    "name": "plm.get_material",
+    "args": {
+     "material_id": "HC340LA"
+    },
+    "output": {
+     "id": "HC340LA",
+     "yield_mpa": 340,
+     "density": 7.85,
+     "class": "cold_formed_steel",
+     "approved": true
+    },
+    "status": "ok",
+    "sources": []
+   },
+   {
     "id": "R008",
+    "kind": "derived",
+    "name": "tooling impact",
+    "args": {},
+    "output": {
+     "tools": {
+      "WZ-9009-1": "rework",
+      "WZ-9009-2": "rework"
+     },
+     "tooling_cost_eur": 265300.0,
+     "tooling_cost_keur": 265.3,
+     "lead_weeks": 8,
+     "new_tools": 0,
+     "reworked_tools": 2,
+     "transferred_tools": 0
+    },
+    "status": "ok",
+    "sources": []
+   },
+   {
+    "id": "R009",
+    "kind": "tool",
+    "name": "documents.search_documents",
+    "args": {
+     "query": "internal crash target rear impact fuel system CN maximum intrusion",
+     "load_case": "rear",
+     "market": "CN",
+     "k": 2,
+     "method": "hybrid",
+     "current_only": true
+    },
+    "output": {
+     "documents": [
+      {
+       "id": "CT-rear-CN-2025",
+       "status": "current",
+       "load_case": "rear",
+       "market": "CN",
+       "title": "Internal crash target: rear impact and fuel system integrity, CN (GB 20072)",
+       "text": "For the rear impact and fuel system integrity load case, homologation in CN under GB 20072 is secured by the internal target: maximum intrusion 68 mm at the reference measurement point. A structural change that may exceed 68 mm needs a full finite-element simulation and sign-off by the passive safety owner. Version 2025, current."
+      },
+      {
+       "id": "PROC-ECR-01",
+       "status": "current",
+       "load_case": null,
+       "market": null,
+       "title": "Engineering change process: impact analysis",
+       "text": "Every engineering change request lists affected variants, special tools, suppliers and applicable crash targets. Crash-relevant changes are signed by the responsible engineer and the passive safety owner."
+      }
+     ]
+    },
+    "status": "ok",
+    "sources": []
+   },
+   {
+    "id": "R010",
     "kind": "tool",
     "name": "documents.search_documents",
     "args": {
@@ -30362,43 +29415,6 @@
        "text": "Every engineering change request lists affected variants, special tools, suppliers and applicable crash targets. Crash-relevant changes are signed by the responsible engineer and the passive safety owner."
       }
      ]
-    },
-    "status": "ok",
-    "sources": []
-   },
-   {
-    "id": "R009",
-    "kind": "tool",
-    "name": "plm.get_material",
-    "args": {
-     "material_id": "HC340LA"
-    },
-    "output": {
-     "id": "HC340LA",
-     "yield_mpa": 340,
-     "density": 7.85,
-     "class": "cold_formed_steel",
-     "approved": true
-    },
-    "status": "ok",
-    "sources": []
-   },
-   {
-    "id": "R010",
-    "kind": "derived",
-    "name": "tooling impact",
-    "args": {},
-    "output": {
-     "tools": {
-      "WZ-9009-1": "rework",
-      "WZ-9009-2": "rework"
-     },
-     "tooling_cost_eur": 265300.0,
-     "tooling_cost_keur": 265.3,
-     "lead_weeks": 8,
-     "new_tools": 0,
-     "reworked_tools": 2,
-     "transferred_tools": 0
     },
     "status": "ok",
     "sources": []
@@ -30566,7 +29582,7 @@
    "engineer",
    "safety_owner"
   ],
-  "latency_ms": 4649.0,
+  "latency_ms": 4531.2,
   "model_calls": 5,
   "cost_eur": 0.015988,
   "spans": [
@@ -30614,23 +29630,23 @@
     "name": "documents.search_documents",
     "kind": "tool",
     "start": 2252.613188804522,
-    "end": 2544.014135318368,
+    "end": 2426.233644644401,
     "status": "ok",
     "detail": "{\"query\": \"internal crash target pole side impact CN maximum intrusion\", \"load_c"
    },
    {
     "name": "documents.search_documents",
     "kind": "tool",
-    "start": 2544.014135318368,
-    "end": 2626.9830061079865,
+    "start": 2426.233644644401,
+    "end": 2509.2025154340195,
     "status": "ok",
     "detail": "{\"query\": \"internal crash target pole side impact EU maximum intrusion\", \"load_c"
    },
    {
     "name": "plm.get_material",
     "kind": "tool",
-    "start": 2626.9830061079865,
-    "end": 2849.0210588043074,
+    "start": 2509.2025154340195,
+    "end": 2731.2405681303403,
     "status": "ok",
     "detail": "{\"material_id\": \"CR1180Y1500T-MS\"}"
    },
@@ -30638,7 +29654,7 @@
     "name": "compliance agent",
     "kind": "agent",
     "start": 1163.0033029180497,
-    "end": 2849.0210588043074,
+    "end": 2731.2405681303403,
     "status": "ok",
     "detail": ""
    },
@@ -30654,15 +29670,15 @@
     "name": "tooling.tools_for_part",
     "kind": "tool",
     "start": 2415.0379612155266,
-    "end": 2588.6584170554056,
+    "end": 2706.4389077293727,
     "status": "ok",
     "detail": "{\"part_no\": \"7979003\"}"
    },
    {
     "name": "plm.get_material",
     "kind": "tool",
-    "start": 2588.6584170554056,
-    "end": 2796.287614683383,
+    "start": 2706.4389077293727,
+    "end": 2914.06810535735,
     "status": "ok",
     "detail": "{\"material_id\": \"CR1180Y1500T-MS\"}"
    },
@@ -30670,47 +29686,47 @@
     "name": "tooling agent",
     "kind": "agent",
     "start": 1163.0033029180497,
-    "end": 2796.287614683383,
+    "end": 2914.06810535735,
     "status": "ok",
     "detail": ""
    },
    {
     "name": "crash agent",
     "kind": "model",
-    "start": 2849.0210588043074,
-    "end": 3279.0183189549957,
+    "start": 2731.2405681303403,
+    "end": 3161.2378282810287,
     "status": "ok",
     "detail": ""
    },
    {
     "name": "simulation.predict_intrusion",
     "kind": "tool",
-    "start": 3279.0183189549957,
-    "end": 3382.3013377664574,
+    "start": 3161.2378282810287,
+    "end": 3264.5208470924904,
     "status": "ok",
     "detail": "{\"load_case\": \"side_pole\", \"thickness_mm\": 1.45, \"material_id\": \"CR1180Y1500T-MS"
    },
    {
     "name": "simulation.request_fe_simulation",
     "kind": "tool",
-    "start": 3382.3013377664574,
-    "end": 3487.041891492769,
+    "start": 3264.5208470924904,
+    "end": 3369.261400818802,
     "status": "ok",
     "detail": "{\"part_no\": \"7979003\", \"load_case\": \"side_pole\", \"reason\": \"prediction interval "
    },
    {
     "name": "crash agent",
     "kind": "agent",
-    "start": 2849.0210588043074,
-    "end": 3487.041891492769,
+    "start": 2731.2405681303403,
+    "end": 3369.261400818802,
     "status": "ok",
     "detail": ""
    },
    {
     "name": "write summary",
     "kind": "model",
-    "start": 3487.041891492769,
-    "end": 4649.028625402679,
+    "start": 3369.261400818802,
+    "end": 4531.248134728711,
     "status": "ok",
     "detail": ""
    }
@@ -30819,41 +29835,6 @@
    {
     "id": "R006",
     "kind": "tool",
-    "name": "documents.search_documents",
-    "args": {
-     "query": "internal crash target pole side impact CN maximum intrusion",
-     "load_case": "side_pole",
-     "market": "CN",
-     "k": 2,
-     "method": "hybrid",
-     "current_only": true
-    },
-    "output": {
-     "documents": [
-      {
-       "id": "CT-side_pole-CN-2025",
-       "status": "current",
-       "load_case": "side_pole",
-       "market": "CN",
-       "title": "Internal crash target: pole side impact, CN (GB/T 37337)",
-       "text": "For the pole side impact load case, homologation in CN under GB/T 37337 is secured by the internal target: maximum intrusion 116 mm at the reference measurement point. A structural change that may exceed 116 mm needs a full finite-element simulation and sign-off by the passive safety owner. Version 2025, current."
-      },
-      {
-       "id": "PROC-ECR-01",
-       "status": "current",
-       "load_case": null,
-       "market": null,
-       "title": "Engineering change process: impact analysis",
-       "text": "Every engineering change request lists affected variants, special tools, suppliers and applicable crash targets. Crash-relevant changes are signed by the responsible engineer and the passive safety owner."
-      }
-     ]
-    },
-    "status": "ok",
-    "sources": []
-   },
-   {
-    "id": "R007",
-    "kind": "tool",
     "name": "tooling.tools_for_part",
     "args": {
      "part_no": "7979003"
@@ -30907,6 +29888,41 @@
        "new_lead_weeks": 31,
        "rework_lead_weeks": 6,
        "status": "active"
+      }
+     ]
+    },
+    "status": "ok",
+    "sources": []
+   },
+   {
+    "id": "R007",
+    "kind": "tool",
+    "name": "documents.search_documents",
+    "args": {
+     "query": "internal crash target pole side impact CN maximum intrusion",
+     "load_case": "side_pole",
+     "market": "CN",
+     "k": 2,
+     "method": "hybrid",
+     "current_only": true
+    },
+    "output": {
+     "documents": [
+      {
+       "id": "CT-side_pole-CN-2025",
+       "status": "current",
+       "load_case": "side_pole",
+       "market": "CN",
+       "title": "Internal crash target: pole side impact, CN (GB/T 37337)",
+       "text": "For the pole side impact load case, homologation in CN under GB/T 37337 is secured by the internal target: maximum intrusion 116 mm at the reference measurement point. A structural change that may exceed 116 mm needs a full finite-element simulation and sign-off by the passive safety owner. Version 2025, current."
+      },
+      {
+       "id": "PROC-ECR-01",
+       "status": "current",
+       "load_case": null,
+       "market": null,
+       "title": "Engineering change process: impact analysis",
+       "text": "Every engineering change request lists affected variants, special tools, suppliers and applicable crash targets. Crash-relevant changes are signed by the responsible engineer and the passive safety owner."
       }
      ]
     },
@@ -31196,7 +30212,7 @@
    "engineer",
    "safety_owner"
   ],
-  "latency_ms": 5822.6,
+  "latency_ms": 5788.3,
   "model_calls": 5,
   "cost_eur": 0.01598,
   "spans": [
@@ -31244,23 +30260,23 @@
     "name": "documents.search_documents",
     "kind": "tool",
     "start": 2110.081434001456,
-    "end": 2234.8718424463236,
+    "end": 2218.5178243848263,
     "status": "ok",
     "detail": "{\"query\": \"internal crash target offset frontal impact CN maximum intrusion\", \"l"
    },
    {
     "name": "documents.search_documents",
     "kind": "tool",
-    "start": 2234.8718424463236,
-    "end": 2347.563143360677,
+    "start": 2218.5178243848263,
+    "end": 2313.239649146218,
     "status": "ok",
     "detail": "{\"query\": \"internal crash target offset frontal impact EU maximum intrusion\", \"l"
    },
    {
     "name": "plm.get_material",
     "kind": "tool",
-    "start": 2347.563143360677,
-    "end": 2525.9545079241934,
+    "start": 2313.239649146218,
+    "end": 2491.631013709735,
     "status": "ok",
     "detail": "{\"material_id\": \"CR1180Y1500T-MS\"}"
    },
@@ -31268,7 +30284,7 @@
     "name": "compliance agent",
     "kind": "agent",
     "start": 1189.078834959516,
-    "end": 2525.9545079241934,
+    "end": 2491.631013709735,
     "status": "ok",
     "detail": ""
    },
@@ -31284,15 +30300,15 @@
     "name": "tooling.tools_for_part",
     "kind": "tool",
     "start": 1944.774870171183,
-    "end": 2053.2112605545535,
+    "end": 2069.565278616051,
     "status": "ok",
     "detail": "{\"part_no\": \"7376006\"}"
    },
    {
     "name": "plm.get_material",
     "kind": "tool",
-    "start": 2053.2112605545535,
-    "end": 2147.9330853159454,
+    "start": 2069.565278616051,
+    "end": 2182.256579530404,
     "status": "ok",
     "detail": "{\"material_id\": \"CR1180Y1500T-MS\"}"
    },
@@ -31300,63 +30316,63 @@
     "name": "tooling agent",
     "kind": "agent",
     "start": 1189.078834959516,
-    "end": 2147.9330853159454,
+    "end": 2182.256579530404,
     "status": "ok",
     "detail": ""
    },
    {
     "name": "crash agent",
     "kind": "model",
-    "start": 2525.9545079241934,
-    "end": 4118.683804300283,
+    "start": 2491.631013709735,
+    "end": 4084.3603100858236,
     "status": "ok",
     "detail": ""
    },
    {
     "name": "simulation.predict_intrusion",
     "kind": "tool",
-    "start": 4118.683804300283,
-    "end": 4228.571395908674,
+    "start": 4084.3603100858236,
+    "end": 4194.247901694215,
     "status": "ok",
     "detail": "{\"load_case\": \"frontal_odb\", \"thickness_mm\": 2.2, \"material_id\": \"CR1180Y1500T-M"
    },
    {
     "name": "simulation.predict_intrusion",
     "kind": "tool",
-    "start": 4228.571395908674,
-    "end": 4327.594015607358,
+    "start": 4194.247901694215,
+    "end": 4293.270521392899,
     "status": "ok",
     "detail": "{\"load_case\": \"frontal_odb\", \"thickness_mm\": 2.2, \"material_id\": \"CR1180Y1500T-M"
    },
    {
     "name": "simulation.predict_intrusion",
     "kind": "tool",
-    "start": 4327.594015607358,
-    "end": 4490.460776844403,
+    "start": 4293.270521392899,
+    "end": 4456.137282629944,
     "status": "ok",
     "detail": "{\"load_case\": \"frontal_odb\", \"thickness_mm\": 2.2, \"material_id\": \"CR1180Y1500T-M"
    },
    {
     "name": "simulation.request_fe_simulation",
     "kind": "tool",
-    "start": 4490.460776844403,
-    "end": 4619.692715835206,
+    "start": 4456.137282629944,
+    "end": 4585.369221620747,
     "status": "ok",
     "detail": "{\"part_no\": \"7376006\", \"load_case\": \"frontal_odb\", \"reason\": \"prediction interva"
    },
    {
     "name": "crash agent",
     "kind": "agent",
-    "start": 2525.9545079241934,
-    "end": 4619.692715835206,
+    "start": 2491.631013709735,
+    "end": 4585.369221620747,
     "status": "ok",
     "detail": ""
    },
    {
     "name": "write summary",
     "kind": "model",
-    "start": 4619.692715835206,
-    "end": 5822.575194052858,
+    "start": 4585.369221620747,
+    "end": 5788.251699838399,
     "status": "ok",
     "detail": ""
    }
@@ -31490,41 +30506,6 @@
    {
     "id": "R006",
     "kind": "tool",
-    "name": "documents.search_documents",
-    "args": {
-     "query": "internal crash target offset frontal impact CN maximum intrusion",
-     "load_case": "frontal_odb",
-     "market": "CN",
-     "k": 2,
-     "method": "hybrid",
-     "current_only": true
-    },
-    "output": {
-     "documents": [
-      {
-       "id": "CT-frontal_odb-CN-2025",
-       "status": "current",
-       "load_case": "frontal_odb",
-       "market": "CN",
-       "title": "Internal crash target: offset frontal impact, CN (GB/T 20913)",
-       "text": "For the offset frontal impact load case, homologation in CN under GB/T 20913 is secured by the internal target: maximum intrusion 148 mm at the reference measurement point. A structural change that may exceed 148 mm needs a full finite-element simulation and sign-off by the passive safety owner. Version 2025, current."
-      },
-      {
-       "id": "PROC-ECR-01",
-       "status": "current",
-       "load_case": null,
-       "market": null,
-       "title": "Engineering change process: impact analysis",
-       "text": "Every engineering change request lists affected variants, special tools, suppliers and applicable crash targets. Crash-relevant changes are signed by the responsible engineer and the passive safety owner."
-      }
-     ]
-    },
-    "status": "ok",
-    "sources": []
-   },
-   {
-    "id": "R007",
-    "kind": "tool",
     "name": "tooling.tools_for_part",
     "args": {
      "part_no": "7376006"
@@ -31569,7 +30550,79 @@
     "sources": []
    },
    {
+    "id": "R007",
+    "kind": "tool",
+    "name": "documents.search_documents",
+    "args": {
+     "query": "internal crash target offset frontal impact CN maximum intrusion",
+     "load_case": "frontal_odb",
+     "market": "CN",
+     "k": 2,
+     "method": "hybrid",
+     "current_only": true
+    },
+    "output": {
+     "documents": [
+      {
+       "id": "CT-frontal_odb-CN-2025",
+       "status": "current",
+       "load_case": "frontal_odb",
+       "market": "CN",
+       "title": "Internal crash target: offset frontal impact, CN (GB/T 20913)",
+       "text": "For the offset frontal impact load case, homologation in CN under GB/T 20913 is secured by the internal target: maximum intrusion 148 mm at the reference measurement point. A structural change that may exceed 148 mm needs a full finite-element simulation and sign-off by the passive safety owner. Version 2025, current."
+      },
+      {
+       "id": "PROC-ECR-01",
+       "status": "current",
+       "load_case": null,
+       "market": null,
+       "title": "Engineering change process: impact analysis",
+       "text": "Every engineering change request lists affected variants, special tools, suppliers and applicable crash targets. Crash-relevant changes are signed by the responsible engineer and the passive safety owner."
+      }
+     ]
+    },
+    "status": "ok",
+    "sources": []
+   },
+   {
     "id": "R008",
+    "kind": "tool",
+    "name": "plm.get_material",
+    "args": {
+     "material_id": "CR1180Y1500T-MS"
+    },
+    "output": {
+     "id": "CR1180Y1500T-MS",
+     "yield_mpa": 1180,
+     "density": 7.85,
+     "class": "cold_formed_steel",
+     "approved": true
+    },
+    "status": "ok",
+    "sources": []
+   },
+   {
+    "id": "R009",
+    "kind": "derived",
+    "name": "tooling impact",
+    "args": {},
+    "output": {
+     "tools": {
+      "WZ-6006-1": "rework",
+      "WZ-6006-2": "rework"
+     },
+     "tooling_cost_eur": 154300.0,
+     "tooling_cost_keur": 154.3,
+     "lead_weeks": 8,
+     "new_tools": 0,
+     "reworked_tools": 2,
+     "transferred_tools": 0
+    },
+    "status": "ok",
+    "sources": []
+   },
+   {
+    "id": "R010",
     "kind": "tool",
     "name": "documents.search_documents",
     "args": {
@@ -31599,43 +30652,6 @@
        "text": "Every engineering change request lists affected variants, special tools, suppliers and applicable crash targets. Crash-relevant changes are signed by the responsible engineer and the passive safety owner."
       }
      ]
-    },
-    "status": "ok",
-    "sources": []
-   },
-   {
-    "id": "R009",
-    "kind": "tool",
-    "name": "plm.get_material",
-    "args": {
-     "material_id": "CR1180Y1500T-MS"
-    },
-    "output": {
-     "id": "CR1180Y1500T-MS",
-     "yield_mpa": 1180,
-     "density": 7.85,
-     "class": "cold_formed_steel",
-     "approved": true
-    },
-    "status": "ok",
-    "sources": []
-   },
-   {
-    "id": "R010",
-    "kind": "derived",
-    "name": "tooling impact",
-    "args": {},
-    "output": {
-     "tools": {
-      "WZ-6006-1": "rework",
-      "WZ-6006-2": "rework"
-     },
-     "tooling_cost_eur": 154300.0,
-     "tooling_cost_keur": 154.3,
-     "lead_weeks": 8,
-     "new_tools": 0,
-     "reworked_tools": 2,
-     "transferred_tools": 0
     },
     "status": "ok",
     "sources": []
@@ -33032,7 +32048,7 @@
    "engineer",
    "safety_owner"
   ],
-  "latency_ms": 6361.8,
+  "latency_ms": 6524.5,
   "model_calls": 5,
   "cost_eur": 0.015983,
   "spans": [
@@ -33080,23 +32096,23 @@
     "name": "documents.search_documents",
     "kind": "tool",
     "start": 3150.3222673200025,
-    "end": 3263.7081010465954,
+    "end": 3395.336920571332,
     "status": "ok",
     "detail": "{\"query\": \"internal crash target moving-barrier side impact CN maximum intrusion"
    },
    {
     "name": "documents.search_documents",
     "kind": "tool",
-    "start": 3263.7081010465954,
-    "end": 3388.0336129541165,
+    "start": 3395.336920571332,
+    "end": 3550.7657932991374,
     "status": "ok",
     "detail": "{\"query\": \"internal crash target moving-barrier side impact EU maximum intrusion"
    },
    {
     "name": "plm.get_material",
     "kind": "tool",
-    "start": 3388.0336129541165,
-    "end": 3571.1233157158526,
+    "start": 3550.7657932991374,
+    "end": 3733.8554960608735,
     "status": "ok",
     "detail": "{\"material_id\": \"CR1180Y1500T-MS\"}"
    },
@@ -33104,7 +32120,7 @@
     "name": "compliance agent",
     "kind": "agent",
     "start": 1777.8772498094136,
-    "end": 3571.1233157158526,
+    "end": 3733.8554960608735,
     "status": "ok",
     "detail": ""
    },
@@ -33120,15 +32136,15 @@
     "name": "tooling.tools_for_part",
     "kind": "tool",
     "start": 2796.5063209106847,
-    "end": 3041.520974162014,
+    "end": 2909.8921546372776,
     "status": "ok",
     "detail": "{\"part_no\": \"7895004\"}"
    },
    {
     "name": "plm.get_material",
     "kind": "tool",
-    "start": 3041.520974162014,
-    "end": 3196.9498468898196,
+    "start": 2909.8921546372776,
+    "end": 3034.2176665447987,
     "status": "ok",
     "detail": "{\"material_id\": \"CR1180Y1500T-MS\"}"
    },
@@ -33136,63 +32152,63 @@
     "name": "tooling agent",
     "kind": "agent",
     "start": 1777.8772498094136,
-    "end": 3196.9498468898196,
+    "end": 3034.2176665447987,
     "status": "ok",
     "detail": ""
    },
    {
     "name": "crash agent",
     "kind": "model",
-    "start": 3571.1233157158526,
-    "end": 4716.335160610973,
+    "start": 3733.8554960608735,
+    "end": 4879.067340955993,
     "status": "ok",
     "detail": ""
    },
    {
     "name": "simulation.predict_intrusion",
     "kind": "tool",
-    "start": 4716.335160610973,
-    "end": 4872.647998711029,
+    "start": 4879.067340955993,
+    "end": 5035.380179056049,
     "status": "ok",
     "detail": "{\"load_case\": \"side_mdb\", \"thickness_mm\": 1.25, \"material_id\": \"CR1180Y1500T-MS\""
    },
    {
     "name": "simulation.predict_intrusion",
     "kind": "tool",
-    "start": 4872.647998711029,
-    "end": 5051.974601824701,
+    "start": 5035.380179056049,
+    "end": 5214.706782169721,
     "status": "ok",
     "detail": "{\"load_case\": \"side_mdb\", \"thickness_mm\": 1.25, \"material_id\": \"CR1180Y1500T-MS\""
    },
    {
     "name": "simulation.predict_intrusion",
     "kind": "tool",
-    "start": 5051.974601824701,
-    "end": 5194.974543030802,
+    "start": 5214.706782169721,
+    "end": 5357.706723375823,
     "status": "ok",
     "detail": "{\"load_case\": \"side_mdb\", \"thickness_mm\": 1.25, \"material_id\": \"CR1180Y1500T-MS\""
    },
    {
     "name": "simulation.request_fe_simulation",
     "kind": "tool",
-    "start": 5194.974543030802,
-    "end": 5340.068626464641,
+    "start": 5357.706723375823,
+    "end": 5502.8008068096615,
     "status": "ok",
     "detail": "{\"part_no\": \"7895004\", \"load_case\": \"side_mdb\", \"reason\": \"prediction interval o"
    },
    {
     "name": "crash agent",
     "kind": "agent",
-    "start": 3571.1233157158526,
-    "end": 5340.068626464641,
+    "start": 3733.8554960608735,
+    "end": 5502.8008068096615,
     "status": "ok",
     "detail": ""
    },
    {
     "name": "write summary",
     "kind": "model",
-    "start": 5340.068626464641,
-    "end": 6361.782722471506,
+    "start": 5502.8008068096615,
+    "end": 6524.514902816526,
     "status": "ok",
     "detail": ""
    }
@@ -33326,41 +32342,6 @@
    {
     "id": "R006",
     "kind": "tool",
-    "name": "documents.search_documents",
-    "args": {
-     "query": "internal crash target moving-barrier side impact CN maximum intrusion",
-     "load_case": "side_mdb",
-     "market": "CN",
-     "k": 2,
-     "method": "hybrid",
-     "current_only": true
-    },
-    "output": {
-     "documents": [
-      {
-       "id": "CT-side_mdb-CN-2025",
-       "status": "current",
-       "load_case": "side_mdb",
-       "market": "CN",
-       "title": "Internal crash target: moving-barrier side impact, CN (GB 20071)",
-       "text": "For the moving-barrier side impact load case, homologation in CN under GB 20071 is secured by the internal target: maximum intrusion 102 mm at the reference measurement point. A structural change that may exceed 102 mm needs a full finite-element simulation and sign-off by the passive safety owner. Version 2025, current."
-      },
-      {
-       "id": "PROC-ECR-01",
-       "status": "current",
-       "load_case": null,
-       "market": null,
-       "title": "Engineering change process: impact analysis",
-       "text": "Every engineering change request lists affected variants, special tools, suppliers and applicable crash targets. Crash-relevant changes are signed by the responsible engineer and the passive safety owner."
-      }
-     ]
-    },
-    "status": "ok",
-    "sources": []
-   },
-   {
-    "id": "R007",
-    "kind": "tool",
     "name": "tooling.tools_for_part",
     "args": {
      "part_no": "7895004"
@@ -33421,7 +32402,79 @@
     "sources": []
    },
    {
+    "id": "R007",
+    "kind": "tool",
+    "name": "documents.search_documents",
+    "args": {
+     "query": "internal crash target moving-barrier side impact CN maximum intrusion",
+     "load_case": "side_mdb",
+     "market": "CN",
+     "k": 2,
+     "method": "hybrid",
+     "current_only": true
+    },
+    "output": {
+     "documents": [
+      {
+       "id": "CT-side_mdb-CN-2025",
+       "status": "current",
+       "load_case": "side_mdb",
+       "market": "CN",
+       "title": "Internal crash target: moving-barrier side impact, CN (GB 20071)",
+       "text": "For the moving-barrier side impact load case, homologation in CN under GB 20071 is secured by the internal target: maximum intrusion 102 mm at the reference measurement point. A structural change that may exceed 102 mm needs a full finite-element simulation and sign-off by the passive safety owner. Version 2025, current."
+      },
+      {
+       "id": "PROC-ECR-01",
+       "status": "current",
+       "load_case": null,
+       "market": null,
+       "title": "Engineering change process: impact analysis",
+       "text": "Every engineering change request lists affected variants, special tools, suppliers and applicable crash targets. Crash-relevant changes are signed by the responsible engineer and the passive safety owner."
+      }
+     ]
+    },
+    "status": "ok",
+    "sources": []
+   },
+   {
     "id": "R008",
+    "kind": "tool",
+    "name": "plm.get_material",
+    "args": {
+     "material_id": "CR1180Y1500T-MS"
+    },
+    "output": {
+     "id": "CR1180Y1500T-MS",
+     "yield_mpa": 1180,
+     "density": 7.85,
+     "class": "cold_formed_steel",
+     "approved": true
+    },
+    "status": "ok",
+    "sources": []
+   },
+   {
+    "id": "R009",
+    "kind": "derived",
+    "name": "tooling impact",
+    "args": {},
+    "output": {
+     "tools": {
+      "WZ-5004-1": "new",
+      "WZ-5004-2": "rework"
+     },
+     "tooling_cost_eur": 523100.0,
+     "tooling_cost_keur": 523.1,
+     "lead_weeks": 21,
+     "new_tools": 1,
+     "reworked_tools": 1,
+     "transferred_tools": 0
+    },
+    "status": "ok",
+    "sources": []
+   },
+   {
+    "id": "R010",
     "kind": "tool",
     "name": "documents.search_documents",
     "args": {
@@ -33451,43 +32504,6 @@
        "text": "Every engineering change request lists affected variants, special tools, suppliers and applicable crash targets. Crash-relevant changes are signed by the responsible engineer and the passive safety owner."
       }
      ]
-    },
-    "status": "ok",
-    "sources": []
-   },
-   {
-    "id": "R009",
-    "kind": "tool",
-    "name": "plm.get_material",
-    "args": {
-     "material_id": "CR1180Y1500T-MS"
-    },
-    "output": {
-     "id": "CR1180Y1500T-MS",
-     "yield_mpa": 1180,
-     "density": 7.85,
-     "class": "cold_formed_steel",
-     "approved": true
-    },
-    "status": "ok",
-    "sources": []
-   },
-   {
-    "id": "R010",
-    "kind": "derived",
-    "name": "tooling impact",
-    "args": {},
-    "output": {
-     "tools": {
-      "WZ-5004-1": "new",
-      "WZ-5004-2": "rework"
-     },
-     "tooling_cost_eur": 523100.0,
-     "tooling_cost_keur": 523.1,
-     "lead_weeks": 21,
-     "new_tools": 1,
-     "reworked_tools": 1,
-     "transferred_tools": 0
     },
     "status": "ok",
     "sources": []

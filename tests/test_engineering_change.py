@@ -73,7 +73,8 @@ def test_a_supplier_change_transfers_the_tools(s):
 
 def test_validation_corrects_a_misread_part_number(s):
     p = part("roof bow")
-    text = f"ECR for part {p['part_no']} ({p['name']}): thickness {p['thickness_mm']} mm -> {p['thickness_mm']} mm."
+    t = p["thickness_mm"]
+    text = f"ECR for part {p['part_no']} ({p['name']}): thickness {t} mm -> {t + 0.05:.2f} mm."
     rep = analyse(settings_with(s, wrong_part=1.0, recover=1.0), text)
     assert rep["part_no"] == p["part_no"] and any("does not exist" in n for n in rep["notes"])
     rep = analyse(settings_with(s, wrong_part=1.0, recover=0.0), text)
@@ -125,3 +126,13 @@ def test_trace_and_ledger(s):
     assert tooling["start"] == compliance["start"]  # the specialists run in parallel
     assert abs(rep["latency_ms"] - max(sp["end"] for sp in rep["spans"])) <= 0.1
     assert any(r["name"] == "simulation.predict_intrusion" for r in rep["ledger"])
+
+
+def test_a_misread_target_value_is_caught_against_the_request_text(s):
+    """Regression for the held-out miss: the target thickness misread as the current one looked like no change."""
+    p = part("bumper carrier")
+    t = p["thickness_mm"]
+    text = f"ECR for part {p['part_no']} ({p['name']}): thickness {t} mm -> 1.0 mm on all P2 derivatives."
+    rep = analyse(settings_with(s, misread_number=1.0, recover=1.0), text, seed=3)
+    assert any("does not appear in the request" in n for n in rep["notes"])
+    assert rep["change"]["thickness_to"] == 1.0 and rep["recommendation"] == "reject"

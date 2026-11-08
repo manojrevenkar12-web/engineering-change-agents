@@ -187,6 +187,7 @@ class EngineeringChange:
 
     async def intake(self, st: State) -> dict:
         r, spans, notes = st["request"], [], []
+        self._text = r["text"]
         attachment = self.run.guard.clean(r.get("attachment", ""))
         self.run.ledger.add("input", "request", {}, {"text": r["text"]})
         t = self._think(
@@ -226,6 +227,14 @@ class EngineeringChange:
             return f"stated current material {c['material_from']}, PLM has {part['material']}"
         if c["thickness_to"] is not None and not 0.5 <= c["thickness_to"] <= 4.0:
             return f"implausible thickness {c['thickness_to']} mm"
+        # every extracted figure must stand in the request itself (found by the held-out run: a misread target
+        # thickness equal to the current one made a change look like no change)
+        stated = {round(_num(x), 4) for x in re.findall(r"\d+(?:[.,]\d+)?", self._text)}
+        for key in ("thickness_from", "thickness_to"):
+            if c[key] is not None and round(c[key], 4) not in stated:
+                return f"{key.replace('_', ' ')} {c[key]} mm does not appear in the request"
+        if c["thickness_to"] == part["thickness_mm"] and not c["material_to"] and not c["supplier_to"]:
+            return "the extracted change changes nothing"
         return None
 
     async def context(self, st: State) -> dict:
