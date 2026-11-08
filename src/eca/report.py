@@ -132,7 +132,7 @@ def readme_block(r: dict) -> str:
         f"€{p['cost_per_request_eur']:.3f} | **{f['p95_latency_ms'] / 1000:.1f} s, "
         f"€{f['cost_per_request_eur']:.3f}** |",
         "",
-        "What each control buys (held-out, change against the full design):"
+        "What each control buys: each row takes one control away from the full design (held-out):"
         if r["heldout"]
         else "What each control buys:",
         "",

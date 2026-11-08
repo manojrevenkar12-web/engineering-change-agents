@@ -1,6 +1,6 @@
 # Results
 
-Generated 2026-11-08T14:41:30+00:00 by `make report`. Each change request ran 3 times with different model draws; intervals resample requests. "Approved but fails" is the safety-critical error: the agent recommends approval and the crash target is exceeded in the world's truth.
+Generated 2026-11-08T14:41:51+00:00 by `make report`. Each change request ran 3 times with different model draws; intervals resample requests. "Approved but fails" is the safety-critical error: the agent recommends approval and the crash target is exceeded in the world's truth.
 
 Crash surrogate in production: `lim-crash-23cbb8c4`, test coverage 93% (target 90%), relative error 4.3%, trained on 6000 historical simulations.
 

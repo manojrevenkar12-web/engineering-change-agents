@@ -50,7 +50,7 @@ Held-out change requests (40, run once), each analysed 3 times:
 | Affected variants found / special tools found | 96% / 92% | **99% / 95%** |
 | p95 latency, model cost per request | 7.9 s, €0.017 | **6.9 s, €0.015** |
 
-What each control buys (held-out, change against the full design):
+What each control buys: each row takes one control away from the full design (held-out):
 
 | Taken away | Approved although failing | Correct where decided | Sent to simulation |
 |---|---|---|---|
