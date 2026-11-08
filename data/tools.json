@@ -1,0 +1,1354 @@
+{
+ "tools": [
+  {
+   "tool_id": "WZ-1001-1",
+   "kind": "hot_forming_die",
+   "part_no": "7431001",
+   "supplier_id": "S-2207",
+   "owner": "OEM",
+   "tolerance_mm": 0.15,
+   "material_classes": [
+    "press_hardened"
+   ],
+   "new_cost_eur": 443300.0,
+   "rework_cost_eur": 83900.0,
+   "new_lead_weeks": 20,
+   "rework_lead_weeks": 3,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-1001-2",
+   "kind": "trim_die",
+   "part_no": "7431001",
+   "supplier_id": "S-2207",
+   "owner": "OEM",
+   "tolerance_mm": 0.2,
+   "material_classes": [
+    "cold_formed_steel"
+   ],
+   "new_cost_eur": 241900.0,
+   "rework_cost_eur": 21400.0,
+   "new_lead_weeks": 16,
+   "rework_lead_weeks": 7,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-4002-1",
+   "kind": "press_die",
+   "part_no": "7534002",
+   "supplier_id": "S-1041",
+   "owner": "OEM",
+   "tolerance_mm": 0.25,
+   "material_classes": [
+    "cold_formed_steel"
+   ],
+   "new_cost_eur": 862200.0,
+   "rework_cost_eur": 133900.0,
+   "new_lead_weeks": 15,
+   "rework_lead_weeks": 7,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-4002-2",
+   "kind": "trim_die",
+   "part_no": "7534002",
+   "supplier_id": "S-1041",
+   "owner": "OEM",
+   "tolerance_mm": 0.15,
+   "material_classes": [
+    "cold_formed_steel"
+   ],
+   "new_cost_eur": 601600.0,
+   "rework_cost_eur": 118600.0,
+   "new_lead_weeks": 15,
+   "rework_lead_weeks": 7,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-9003-1",
+   "kind": "press_die",
+   "part_no": "7979003",
+   "supplier_id": "S-2207",
+   "owner": "OEM",
+   "tolerance_mm": 0.25,
+   "material_classes": [
+    "cold_formed_steel"
+   ],
+   "new_cost_eur": 583400.0,
+   "rework_cost_eur": 59300.0,
+   "new_lead_weeks": 32,
+   "rework_lead_weeks": 7,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-9003-2",
+   "kind": "trim_die",
+   "part_no": "7979003",
+   "supplier_id": "S-2207",
+   "owner": "OEM",
+   "tolerance_mm": 0.2,
+   "material_classes": [
+    "cold_formed_steel"
+   ],
+   "new_cost_eur": 640000.0,
+   "rework_cost_eur": 58700.0,
+   "new_lead_weeks": 16,
+   "rework_lead_weeks": 7,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-9003-3",
+   "kind": "welding_fixture",
+   "part_no": "7979003",
+   "supplier_id": "S-2207",
+   "owner": "OEM",
+   "tolerance_mm": 0.0,
+   "material_classes": [
+    "any"
+   ],
+   "new_cost_eur": 69500.0,
+   "rework_cost_eur": 7300.0,
+   "new_lead_weeks": 31,
+   "rework_lead_weeks": 6,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-5004-1",
+   "kind": "hot_forming_die",
+   "part_no": "7895004",
+   "supplier_id": "S-3318",
+   "owner": "OEM",
+   "tolerance_mm": 0.15,
+   "material_classes": [
+    "press_hardened"
+   ],
+   "new_cost_eur": 440300.0,
+   "rework_cost_eur": 77200.0,
+   "new_lead_weeks": 21,
+   "rework_lead_weeks": 3,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-5004-2",
+   "kind": "trim_die",
+   "part_no": "7895004",
+   "supplier_id": "S-3318",
+   "owner": "OEM",
+   "tolerance_mm": 0.25,
+   "material_classes": [
+    "cold_formed_steel"
+   ],
+   "new_cost_eur": 593600.0,
+   "rework_cost_eur": 82800.0,
+   "new_lead_weeks": 24,
+   "rework_lead_weeks": 8,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-5004-3",
+   "kind": "welding_fixture",
+   "part_no": "7895004",
+   "supplier_id": "S-3318",
+   "owner": "OEM",
+   "tolerance_mm": 0.0,
+   "material_classes": [
+    "any"
+   ],
+   "new_cost_eur": 131800.0,
+   "rework_cost_eur": 20200.0,
+   "new_lead_weeks": 16,
+   "rework_lead_weeks": 3,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-4005-1",
+   "kind": "press_die",
+   "part_no": "7624005",
+   "supplier_id": "S-4120",
+   "owner": "OEM",
+   "tolerance_mm": 0.25,
+   "material_classes": [
+    "cold_formed_steel"
+   ],
+   "new_cost_eur": 208200.0,
+   "rework_cost_eur": 18600.0,
+   "new_lead_weeks": 31,
+   "rework_lead_weeks": 7,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-4005-2",
+   "kind": "trim_die",
+   "part_no": "7624005",
+   "supplier_id": "S-4120",
+   "owner": "OEM",
+   "tolerance_mm": 0.2,
+   "material_classes": [
+    "cold_formed_steel"
+   ],
+   "new_cost_eur": 748100.0,
+   "rework_cost_eur": 90400.0,
+   "new_lead_weeks": 25,
+   "rework_lead_weeks": 7,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-4005-3",
+   "kind": "welding_fixture",
+   "part_no": "7624005",
+   "supplier_id": "S-4120",
+   "owner": "OEM",
+   "tolerance_mm": 0.0,
+   "material_classes": [
+    "any"
+   ],
+   "new_cost_eur": 139500.0,
+   "rework_cost_eur": 24500.0,
+   "new_lead_weeks": 16,
+   "rework_lead_weeks": 3,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-6006-1",
+   "kind": "press_die",
+   "part_no": "7376006",
+   "supplier_id": "S-4120",
+   "owner": "OEM",
+   "tolerance_mm": 0.25,
+   "material_classes": [
+    "cold_formed_steel"
+   ],
+   "new_cost_eur": 223700.0,
+   "rework_cost_eur": 26200.0,
+   "new_lead_weeks": 32,
+   "rework_lead_weeks": 8,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-6006-2",
+   "kind": "trim_die",
+   "part_no": "7376006",
+   "supplier_id": "S-4120",
+   "owner": "OEM",
+   "tolerance_mm": 0.2,
+   "material_classes": [
+    "cold_formed_steel"
+   ],
+   "new_cost_eur": 771800.0,
+   "rework_cost_eur": 128100.0,
+   "new_lead_weeks": 25,
+   "rework_lead_weeks": 3,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-2007-1",
+   "kind": "press_die",
+   "part_no": "7572007",
+   "supplier_id": "S-3318",
+   "owner": "OEM",
+   "tolerance_mm": 0.15,
+   "material_classes": [
+    "aluminium"
+   ],
+   "new_cost_eur": 273100.0,
+   "rework_cost_eur": 34900.0,
+   "new_lead_weeks": 29,
+   "rework_lead_weeks": 3,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-2007-2",
+   "kind": "trim_die",
+   "part_no": "7572007",
+   "supplier_id": "S-3318",
+   "owner": "OEM",
+   "tolerance_mm": 0.2,
+   "material_classes": [
+    "aluminium"
+   ],
+   "new_cost_eur": 299800.0,
+   "rework_cost_eur": 43800.0,
+   "new_lead_weeks": 18,
+   "rework_lead_weeks": 6,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-2007-3",
+   "kind": "welding_fixture",
+   "part_no": "7572007",
+   "supplier_id": "S-3318",
+   "owner": "OEM",
+   "tolerance_mm": 0.0,
+   "material_classes": [
+    "any"
+   ],
+   "new_cost_eur": 198200.0,
+   "rework_cost_eur": 22500.0,
+   "new_lead_weeks": 27,
+   "rework_lead_weeks": 5,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-9008-1",
+   "kind": "press_die",
+   "part_no": "7799008",
+   "supplier_id": "S-4120",
+   "owner": "OEM",
+   "tolerance_mm": 0.15,
+   "material_classes": [
+    "cold_formed_steel"
+   ],
+   "new_cost_eur": 239700.0,
+   "rework_cost_eur": 25800.0,
+   "new_lead_weeks": 21,
+   "rework_lead_weeks": 3,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-9008-2",
+   "kind": "trim_die",
+   "part_no": "7799008",
+   "supplier_id": "S-4120",
+   "owner": "OEM",
+   "tolerance_mm": 0.25,
+   "material_classes": [
+    "cold_formed_steel"
+   ],
+   "new_cost_eur": 529200.0,
+   "rework_cost_eur": 53900.0,
+   "new_lead_weeks": 23,
+   "rework_lead_weeks": 3,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-9009-1",
+   "kind": "press_die",
+   "part_no": "7249009",
+   "supplier_id": "S-4120",
+   "owner": "OEM",
+   "tolerance_mm": 0.25,
+   "material_classes": [
+    "cold_formed_steel"
+   ],
+   "new_cost_eur": 677200.0,
+   "rework_cost_eur": 131400.0,
+   "new_lead_weeks": 34,
+   "rework_lead_weeks": 8,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-9009-2",
+   "kind": "trim_die",
+   "part_no": "7249009",
+   "supplier_id": "S-4120",
+   "owner": "OEM",
+   "tolerance_mm": 0.2,
+   "material_classes": [
+    "cold_formed_steel"
+   ],
+   "new_cost_eur": 712600.0,
+   "rework_cost_eur": 133900.0,
+   "new_lead_weeks": 31,
+   "rework_lead_weeks": 6,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-7010-1",
+   "kind": "press_die",
+   "part_no": "7507010",
+   "supplier_id": "S-4120",
+   "owner": "OEM",
+   "tolerance_mm": 0.15,
+   "material_classes": [
+    "cold_formed_steel"
+   ],
+   "new_cost_eur": 636700.0,
+   "rework_cost_eur": 65500.0,
+   "new_lead_weeks": 20,
+   "rework_lead_weeks": 6,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-7010-2",
+   "kind": "trim_die",
+   "part_no": "7507010",
+   "supplier_id": "S-4120",
+   "owner": "OEM",
+   "tolerance_mm": 0.2,
+   "material_classes": [
+    "cold_formed_steel"
+   ],
+   "new_cost_eur": 296900.0,
+   "rework_cost_eur": 45200.0,
+   "new_lead_weeks": 17,
+   "rework_lead_weeks": 3,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-7010-3",
+   "kind": "welding_fixture",
+   "part_no": "7507010",
+   "supplier_id": "S-4120",
+   "owner": "OEM",
+   "tolerance_mm": 0.0,
+   "material_classes": [
+    "any"
+   ],
+   "new_cost_eur": 150700.0,
+   "rework_cost_eur": 21800.0,
+   "new_lead_weeks": 25,
+   "rework_lead_weeks": 7,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-6011-1",
+   "kind": "press_die",
+   "part_no": "7126011",
+   "supplier_id": "S-1041",
+   "owner": "OEM",
+   "tolerance_mm": 0.15,
+   "material_classes": [
+    "cold_formed_steel"
+   ],
+   "new_cost_eur": 622100.0,
+   "rework_cost_eur": 97100.0,
+   "new_lead_weeks": 25,
+   "rework_lead_weeks": 7,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-1012-1",
+   "kind": "press_die",
+   "part_no": "7591012",
+   "supplier_id": "S-4120",
+   "owner": "OEM",
+   "tolerance_mm": 0.15,
+   "material_classes": [
+    "cold_formed_steel"
+   ],
+   "new_cost_eur": 241800.0,
+   "rework_cost_eur": 41100.0,
+   "new_lead_weeks": 22,
+   "rework_lead_weeks": 6,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-5013-1",
+   "kind": "press_die",
+   "part_no": "7405013",
+   "supplier_id": "S-6630",
+   "owner": "OEM",
+   "tolerance_mm": 0.2,
+   "material_classes": [
+    "cold_formed_steel"
+   ],
+   "new_cost_eur": 681300.0,
+   "rework_cost_eur": 96900.0,
+   "new_lead_weeks": 19,
+   "rework_lead_weeks": 5,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-1014-1",
+   "kind": "press_die",
+   "part_no": "7751014",
+   "supplier_id": "S-2207",
+   "owner": "OEM",
+   "tolerance_mm": 0.2,
+   "material_classes": [
+    "cold_formed_steel"
+   ],
+   "new_cost_eur": 760400.0,
+   "rework_cost_eur": 128300.0,
+   "new_lead_weeks": 21,
+   "rework_lead_weeks": 4,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-3015-1",
+   "kind": "hot_forming_die",
+   "part_no": "7583015",
+   "supplier_id": "S-3318",
+   "owner": "OEM",
+   "tolerance_mm": 0.2,
+   "material_classes": [
+    "press_hardened"
+   ],
+   "new_cost_eur": 867600.0,
+   "rework_cost_eur": 77800.0,
+   "new_lead_weeks": 17,
+   "rework_lead_weeks": 4,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-3015-2",
+   "kind": "trim_die",
+   "part_no": "7583015",
+   "supplier_id": "S-3318",
+   "owner": "OEM",
+   "tolerance_mm": 0.2,
+   "material_classes": [
+    "cold_formed_steel"
+   ],
+   "new_cost_eur": 518500.0,
+   "rework_cost_eur": 54200.0,
+   "new_lead_weeks": 33,
+   "rework_lead_weeks": 7,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-3015-3",
+   "kind": "welding_fixture",
+   "part_no": "7583015",
+   "supplier_id": "S-3318",
+   "owner": "OEM",
+   "tolerance_mm": 0.0,
+   "material_classes": [
+    "any"
+   ],
+   "new_cost_eur": 194500.0,
+   "rework_cost_eur": 26800.0,
+   "new_lead_weeks": 34,
+   "rework_lead_weeks": 5,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-8016-1",
+   "kind": "press_die",
+   "part_no": "7918016",
+   "supplier_id": "S-6630",
+   "owner": "OEM",
+   "tolerance_mm": 0.25,
+   "material_classes": [
+    "cold_formed_steel"
+   ],
+   "new_cost_eur": 835000.0,
+   "rework_cost_eur": 142000.0,
+   "new_lead_weeks": 29,
+   "rework_lead_weeks": 4,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-8016-2",
+   "kind": "trim_die",
+   "part_no": "7918016",
+   "supplier_id": "S-6630",
+   "owner": "OEM",
+   "tolerance_mm": 0.25,
+   "material_classes": [
+    "cold_formed_steel"
+   ],
+   "new_cost_eur": 492400.0,
+   "rework_cost_eur": 59000.0,
+   "new_lead_weeks": 26,
+   "rework_lead_weeks": 6,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-1017-1",
+   "kind": "press_die",
+   "part_no": "7511017",
+   "supplier_id": "S-6630",
+   "owner": "OEM",
+   "tolerance_mm": 0.25,
+   "material_classes": [
+    "cold_formed_steel"
+   ],
+   "new_cost_eur": 199800.0,
+   "rework_cost_eur": 37700.0,
+   "new_lead_weeks": 34,
+   "rework_lead_weeks": 4,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-1017-2",
+   "kind": "trim_die",
+   "part_no": "7511017",
+   "supplier_id": "S-6630",
+   "owner": "OEM",
+   "tolerance_mm": 0.25,
+   "material_classes": [
+    "cold_formed_steel"
+   ],
+   "new_cost_eur": 620300.0,
+   "rework_cost_eur": 122600.0,
+   "new_lead_weeks": 25,
+   "rework_lead_weeks": 4,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-1018-1",
+   "kind": "hot_forming_die",
+   "part_no": "7661018",
+   "supplier_id": "S-5501",
+   "owner": "OEM",
+   "tolerance_mm": 0.25,
+   "material_classes": [
+    "press_hardened"
+   ],
+   "new_cost_eur": 755500.0,
+   "rework_cost_eur": 119300.0,
+   "new_lead_weeks": 30,
+   "rework_lead_weeks": 8,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-1018-2",
+   "kind": "trim_die",
+   "part_no": "7661018",
+   "supplier_id": "S-5501",
+   "owner": "OEM",
+   "tolerance_mm": 0.2,
+   "material_classes": [
+    "cold_formed_steel"
+   ],
+   "new_cost_eur": 852200.0,
+   "rework_cost_eur": 169100.0,
+   "new_lead_weeks": 20,
+   "rework_lead_weeks": 4,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-8019-1",
+   "kind": "press_die",
+   "part_no": "7128019",
+   "supplier_id": "S-3318",
+   "owner": "OEM",
+   "tolerance_mm": 0.2,
+   "material_classes": [
+    "cold_formed_steel"
+   ],
+   "new_cost_eur": 366700.0,
+   "rework_cost_eur": 66000.0,
+   "new_lead_weeks": 15,
+   "rework_lead_weeks": 8,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-8019-2",
+   "kind": "trim_die",
+   "part_no": "7128019",
+   "supplier_id": "S-3318",
+   "owner": "OEM",
+   "tolerance_mm": 0.2,
+   "material_classes": [
+    "cold_formed_steel"
+   ],
+   "new_cost_eur": 434700.0,
+   "rework_cost_eur": 69300.0,
+   "new_lead_weeks": 30,
+   "rework_lead_weeks": 6,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-8019-3",
+   "kind": "welding_fixture",
+   "part_no": "7128019",
+   "supplier_id": "S-3318",
+   "owner": "OEM",
+   "tolerance_mm": 0.0,
+   "material_classes": [
+    "any"
+   ],
+   "new_cost_eur": 192300.0,
+   "rework_cost_eur": 35600.0,
+   "new_lead_weeks": 18,
+   "rework_lead_weeks": 7,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-5020-1",
+   "kind": "press_die",
+   "part_no": "7255020",
+   "supplier_id": "S-5501",
+   "owner": "OEM",
+   "tolerance_mm": 0.25,
+   "material_classes": [
+    "cold_formed_steel"
+   ],
+   "new_cost_eur": 739100.0,
+   "rework_cost_eur": 59500.0,
+   "new_lead_weeks": 18,
+   "rework_lead_weeks": 4,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-5020-2",
+   "kind": "trim_die",
+   "part_no": "7255020",
+   "supplier_id": "S-5501",
+   "owner": "OEM",
+   "tolerance_mm": 0.25,
+   "material_classes": [
+    "cold_formed_steel"
+   ],
+   "new_cost_eur": 281900.0,
+   "rework_cost_eur": 47100.0,
+   "new_lead_weeks": 31,
+   "rework_lead_weeks": 3,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-5020-3",
+   "kind": "welding_fixture",
+   "part_no": "7255020",
+   "supplier_id": "S-5501",
+   "owner": "OEM",
+   "tolerance_mm": 0.0,
+   "material_classes": [
+    "any"
+   ],
+   "new_cost_eur": 112200.0,
+   "rework_cost_eur": 16000.0,
+   "new_lead_weeks": 31,
+   "rework_lead_weeks": 6,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-3021-1",
+   "kind": "press_die",
+   "part_no": "7903021",
+   "supplier_id": "S-1041",
+   "owner": "OEM",
+   "tolerance_mm": 0.25,
+   "material_classes": [
+    "aluminium"
+   ],
+   "new_cost_eur": 736000.0,
+   "rework_cost_eur": 98800.0,
+   "new_lead_weeks": 14,
+   "rework_lead_weeks": 3,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-3021-2",
+   "kind": "trim_die",
+   "part_no": "7903021",
+   "supplier_id": "S-1041",
+   "owner": "OEM",
+   "tolerance_mm": 0.25,
+   "material_classes": [
+    "aluminium"
+   ],
+   "new_cost_eur": 499100.0,
+   "rework_cost_eur": 98200.0,
+   "new_lead_weeks": 33,
+   "rework_lead_weeks": 7,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-4022-1",
+   "kind": "press_die",
+   "part_no": "7304022",
+   "supplier_id": "S-6630",
+   "owner": "OEM",
+   "tolerance_mm": 0.15,
+   "material_classes": [
+    "cold_formed_steel"
+   ],
+   "new_cost_eur": 545600.0,
+   "rework_cost_eur": 89400.0,
+   "new_lead_weeks": 22,
+   "rework_lead_weeks": 7,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-4022-2",
+   "kind": "trim_die",
+   "part_no": "7304022",
+   "supplier_id": "S-6630",
+   "owner": "OEM",
+   "tolerance_mm": 0.15,
+   "material_classes": [
+    "cold_formed_steel"
+   ],
+   "new_cost_eur": 822800.0,
+   "rework_cost_eur": 148800.0,
+   "new_lead_weeks": 18,
+   "rework_lead_weeks": 6,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-4022-3",
+   "kind": "welding_fixture",
+   "part_no": "7304022",
+   "supplier_id": "S-6630",
+   "owner": "OEM",
+   "tolerance_mm": 0.0,
+   "material_classes": [
+    "any"
+   ],
+   "new_cost_eur": 79500.0,
+   "rework_cost_eur": 10600.0,
+   "new_lead_weeks": 16,
+   "rework_lead_weeks": 8,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-6023-1",
+   "kind": "press_die",
+   "part_no": "7346023",
+   "supplier_id": "S-4120",
+   "owner": "OEM",
+   "tolerance_mm": 0.25,
+   "material_classes": [
+    "cold_formed_steel"
+   ],
+   "new_cost_eur": 856400.0,
+   "rework_cost_eur": 136400.0,
+   "new_lead_weeks": 18,
+   "rework_lead_weeks": 5,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-6023-2",
+   "kind": "trim_die",
+   "part_no": "7346023",
+   "supplier_id": "S-4120",
+   "owner": "OEM",
+   "tolerance_mm": 0.2,
+   "material_classes": [
+    "cold_formed_steel"
+   ],
+   "new_cost_eur": 815600.0,
+   "rework_cost_eur": 86700.0,
+   "new_lead_weeks": 17,
+   "rework_lead_weeks": 6,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-8024-1",
+   "kind": "press_die",
+   "part_no": "7598024",
+   "supplier_id": "S-2207",
+   "owner": "OEM",
+   "tolerance_mm": 0.2,
+   "material_classes": [
+    "cold_formed_steel"
+   ],
+   "new_cost_eur": 296300.0,
+   "rework_cost_eur": 59000.0,
+   "new_lead_weeks": 26,
+   "rework_lead_weeks": 5,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-8024-2",
+   "kind": "trim_die",
+   "part_no": "7598024",
+   "supplier_id": "S-2207",
+   "owner": "OEM",
+   "tolerance_mm": 0.2,
+   "material_classes": [
+    "cold_formed_steel"
+   ],
+   "new_cost_eur": 483300.0,
+   "rework_cost_eur": 57100.0,
+   "new_lead_weeks": 25,
+   "rework_lead_weeks": 3,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-6025-1",
+   "kind": "press_die",
+   "part_no": "7446025",
+   "supplier_id": "S-5501",
+   "owner": "OEM",
+   "tolerance_mm": 0.15,
+   "material_classes": [
+    "cold_formed_steel"
+   ],
+   "new_cost_eur": 497100.0,
+   "rework_cost_eur": 62700.0,
+   "new_lead_weeks": 30,
+   "rework_lead_weeks": 7,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-3026-1",
+   "kind": "press_die",
+   "part_no": "7873026",
+   "supplier_id": "S-2207",
+   "owner": "OEM",
+   "tolerance_mm": 0.25,
+   "material_classes": [
+    "cold_formed_steel"
+   ],
+   "new_cost_eur": 791700.0,
+   "rework_cost_eur": 141100.0,
+   "new_lead_weeks": 22,
+   "rework_lead_weeks": 6,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-4027-1",
+   "kind": "press_die",
+   "part_no": "7174027",
+   "supplier_id": "S-3318",
+   "owner": "OEM",
+   "tolerance_mm": 0.2,
+   "material_classes": [
+    "cold_formed_steel"
+   ],
+   "new_cost_eur": 636800.0,
+   "rework_cost_eur": 57300.0,
+   "new_lead_weeks": 21,
+   "rework_lead_weeks": 3,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-7028-1",
+   "kind": "press_die",
+   "part_no": "7527028",
+   "supplier_id": "S-3318",
+   "owner": "OEM",
+   "tolerance_mm": 0.25,
+   "material_classes": [
+    "cold_formed_steel"
+   ],
+   "new_cost_eur": 211100.0,
+   "rework_cost_eur": 22900.0,
+   "new_lead_weeks": 17,
+   "rework_lead_weeks": 4,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-2029-1",
+   "kind": "hot_forming_die",
+   "part_no": "7412029",
+   "supplier_id": "S-5501",
+   "owner": "OEM",
+   "tolerance_mm": 0.15,
+   "material_classes": [
+    "press_hardened"
+   ],
+   "new_cost_eur": 374800.0,
+   "rework_cost_eur": 74700.0,
+   "new_lead_weeks": 15,
+   "rework_lead_weeks": 3,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-2029-2",
+   "kind": "trim_die",
+   "part_no": "7412029",
+   "supplier_id": "S-5501",
+   "owner": "OEM",
+   "tolerance_mm": 0.25,
+   "material_classes": [
+    "cold_formed_steel"
+   ],
+   "new_cost_eur": 193300.0,
+   "rework_cost_eur": 28200.0,
+   "new_lead_weeks": 20,
+   "rework_lead_weeks": 7,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-6030-1",
+   "kind": "press_die",
+   "part_no": "7586030",
+   "supplier_id": "S-2207",
+   "owner": "OEM",
+   "tolerance_mm": 0.25,
+   "material_classes": [
+    "cold_formed_steel"
+   ],
+   "new_cost_eur": 654000.0,
+   "rework_cost_eur": 86200.0,
+   "new_lead_weeks": 29,
+   "rework_lead_weeks": 7,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-6030-2",
+   "kind": "trim_die",
+   "part_no": "7586030",
+   "supplier_id": "S-2207",
+   "owner": "OEM",
+   "tolerance_mm": 0.2,
+   "material_classes": [
+    "cold_formed_steel"
+   ],
+   "new_cost_eur": 780900.0,
+   "rework_cost_eur": 153400.0,
+   "new_lead_weeks": 23,
+   "rework_lead_weeks": 8,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-0031-1",
+   "kind": "press_die",
+   "part_no": "7320031",
+   "supplier_id": "S-2207",
+   "owner": "OEM",
+   "tolerance_mm": 0.2,
+   "material_classes": [
+    "cold_formed_steel"
+   ],
+   "new_cost_eur": 471400.0,
+   "rework_cost_eur": 93300.0,
+   "new_lead_weeks": 18,
+   "rework_lead_weeks": 3,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-0031-2",
+   "kind": "trim_die",
+   "part_no": "7320031",
+   "supplier_id": "S-2207",
+   "owner": "OEM",
+   "tolerance_mm": 0.25,
+   "material_classes": [
+    "cold_formed_steel"
+   ],
+   "new_cost_eur": 230900.0,
+   "rework_cost_eur": 42900.0,
+   "new_lead_weeks": 27,
+   "rework_lead_weeks": 4,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-6032-1",
+   "kind": "hot_forming_die",
+   "part_no": "7156032",
+   "supplier_id": "S-1041",
+   "owner": "OEM",
+   "tolerance_mm": 0.25,
+   "material_classes": [
+    "press_hardened"
+   ],
+   "new_cost_eur": 806800.0,
+   "rework_cost_eur": 158500.0,
+   "new_lead_weeks": 33,
+   "rework_lead_weeks": 4,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-6032-2",
+   "kind": "trim_die",
+   "part_no": "7156032",
+   "supplier_id": "S-1041",
+   "owner": "OEM",
+   "tolerance_mm": 0.15,
+   "material_classes": [
+    "cold_formed_steel"
+   ],
+   "new_cost_eur": 678700.0,
+   "rework_cost_eur": 91700.0,
+   "new_lead_weeks": 19,
+   "rework_lead_weeks": 5,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-6032-3",
+   "kind": "welding_fixture",
+   "part_no": "7156032",
+   "supplier_id": "S-1041",
+   "owner": "OEM",
+   "tolerance_mm": 0.0,
+   "material_classes": [
+    "any"
+   ],
+   "new_cost_eur": 131300.0,
+   "rework_cost_eur": 14700.0,
+   "new_lead_weeks": 24,
+   "rework_lead_weeks": 7,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-1033-1",
+   "kind": "press_die",
+   "part_no": "7431033",
+   "supplier_id": "S-2207",
+   "owner": "OEM",
+   "tolerance_mm": 0.2,
+   "material_classes": [
+    "cold_formed_steel"
+   ],
+   "new_cost_eur": 180800.0,
+   "rework_cost_eur": 16300.0,
+   "new_lead_weeks": 22,
+   "rework_lead_weeks": 7,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-1033-2",
+   "kind": "trim_die",
+   "part_no": "7431033",
+   "supplier_id": "S-2207",
+   "owner": "OEM",
+   "tolerance_mm": 0.15,
+   "material_classes": [
+    "cold_formed_steel"
+   ],
+   "new_cost_eur": 652300.0,
+   "rework_cost_eur": 91700.0,
+   "new_lead_weeks": 14,
+   "rework_lead_weeks": 3,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-0034-1",
+   "kind": "press_die",
+   "part_no": "7370034",
+   "supplier_id": "S-1041",
+   "owner": "OEM",
+   "tolerance_mm": 0.2,
+   "material_classes": [
+    "cold_formed_steel"
+   ],
+   "new_cost_eur": 463700.0,
+   "rework_cost_eur": 54000.0,
+   "new_lead_weeks": 21,
+   "rework_lead_weeks": 3,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-0034-2",
+   "kind": "trim_die",
+   "part_no": "7370034",
+   "supplier_id": "S-1041",
+   "owner": "OEM",
+   "tolerance_mm": 0.25,
+   "material_classes": [
+    "cold_formed_steel"
+   ],
+   "new_cost_eur": 601600.0,
+   "rework_cost_eur": 109700.0,
+   "new_lead_weeks": 18,
+   "rework_lead_weeks": 8,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-3035-1",
+   "kind": "press_die",
+   "part_no": "7833035",
+   "supplier_id": "S-5501",
+   "owner": "OEM",
+   "tolerance_mm": 0.25,
+   "material_classes": [
+    "aluminium"
+   ],
+   "new_cost_eur": 384600.0,
+   "rework_cost_eur": 60500.0,
+   "new_lead_weeks": 15,
+   "rework_lead_weeks": 8,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-3035-2",
+   "kind": "trim_die",
+   "part_no": "7833035",
+   "supplier_id": "S-5501",
+   "owner": "OEM",
+   "tolerance_mm": 0.25,
+   "material_classes": [
+    "aluminium"
+   ],
+   "new_cost_eur": 822200.0,
+   "rework_cost_eur": 108100.0,
+   "new_lead_weeks": 30,
+   "rework_lead_weeks": 4,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-6036-1",
+   "kind": "press_die",
+   "part_no": "7636036",
+   "supplier_id": "S-5501",
+   "owner": "OEM",
+   "tolerance_mm": 0.25,
+   "material_classes": [
+    "cold_formed_steel"
+   ],
+   "new_cost_eur": 775000.0,
+   "rework_cost_eur": 136200.0,
+   "new_lead_weeks": 34,
+   "rework_lead_weeks": 4,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-6036-2",
+   "kind": "trim_die",
+   "part_no": "7636036",
+   "supplier_id": "S-5501",
+   "owner": "OEM",
+   "tolerance_mm": 0.15,
+   "material_classes": [
+    "cold_formed_steel"
+   ],
+   "new_cost_eur": 241300.0,
+   "rework_cost_eur": 23200.0,
+   "new_lead_weeks": 25,
+   "rework_lead_weeks": 3,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-5037-1",
+   "kind": "press_die",
+   "part_no": "7485037",
+   "supplier_id": "S-4120",
+   "owner": "OEM",
+   "tolerance_mm": 0.15,
+   "material_classes": [
+    "cold_formed_steel"
+   ],
+   "new_cost_eur": 532300.0,
+   "rework_cost_eur": 71800.0,
+   "new_lead_weeks": 16,
+   "rework_lead_weeks": 8,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-5037-2",
+   "kind": "trim_die",
+   "part_no": "7485037",
+   "supplier_id": "S-4120",
+   "owner": "OEM",
+   "tolerance_mm": 0.25,
+   "material_classes": [
+    "cold_formed_steel"
+   ],
+   "new_cost_eur": 851400.0,
+   "rework_cost_eur": 77500.0,
+   "new_lead_weeks": 30,
+   "rework_lead_weeks": 3,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-3038-1",
+   "kind": "press_die",
+   "part_no": "7863038",
+   "supplier_id": "S-6630",
+   "owner": "OEM",
+   "tolerance_mm": 0.15,
+   "material_classes": [
+    "cold_formed_steel"
+   ],
+   "new_cost_eur": 789200.0,
+   "rework_cost_eur": 132200.0,
+   "new_lead_weeks": 20,
+   "rework_lead_weeks": 4,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-3038-2",
+   "kind": "trim_die",
+   "part_no": "7863038",
+   "supplier_id": "S-6630",
+   "owner": "OEM",
+   "tolerance_mm": 0.2,
+   "material_classes": [
+    "cold_formed_steel"
+   ],
+   "new_cost_eur": 712700.0,
+   "rework_cost_eur": 99300.0,
+   "new_lead_weeks": 26,
+   "rework_lead_weeks": 3,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-0039-1",
+   "kind": "press_die",
+   "part_no": "7590039",
+   "supplier_id": "S-6630",
+   "owner": "OEM",
+   "tolerance_mm": 0.25,
+   "material_classes": [
+    "cold_formed_steel"
+   ],
+   "new_cost_eur": 732200.0,
+   "rework_cost_eur": 114200.0,
+   "new_lead_weeks": 20,
+   "rework_lead_weeks": 3,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-5040-1",
+   "kind": "press_die",
+   "part_no": "7375040",
+   "supplier_id": "S-6630",
+   "owner": "OEM",
+   "tolerance_mm": 0.25,
+   "material_classes": [
+    "cold_formed_steel"
+   ],
+   "new_cost_eur": 678400.0,
+   "rework_cost_eur": 94100.0,
+   "new_lead_weeks": 30,
+   "rework_lead_weeks": 5,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-9041-1",
+   "kind": "press_die",
+   "part_no": "7419041",
+   "supplier_id": "S-1041",
+   "owner": "OEM",
+   "tolerance_mm": 0.2,
+   "material_classes": [
+    "cold_formed_steel"
+   ],
+   "new_cost_eur": 192600.0,
+   "rework_cost_eur": 17200.0,
+   "new_lead_weeks": 30,
+   "rework_lead_weeks": 6,
+   "status": "active"
+  },
+  {
+   "tool_id": "WZ-8042-1",
+   "kind": "press_die",
+   "part_no": "7468042",
+   "supplier_id": "S-2207",
+   "owner": "OEM",
+   "tolerance_mm": 0.25,
+   "material_classes": [
+    "cold_formed_steel"
+   ],
+   "new_cost_eur": 818500.0,
+   "rework_cost_eur": 101300.0,
+   "new_lead_weeks": 29,
+   "rework_lead_weeks": 6,
+   "status": "active"
+  }
+ ],
+ "suppliers": [
+  {
+   "supplier_id": "S-1041",
+   "name": "Stahlform Bayern GmbH",
+   "country": "DE",
+   "ppap_level": 3
+  },
+  {
+   "supplier_id": "S-2207",
+   "name": "Presswerk Steiermark AG",
+   "country": "AT",
+   "ppap_level": 3
+  },
+  {
+   "supplier_id": "S-3318",
+   "name": "Leichtbau Sachsen GmbH",
+   "country": "DE",
+   "ppap_level": 3
+  },
+  {
+   "supplier_id": "S-4120",
+   "name": "Kovov\u00fdroba Plze\u0148 s.r.o.",
+   "country": "CZ",
+   "ppap_level": 3
+  },
+  {
+   "supplier_id": "S-5501",
+   "name": "Shenyang Body Parts Co.",
+   "country": "CN",
+   "ppap_level": 3
+  },
+  {
+   "supplier_id": "S-6630",
+   "name": "Carolina Stamping LLC",
+   "country": "US",
+   "ppap_level": 3
+  }
+ ]
+}

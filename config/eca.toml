@@ -1,0 +1,139 @@
+# Settings for engineering-change-agents. Loaded strictly: an unknown key fails at start-up.
+# Every number in the synthetic world is invented for this project and marked as such in the README.
+
+[run]
+seed = 20261108
+repeats = 3  # each change request is analysed this many times with different model draws
+
+[world]
+seed = 7
+heldout_seed = 9107
+historical_simulations = 6000
+dev_requests = 60
+heldout_requests = 40
+injected_share = 0.15  # requests whose attached supplier note carries an instruction to the assistant
+
+# The simulated model behind the agents: how often each kind of mistake happens.
+[llm]
+latency_ms = 850
+latency_spread = 0.3
+ms_per_1k_in = 260
+price_in = 0.0025   # EUR per 1,000 tokens
+price_out = 0.010
+misread_number = 0.05      # e.g. 1.5 mm read as 1.8 mm
+wrong_part = 0.03          # a digit of the part number swapped
+missed_scope = 0.05        # "EV only" read as the whole platform
+hallucinate_number = 0.10  # an invented figure in the written summary
+follow_injection = 0.30    # acts on an instruction found in an attachment
+misjudge = 0.04            # when the model itself decides: reads the comparison the wrong way
+recover = 0.85             # chance a re-extraction after a failed validation is right
+
+[tokens]
+system = 600
+per_tool_schema = 110
+per_observation = 180
+summary = 260
+action = 70
+tokens_per_word = 1.3
+
+[tools]
+latency_ms = 140
+latency_spread = 0.4
+fe_simulation_hours = 18  # one full finite-element crash run, wall clock
+
+[lim]
+model_version_prefix = "lim-crash"
+n_estimators = 300
+max_depth = 3
+learning_rate = 0.06
+quantiles = [0.05, 0.95]
+calibration_share = 0.25
+test_share = 0.15
+alpha = 0.10                 # target miscoverage of the conformal interval
+promote_min_coverage = 0.88  # a model is promoted only if its test coverage reaches this
+promote_max_mae_mm = 4.0
+thickness_range_margin = 0.0  # inputs outside the training range are out of distribution
+
+[retrieval]
+k = 4
+rrf_k = 60
+bm25_k1 = 1.2
+bm25_b = 0.75
+
+[guard]
+patterns = [
+  "ignore (all |any |the |your |previous |prior )*(instructions|rules)",
+  "(note|instruction|message)s? (to|for) the (ai|assistant|agent)",
+  "(mark|treat) (this|the) change as approved",
+]
+
+[policy]
+schedule_weeks = 26  # a new special tool with a longer lead time than this is a schedule risk
+
+[approval]
+crash_relevant = ["engineer", "safety_owner"]  # roles that must sign a crash-relevant change
+other = ["engineer"]
+
+[value]
+# Manual effort of an impact analysis, as assumed for the estimate in the README (hours)
+manual_base_hours = 6.0
+manual_per_variant = 0.5
+manual_per_tool = 1.0
+manual_per_regulation = 0.75
+review_hours = 0.5
+
+[eval]
+bootstrap = 2000
+alpha = 0.05
+
+[gateway]
+# OpenAI-compatible chat completions, as a central enterprise AI platform exposes them. Used only by
+# `eca analyse --live`; the evaluation never calls a network.
+base_url = "https://ai-gateway.example.internal/v1"
+model = "gpt-5.1"
+timeout_s = 30
+
+# Configurations compared. "full" is the design; the others take one control away.
+[configs.full]
+decides = "code"
+gate = "conformal"
+ood_check = true
+reviewer = true
+guard = true
+retrieval = "hybrid"
+current_only = true
+validate_extraction = true
+
+[configs.prototype]
+decides = "model"
+gate = "point"
+ood_check = false
+reviewer = false
+guard = false
+retrieval = "bm25"
+current_only = false
+validate_extraction = false
+
+[ablations."model decides"]
+decides = "model"
+
+[ablations."point prediction, no interval"]
+gate = "point"
+
+[ablations."no out-of-distribution check"]
+ood_check = false
+
+[ablations."no reviewer"]
+reviewer = false
+
+[ablations."no injection guard"]
+guard = false
+
+[ablations."superseded documents allowed"]
+current_only = false
+
+[ablations."BM25 only"]
+retrieval = "bm25"
+
+[ablations."no extraction validation"]
+validate_extraction = false

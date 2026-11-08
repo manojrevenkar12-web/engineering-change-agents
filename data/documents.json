@@ -1,0 +1,322 @@
+[
+ {
+  "id": "CT-side_pole-EU-2025",
+  "status": "current",
+  "load_case": "side_pole",
+  "market": "EU",
+  "title": "Internal crash target: pole side impact, EU (UN R135)",
+  "text": "For the pole side impact load case, homologation in EU under UN R135 is secured by the internal target: maximum intrusion 120 mm at the reference measurement point. A structural change that may exceed 120 mm needs a full finite-element simulation and sign-off by the passive safety owner. Version 2025, current."
+ },
+ {
+  "id": "CT-side_pole-EU-2019",
+  "status": "superseded",
+  "load_case": "side_pole",
+  "market": "EU",
+  "title": "Internal crash target: pole side impact, EU (UN R135), 2019 edition",
+  "text": "For the pole side impact load case in EU (UN R135) the internal target was a maximum intrusion of 128 mm. Version 2019, superseded by the 2025 edition."
+ },
+ {
+  "id": "CT-side_pole-US-2025",
+  "status": "current",
+  "load_case": "side_pole",
+  "market": "US",
+  "title": "Internal crash target: pole side impact, US (FMVSS 214 pole)",
+  "text": "For the pole side impact load case, homologation in US under FMVSS 214 pole is secured by the internal target: maximum intrusion 125 mm at the reference measurement point. A structural change that may exceed 125 mm needs a full finite-element simulation and sign-off by the passive safety owner. Version 2025, current."
+ },
+ {
+  "id": "CT-side_pole-US-2019",
+  "status": "superseded",
+  "load_case": "side_pole",
+  "market": "US",
+  "title": "Internal crash target: pole side impact, US (FMVSS 214 pole), 2019 edition",
+  "text": "For the pole side impact load case in US (FMVSS 214 pole) the internal target was a maximum intrusion of 133 mm. Version 2019, superseded by the 2025 edition."
+ },
+ {
+  "id": "CT-side_pole-CN-2025",
+  "status": "current",
+  "load_case": "side_pole",
+  "market": "CN",
+  "title": "Internal crash target: pole side impact, CN (GB/T 37337)",
+  "text": "For the pole side impact load case, homologation in CN under GB/T 37337 is secured by the internal target: maximum intrusion 116 mm at the reference measurement point. A structural change that may exceed 116 mm needs a full finite-element simulation and sign-off by the passive safety owner. Version 2025, current."
+ },
+ {
+  "id": "CT-side_pole-CN-2019",
+  "status": "superseded",
+  "load_case": "side_pole",
+  "market": "CN",
+  "title": "Internal crash target: pole side impact, CN (GB/T 37337), 2019 edition",
+  "text": "For the pole side impact load case in CN (GB/T 37337) the internal target was a maximum intrusion of 124 mm. Version 2019, superseded by the 2025 edition."
+ },
+ {
+  "id": "CT-side_mdb-EU-2025",
+  "status": "current",
+  "load_case": "side_mdb",
+  "market": "EU",
+  "title": "Internal crash target: moving-barrier side impact, EU (UN R95)",
+  "text": "For the moving-barrier side impact load case, homologation in EU under UN R95 is secured by the internal target: maximum intrusion 105 mm at the reference measurement point. A structural change that may exceed 105 mm needs a full finite-element simulation and sign-off by the passive safety owner. Version 2025, current."
+ },
+ {
+  "id": "CT-side_mdb-EU-2019",
+  "status": "superseded",
+  "load_case": "side_mdb",
+  "market": "EU",
+  "title": "Internal crash target: moving-barrier side impact, EU (UN R95), 2019 edition",
+  "text": "For the moving-barrier side impact load case in EU (UN R95) the internal target was a maximum intrusion of 113 mm. Version 2019, superseded by the 2025 edition."
+ },
+ {
+  "id": "CT-side_mdb-US-2025",
+  "status": "current",
+  "load_case": "side_mdb",
+  "market": "US",
+  "title": "Internal crash target: moving-barrier side impact, US (FMVSS 214 MDB)",
+  "text": "For the moving-barrier side impact load case, homologation in US under FMVSS 214 MDB is secured by the internal target: maximum intrusion 110 mm at the reference measurement point. A structural change that may exceed 110 mm needs a full finite-element simulation and sign-off by the passive safety owner. Version 2025, current."
+ },
+ {
+  "id": "CT-side_mdb-US-2019",
+  "status": "superseded",
+  "load_case": "side_mdb",
+  "market": "US",
+  "title": "Internal crash target: moving-barrier side impact, US (FMVSS 214 MDB), 2019 edition",
+  "text": "For the moving-barrier side impact load case in US (FMVSS 214 MDB) the internal target was a maximum intrusion of 118 mm. Version 2019, superseded by the 2025 edition."
+ },
+ {
+  "id": "CT-side_mdb-CN-2025",
+  "status": "current",
+  "load_case": "side_mdb",
+  "market": "CN",
+  "title": "Internal crash target: moving-barrier side impact, CN (GB 20071)",
+  "text": "For the moving-barrier side impact load case, homologation in CN under GB 20071 is secured by the internal target: maximum intrusion 102 mm at the reference measurement point. A structural change that may exceed 102 mm needs a full finite-element simulation and sign-off by the passive safety owner. Version 2025, current."
+ },
+ {
+  "id": "CT-side_mdb-CN-2019",
+  "status": "superseded",
+  "load_case": "side_mdb",
+  "market": "CN",
+  "title": "Internal crash target: moving-barrier side impact, CN (GB 20071), 2019 edition",
+  "text": "For the moving-barrier side impact load case in CN (GB 20071) the internal target was a maximum intrusion of 110 mm. Version 2019, superseded by the 2025 edition."
+ },
+ {
+  "id": "CT-frontal_odb-EU-2025",
+  "status": "current",
+  "load_case": "frontal_odb",
+  "market": "EU",
+  "title": "Internal crash target: offset frontal impact, EU (UN R94)",
+  "text": "For the offset frontal impact load case, homologation in EU under UN R94 is secured by the internal target: maximum intrusion 150 mm at the reference measurement point. A structural change that may exceed 150 mm needs a full finite-element simulation and sign-off by the passive safety owner. Version 2025, current."
+ },
+ {
+  "id": "CT-frontal_odb-EU-2019",
+  "status": "superseded",
+  "load_case": "frontal_odb",
+  "market": "EU",
+  "title": "Internal crash target: offset frontal impact, EU (UN R94), 2019 edition",
+  "text": "For the offset frontal impact load case in EU (UN R94) the internal target was a maximum intrusion of 158 mm. Version 2019, superseded by the 2025 edition."
+ },
+ {
+  "id": "CT-frontal_odb-US-2025",
+  "status": "current",
+  "load_case": "frontal_odb",
+  "market": "US",
+  "title": "Internal crash target: offset frontal impact, US (FMVSS 208 offset)",
+  "text": "For the offset frontal impact load case, homologation in US under FMVSS 208 offset is secured by the internal target: maximum intrusion 155 mm at the reference measurement point. A structural change that may exceed 155 mm needs a full finite-element simulation and sign-off by the passive safety owner. Version 2025, current."
+ },
+ {
+  "id": "CT-frontal_odb-US-2019",
+  "status": "superseded",
+  "load_case": "frontal_odb",
+  "market": "US",
+  "title": "Internal crash target: offset frontal impact, US (FMVSS 208 offset), 2019 edition",
+  "text": "For the offset frontal impact load case in US (FMVSS 208 offset) the internal target was a maximum intrusion of 163 mm. Version 2019, superseded by the 2025 edition."
+ },
+ {
+  "id": "CT-frontal_odb-CN-2025",
+  "status": "current",
+  "load_case": "frontal_odb",
+  "market": "CN",
+  "title": "Internal crash target: offset frontal impact, CN (GB/T 20913)",
+  "text": "For the offset frontal impact load case, homologation in CN under GB/T 20913 is secured by the internal target: maximum intrusion 148 mm at the reference measurement point. A structural change that may exceed 148 mm needs a full finite-element simulation and sign-off by the passive safety owner. Version 2025, current."
+ },
+ {
+  "id": "CT-frontal_odb-CN-2019",
+  "status": "superseded",
+  "load_case": "frontal_odb",
+  "market": "CN",
+  "title": "Internal crash target: offset frontal impact, CN (GB/T 20913), 2019 edition",
+  "text": "For the offset frontal impact load case in CN (GB/T 20913) the internal target was a maximum intrusion of 156 mm. Version 2019, superseded by the 2025 edition."
+ },
+ {
+  "id": "CT-frontal_full-EU-2025",
+  "status": "current",
+  "load_case": "frontal_full",
+  "market": "EU",
+  "title": "Internal crash target: full-width frontal impact, EU (UN R137)",
+  "text": "For the full-width frontal impact load case, homologation in EU under UN R137 is secured by the internal target: maximum intrusion 90 mm at the reference measurement point. A structural change that may exceed 90 mm needs a full finite-element simulation and sign-off by the passive safety owner. Version 2025, current."
+ },
+ {
+  "id": "CT-frontal_full-EU-2019",
+  "status": "superseded",
+  "load_case": "frontal_full",
+  "market": "EU",
+  "title": "Internal crash target: full-width frontal impact, EU (UN R137), 2019 edition",
+  "text": "For the full-width frontal impact load case in EU (UN R137) the internal target was a maximum intrusion of 98 mm. Version 2019, superseded by the 2025 edition."
+ },
+ {
+  "id": "CT-frontal_full-US-2025",
+  "status": "current",
+  "load_case": "frontal_full",
+  "market": "US",
+  "title": "Internal crash target: full-width frontal impact, US (FMVSS 208 full width)",
+  "text": "For the full-width frontal impact load case, homologation in US under FMVSS 208 full width is secured by the internal target: maximum intrusion 92 mm at the reference measurement point. A structural change that may exceed 92 mm needs a full finite-element simulation and sign-off by the passive safety owner. Version 2025, current."
+ },
+ {
+  "id": "CT-frontal_full-US-2019",
+  "status": "superseded",
+  "load_case": "frontal_full",
+  "market": "US",
+  "title": "Internal crash target: full-width frontal impact, US (FMVSS 208 full width), 2019 edition",
+  "text": "For the full-width frontal impact load case in US (FMVSS 208 full width) the internal target was a maximum intrusion of 100 mm. Version 2019, superseded by the 2025 edition."
+ },
+ {
+  "id": "CT-frontal_full-CN-2025",
+  "status": "current",
+  "load_case": "frontal_full",
+  "market": "CN",
+  "title": "Internal crash target: full-width frontal impact, CN (GB 11551)",
+  "text": "For the full-width frontal impact load case, homologation in CN under GB 11551 is secured by the internal target: maximum intrusion 88 mm at the reference measurement point. A structural change that may exceed 88 mm needs a full finite-element simulation and sign-off by the passive safety owner. Version 2025, current."
+ },
+ {
+  "id": "CT-frontal_full-CN-2019",
+  "status": "superseded",
+  "load_case": "frontal_full",
+  "market": "CN",
+  "title": "Internal crash target: full-width frontal impact, CN (GB 11551), 2019 edition",
+  "text": "For the full-width frontal impact load case in CN (GB 11551) the internal target was a maximum intrusion of 96 mm. Version 2019, superseded by the 2025 edition."
+ },
+ {
+  "id": "CT-rear-EU-2025",
+  "status": "current",
+  "load_case": "rear",
+  "market": "EU",
+  "title": "Internal crash target: rear impact and fuel system integrity, EU (UN R34)",
+  "text": "For the rear impact and fuel system integrity load case, homologation in EU under UN R34 is secured by the internal target: maximum intrusion 70 mm at the reference measurement point. A structural change that may exceed 70 mm needs a full finite-element simulation and sign-off by the passive safety owner. Version 2025, current."
+ },
+ {
+  "id": "CT-rear-EU-2019",
+  "status": "superseded",
+  "load_case": "rear",
+  "market": "EU",
+  "title": "Internal crash target: rear impact and fuel system integrity, EU (UN R34), 2019 edition",
+  "text": "For the rear impact and fuel system integrity load case in EU (UN R34) the internal target was a maximum intrusion of 78 mm. Version 2019, superseded by the 2025 edition."
+ },
+ {
+  "id": "CT-rear-US-2025",
+  "status": "current",
+  "load_case": "rear",
+  "market": "US",
+  "title": "Internal crash target: rear impact and fuel system integrity, US (FMVSS 301)",
+  "text": "For the rear impact and fuel system integrity load case, homologation in US under FMVSS 301 is secured by the internal target: maximum intrusion 72 mm at the reference measurement point. A structural change that may exceed 72 mm needs a full finite-element simulation and sign-off by the passive safety owner. Version 2025, current."
+ },
+ {
+  "id": "CT-rear-US-2019",
+  "status": "superseded",
+  "load_case": "rear",
+  "market": "US",
+  "title": "Internal crash target: rear impact and fuel system integrity, US (FMVSS 301), 2019 edition",
+  "text": "For the rear impact and fuel system integrity load case in US (FMVSS 301) the internal target was a maximum intrusion of 80 mm. Version 2019, superseded by the 2025 edition."
+ },
+ {
+  "id": "CT-rear-CN-2025",
+  "status": "current",
+  "load_case": "rear",
+  "market": "CN",
+  "title": "Internal crash target: rear impact and fuel system integrity, CN (GB 20072)",
+  "text": "For the rear impact and fuel system integrity load case, homologation in CN under GB 20072 is secured by the internal target: maximum intrusion 68 mm at the reference measurement point. A structural change that may exceed 68 mm needs a full finite-element simulation and sign-off by the passive safety owner. Version 2025, current."
+ },
+ {
+  "id": "CT-rear-CN-2019",
+  "status": "superseded",
+  "load_case": "rear",
+  "market": "CN",
+  "title": "Internal crash target: rear impact and fuel system integrity, CN (GB 20072), 2019 edition",
+  "text": "For the rear impact and fuel system integrity load case in CN (GB 20072) the internal target was a maximum intrusion of 76 mm. Version 2019, superseded by the 2025 edition."
+ },
+ {
+  "id": "CT-roof-EU-2025",
+  "status": "current",
+  "load_case": "roof",
+  "market": "EU",
+  "title": "Internal crash target: roof crush, EU (internal roof strength)",
+  "text": "For the roof crush load case, homologation in EU under internal roof strength is secured by the internal target: maximum intrusion 80 mm at the reference measurement point. A structural change that may exceed 80 mm needs a full finite-element simulation and sign-off by the passive safety owner. Version 2025, current."
+ },
+ {
+  "id": "CT-roof-EU-2019",
+  "status": "superseded",
+  "load_case": "roof",
+  "market": "EU",
+  "title": "Internal crash target: roof crush, EU (internal roof strength), 2019 edition",
+  "text": "For the roof crush load case in EU (internal roof strength) the internal target was a maximum intrusion of 88 mm. Version 2019, superseded by the 2025 edition."
+ },
+ {
+  "id": "CT-roof-US-2025",
+  "status": "current",
+  "load_case": "roof",
+  "market": "US",
+  "title": "Internal crash target: roof crush, US (FMVSS 216a)",
+  "text": "For the roof crush load case, homologation in US under FMVSS 216a is secured by the internal target: maximum intrusion 76 mm at the reference measurement point. A structural change that may exceed 76 mm needs a full finite-element simulation and sign-off by the passive safety owner. Version 2025, current."
+ },
+ {
+  "id": "CT-roof-US-2019",
+  "status": "superseded",
+  "load_case": "roof",
+  "market": "US",
+  "title": "Internal crash target: roof crush, US (FMVSS 216a), 2019 edition",
+  "text": "For the roof crush load case in US (FMVSS 216a) the internal target was a maximum intrusion of 84 mm. Version 2019, superseded by the 2025 edition."
+ },
+ {
+  "id": "CT-roof-CN-2025",
+  "status": "current",
+  "load_case": "roof",
+  "market": "CN",
+  "title": "Internal crash target: roof crush, CN (GB 26134)",
+  "text": "For the roof crush load case, homologation in CN under GB 26134 is secured by the internal target: maximum intrusion 78 mm at the reference measurement point. A structural change that may exceed 78 mm needs a full finite-element simulation and sign-off by the passive safety owner. Version 2025, current."
+ },
+ {
+  "id": "CT-roof-CN-2019",
+  "status": "superseded",
+  "load_case": "roof",
+  "market": "CN",
+  "title": "Internal crash target: roof crush, CN (GB 26134), 2019 edition",
+  "text": "For the roof crush load case in CN (GB 26134) the internal target was a maximum intrusion of 86 mm. Version 2019, superseded by the 2025 edition."
+ },
+ {
+  "id": "PROC-ECR-01",
+  "status": "current",
+  "load_case": null,
+  "market": null,
+  "title": "Engineering change process: impact analysis",
+  "text": "Every engineering change request lists affected variants, special tools, suppliers and applicable crash targets. Crash-relevant changes are signed by the responsible engineer and the passive safety owner."
+ },
+ {
+  "id": "PROC-PPAP-03",
+  "status": "current",
+  "load_case": null,
+  "market": null,
+  "title": "Supplier change: production part approval",
+  "text": "A change of supplier for a series part requires a production part approval at level 3 and the transfer of OEM-owned special tools to the new supplier. Tool transfer takes about six weeks."
+ },
+ {
+  "id": "STD-TOOL-07",
+  "status": "current",
+  "load_case": null,
+  "market": null,
+  "title": "Special tools: thickness and material changes",
+  "text": "A press or trim die absorbs a sheet thickness change within its tolerance by rework. Beyond the tolerance, or for a material class it was not built for, a new die is required. Welding fixtures are not affected by thickness or material."
+ },
+ {
+  "id": "STD-MAT-02",
+  "status": "current",
+  "load_case": null,
+  "market": null,
+  "title": "Approved materials list",
+  "text": "Only materials on the approved list may be released for series production. EN AW-7075-T6 is not approved for body structures."
+ }
+]

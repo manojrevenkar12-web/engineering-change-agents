@@ -1,0 +1,894 @@
+{
+ "variants": [
+  {
+   "variant": "P1-sedan",
+   "platform": "P1",
+   "derivative": "sedan",
+   "mass_kg": 1550,
+   "markets": [
+    "EU",
+    "CN"
+   ]
+  },
+  {
+   "variant": "P1-touring",
+   "platform": "P1",
+   "derivative": "touring",
+   "mass_kg": 1620,
+   "markets": [
+    "EU"
+   ]
+  },
+  {
+   "variant": "P1-ev",
+   "platform": "P1",
+   "derivative": "ev",
+   "mass_kg": 1890,
+   "markets": [
+    "EU",
+    "CN"
+   ]
+  },
+  {
+   "variant": "P2-sedan",
+   "platform": "P2",
+   "derivative": "sedan",
+   "mass_kg": 1820,
+   "markets": [
+    "EU",
+    "US",
+    "CN"
+   ]
+  },
+  {
+   "variant": "P2-touring",
+   "platform": "P2",
+   "derivative": "touring",
+   "mass_kg": 1890,
+   "markets": [
+    "EU",
+    "US"
+   ]
+  },
+  {
+   "variant": "P2-ev",
+   "platform": "P2",
+   "derivative": "ev",
+   "mass_kg": 2160,
+   "markets": [
+    "EU",
+    "US",
+    "CN"
+   ]
+  },
+  {
+   "variant": "P3-sedan",
+   "platform": "P3",
+   "derivative": "sedan",
+   "mass_kg": 2180,
+   "markets": [
+    "US",
+    "CN"
+   ]
+  },
+  {
+   "variant": "P3-touring",
+   "platform": "P3",
+   "derivative": "touring",
+   "mass_kg": 2250,
+   "markets": [
+    "EU",
+    "US"
+   ]
+  },
+  {
+   "variant": "P3-ev",
+   "platform": "P3",
+   "derivative": "ev",
+   "mass_kg": 2520,
+   "markets": [
+    "US",
+    "CN",
+    "EU"
+   ]
+  }
+ ],
+ "parts": [
+  {
+   "part_no": "7431001",
+   "name": "B-pillar reinforcement",
+   "platform": "P1",
+   "zone": "side",
+   "crash_load_case": "side_pole",
+   "material": "22MnB5",
+   "thickness_mm": 1.1,
+   "mass_kg": 2.51,
+   "reinforced": true,
+   "supplier_id": "S-2207",
+   "variants": [
+    "P1-sedan",
+    "P1-touring",
+    "P1-ev"
+   ],
+   "assembly": "BIW-P1-SIDE"
+  },
+  {
+   "part_no": "7534002",
+   "name": "side sill inner",
+   "platform": "P1",
+   "zone": "side",
+   "crash_load_case": "side_pole",
+   "material": "CR980Y1180T-DH",
+   "thickness_mm": 1.2,
+   "mass_kg": 3.9,
+   "reinforced": false,
+   "supplier_id": "S-1041",
+   "variants": [
+    "P1-sedan",
+    "P1-touring"
+   ],
+   "assembly": "BIW-P1-SIDE"
+  },
+  {
+   "part_no": "7979003",
+   "name": "side sill inner (EV)",
+   "platform": "P1",
+   "zone": "side",
+   "crash_load_case": "side_pole",
+   "material": "CR980Y1180T-DH",
+   "thickness_mm": 1.45,
+   "mass_kg": 4.71,
+   "reinforced": false,
+   "supplier_id": "S-2207",
+   "variants": [
+    "P1-ev"
+   ],
+   "assembly": "BIW-P1-SIDE"
+  },
+  {
+   "part_no": "7895004",
+   "name": "door impact beam",
+   "platform": "P1",
+   "zone": "side",
+   "crash_load_case": "side_mdb",
+   "material": "22MnB5",
+   "thickness_mm": 1.25,
+   "mass_kg": 1.92,
+   "reinforced": false,
+   "supplier_id": "S-3318",
+   "variants": [
+    "P1-sedan",
+    "P1-touring",
+    "P1-ev"
+   ],
+   "assembly": "BIW-P1-SIDE"
+  },
+  {
+   "part_no": "7624005",
+   "name": "front longitudinal member",
+   "platform": "P1",
+   "zone": "front",
+   "crash_load_case": "frontal_odb",
+   "material": "CR700Y980T-CP",
+   "thickness_mm": 1.4,
+   "mass_kg": 4.76,
+   "reinforced": true,
+   "supplier_id": "S-4120",
+   "variants": [
+    "P1-sedan",
+    "P1-touring",
+    "P1-ev"
+   ],
+   "assembly": "BIW-P1-FRONT"
+  },
+  {
+   "part_no": "7376006",
+   "name": "crash box",
+   "platform": "P1",
+   "zone": "front",
+   "crash_load_case": "frontal_odb",
+   "material": "HC340LA",
+   "thickness_mm": 2.2,
+   "mass_kg": 1.6,
+   "reinforced": false,
+   "supplier_id": "S-4120",
+   "variants": [
+    "P1-sedan",
+    "P1-touring",
+    "P1-ev"
+   ],
+   "assembly": "BIW-P1-FRONT"
+  },
+  {
+   "part_no": "7572007",
+   "name": "bumper carrier",
+   "platform": "P1",
+   "zone": "front",
+   "crash_load_case": "frontal_full",
+   "material": "EN AW-6082-T6",
+   "thickness_mm": 2.5,
+   "mass_kg": 2.9,
+   "reinforced": false,
+   "supplier_id": "S-3318",
+   "variants": [
+    "P1-sedan",
+    "P1-touring",
+    "P1-ev"
+   ],
+   "assembly": "BIW-P1-FRONT"
+  },
+  {
+   "part_no": "7799008",
+   "name": "rear longitudinal member",
+   "platform": "P1",
+   "zone": "rear",
+   "crash_load_case": "rear",
+   "material": "CR700Y980T-CP",
+   "thickness_mm": 1.35,
+   "mass_kg": 4.12,
+   "reinforced": false,
+   "supplier_id": "S-4120",
+   "variants": [
+    "P1-sedan",
+    "P1-touring"
+   ],
+   "assembly": "BIW-P1-REAR"
+  },
+  {
+   "part_no": "7249009",
+   "name": "rear longitudinal member (EV)",
+   "platform": "P1",
+   "zone": "rear",
+   "crash_load_case": "rear",
+   "material": "CR700Y980T-CP",
+   "thickness_mm": 1.5,
+   "mass_kg": 4.58,
+   "reinforced": false,
+   "supplier_id": "S-4120",
+   "variants": [
+    "P1-ev"
+   ],
+   "assembly": "BIW-P1-REAR"
+  },
+  {
+   "part_no": "7507010",
+   "name": "roof bow",
+   "platform": "P1",
+   "zone": "roof",
+   "crash_load_case": "roof",
+   "material": "CR980Y1180T-DH",
+   "thickness_mm": 1.3,
+   "mass_kg": 2.06,
+   "reinforced": false,
+   "supplier_id": "S-4120",
+   "variants": [
+    "P1-sedan",
+    "P1-touring",
+    "P1-ev"
+   ],
+   "assembly": "BIW-P1-ROOF"
+  },
+  {
+   "part_no": "7126011",
+   "name": "battery tray bracket",
+   "platform": "P1",
+   "zone": "underbody",
+   "crash_load_case": null,
+   "material": "HC340LA",
+   "thickness_mm": 1.5,
+   "mass_kg": 0.6,
+   "reinforced": false,
+   "supplier_id": "S-1041",
+   "variants": [
+    "P1-sedan",
+    "P1-touring",
+    "P1-ev"
+   ],
+   "assembly": "BIW-P1-UNDERBODY"
+  },
+  {
+   "part_no": "7591012",
+   "name": "wheelhouse cover",
+   "platform": "P1",
+   "zone": "body",
+   "crash_load_case": null,
+   "material": "DC04",
+   "thickness_mm": 0.8,
+   "mass_kg": 1.1,
+   "reinforced": false,
+   "supplier_id": "S-4120",
+   "variants": [
+    "P1-sedan",
+    "P1-touring",
+    "P1-ev"
+   ],
+   "assembly": "BIW-P1-BODY"
+  },
+  {
+   "part_no": "7405013",
+   "name": "parcel shelf support",
+   "platform": "P1",
+   "zone": "body",
+   "crash_load_case": null,
+   "material": "DC04",
+   "thickness_mm": 0.9,
+   "mass_kg": 0.7,
+   "reinforced": false,
+   "supplier_id": "S-6630",
+   "variants": [
+    "P1-sedan",
+    "P1-touring",
+    "P1-ev"
+   ],
+   "assembly": "BIW-P1-BODY"
+  },
+  {
+   "part_no": "7751014",
+   "name": "seat cross member bracket",
+   "platform": "P1",
+   "zone": "body",
+   "crash_load_case": null,
+   "material": "HC340LA",
+   "thickness_mm": 1.6,
+   "mass_kg": 0.9,
+   "reinforced": false,
+   "supplier_id": "S-2207",
+   "variants": [
+    "P1-sedan",
+    "P1-touring",
+    "P1-ev"
+   ],
+   "assembly": "BIW-P1-BODY"
+  },
+  {
+   "part_no": "7583015",
+   "name": "B-pillar reinforcement",
+   "platform": "P2",
+   "zone": "side",
+   "crash_load_case": "side_pole",
+   "material": "22MnB5",
+   "thickness_mm": 1.3,
+   "mass_kg": 2.96,
+   "reinforced": true,
+   "supplier_id": "S-3318",
+   "variants": [
+    "P2-sedan",
+    "P2-touring",
+    "P2-ev"
+   ],
+   "assembly": "BIW-P2-SIDE"
+  },
+  {
+   "part_no": "7918016",
+   "name": "side sill inner",
+   "platform": "P2",
+   "zone": "side",
+   "crash_load_case": "side_pole",
+   "material": "CR980Y1180T-DH",
+   "thickness_mm": 1.45,
+   "mass_kg": 4.71,
+   "reinforced": false,
+   "supplier_id": "S-6630",
+   "variants": [
+    "P2-sedan",
+    "P2-touring"
+   ],
+   "assembly": "BIW-P2-SIDE"
+  },
+  {
+   "part_no": "7511017",
+   "name": "side sill inner (EV)",
+   "platform": "P2",
+   "zone": "side",
+   "crash_load_case": "side_pole",
+   "material": "CR980Y1180T-DH",
+   "thickness_mm": 1.6,
+   "mass_kg": 5.2,
+   "reinforced": false,
+   "supplier_id": "S-6630",
+   "variants": [
+    "P2-ev"
+   ],
+   "assembly": "BIW-P2-SIDE"
+  },
+  {
+   "part_no": "7661018",
+   "name": "door impact beam",
+   "platform": "P2",
+   "zone": "side",
+   "crash_load_case": "side_mdb",
+   "material": "22MnB5",
+   "thickness_mm": 1.4,
+   "mass_kg": 2.15,
+   "reinforced": false,
+   "supplier_id": "S-5501",
+   "variants": [
+    "P2-sedan",
+    "P2-touring",
+    "P2-ev"
+   ],
+   "assembly": "BIW-P2-SIDE"
+  },
+  {
+   "part_no": "7128019",
+   "name": "front longitudinal member",
+   "platform": "P2",
+   "zone": "front",
+   "crash_load_case": "frontal_odb",
+   "material": "CR700Y980T-CP",
+   "thickness_mm": 1.5,
+   "mass_kg": 5.1,
+   "reinforced": true,
+   "supplier_id": "S-3318",
+   "variants": [
+    "P2-sedan",
+    "P2-touring",
+    "P2-ev"
+   ],
+   "assembly": "BIW-P2-FRONT"
+  },
+  {
+   "part_no": "7255020",
+   "name": "crash box",
+   "platform": "P2",
+   "zone": "front",
+   "crash_load_case": "frontal_odb",
+   "material": "HC340LA",
+   "thickness_mm": 2.45,
+   "mass_kg": 1.78,
+   "reinforced": false,
+   "supplier_id": "S-5501",
+   "variants": [
+    "P2-sedan",
+    "P2-touring",
+    "P2-ev"
+   ],
+   "assembly": "BIW-P2-FRONT"
+  },
+  {
+   "part_no": "7903021",
+   "name": "bumper carrier",
+   "platform": "P2",
+   "zone": "front",
+   "crash_load_case": "frontal_full",
+   "material": "EN AW-6082-T6",
+   "thickness_mm": 2.5,
+   "mass_kg": 2.9,
+   "reinforced": false,
+   "supplier_id": "S-1041",
+   "variants": [
+    "P2-sedan",
+    "P2-touring",
+    "P2-ev"
+   ],
+   "assembly": "BIW-P2-FRONT"
+  },
+  {
+   "part_no": "7304022",
+   "name": "rear longitudinal member",
+   "platform": "P2",
+   "zone": "rear",
+   "crash_load_case": "rear",
+   "material": "CR700Y980T-CP",
+   "thickness_mm": 1.55,
+   "mass_kg": 4.74,
+   "reinforced": false,
+   "supplier_id": "S-6630",
+   "variants": [
+    "P2-sedan",
+    "P2-touring"
+   ],
+   "assembly": "BIW-P2-REAR"
+  },
+  {
+   "part_no": "7346023",
+   "name": "rear longitudinal member (EV)",
+   "platform": "P2",
+   "zone": "rear",
+   "crash_load_case": "rear",
+   "material": "CR700Y980T-CP",
+   "thickness_mm": 1.65,
+   "mass_kg": 5.04,
+   "reinforced": false,
+   "supplier_id": "S-4120",
+   "variants": [
+    "P2-ev"
+   ],
+   "assembly": "BIW-P2-REAR"
+  },
+  {
+   "part_no": "7598024",
+   "name": "roof bow",
+   "platform": "P2",
+   "zone": "roof",
+   "crash_load_case": "roof",
+   "material": "CR980Y1180T-DH",
+   "thickness_mm": 1.35,
+   "mass_kg": 2.14,
+   "reinforced": false,
+   "supplier_id": "S-2207",
+   "variants": [
+    "P2-sedan",
+    "P2-touring",
+    "P2-ev"
+   ],
+   "assembly": "BIW-P2-ROOF"
+  },
+  {
+   "part_no": "7446025",
+   "name": "battery tray bracket",
+   "platform": "P2",
+   "zone": "underbody",
+   "crash_load_case": null,
+   "material": "HC340LA",
+   "thickness_mm": 1.5,
+   "mass_kg": 0.6,
+   "reinforced": false,
+   "supplier_id": "S-5501",
+   "variants": [
+    "P2-sedan",
+    "P2-touring",
+    "P2-ev"
+   ],
+   "assembly": "BIW-P2-UNDERBODY"
+  },
+  {
+   "part_no": "7873026",
+   "name": "wheelhouse cover",
+   "platform": "P2",
+   "zone": "body",
+   "crash_load_case": null,
+   "material": "DC04",
+   "thickness_mm": 0.8,
+   "mass_kg": 1.1,
+   "reinforced": false,
+   "supplier_id": "S-2207",
+   "variants": [
+    "P2-sedan",
+    "P2-touring",
+    "P2-ev"
+   ],
+   "assembly": "BIW-P2-BODY"
+  },
+  {
+   "part_no": "7174027",
+   "name": "parcel shelf support",
+   "platform": "P2",
+   "zone": "body",
+   "crash_load_case": null,
+   "material": "DC04",
+   "thickness_mm": 0.9,
+   "mass_kg": 0.7,
+   "reinforced": false,
+   "supplier_id": "S-3318",
+   "variants": [
+    "P2-sedan",
+    "P2-touring",
+    "P2-ev"
+   ],
+   "assembly": "BIW-P2-BODY"
+  },
+  {
+   "part_no": "7527028",
+   "name": "seat cross member bracket",
+   "platform": "P2",
+   "zone": "body",
+   "crash_load_case": null,
+   "material": "HC340LA",
+   "thickness_mm": 1.6,
+   "mass_kg": 0.9,
+   "reinforced": false,
+   "supplier_id": "S-3318",
+   "variants": [
+    "P2-sedan",
+    "P2-touring",
+    "P2-ev"
+   ],
+   "assembly": "BIW-P2-BODY"
+  },
+  {
+   "part_no": "7412029",
+   "name": "B-pillar reinforcement",
+   "platform": "P3",
+   "zone": "side",
+   "crash_load_case": "side_pole",
+   "material": "22MnB5",
+   "thickness_mm": 1.35,
+   "mass_kg": 3.08,
+   "reinforced": true,
+   "supplier_id": "S-5501",
+   "variants": [
+    "P3-sedan",
+    "P3-touring",
+    "P3-ev"
+   ],
+   "assembly": "BIW-P3-SIDE"
+  },
+  {
+   "part_no": "7586030",
+   "name": "side sill inner",
+   "platform": "P3",
+   "zone": "side",
+   "crash_load_case": "side_pole",
+   "material": "CR980Y1180T-DH",
+   "thickness_mm": 1.4,
+   "mass_kg": 4.55,
+   "reinforced": false,
+   "supplier_id": "S-2207",
+   "variants": [
+    "P3-sedan",
+    "P3-touring"
+   ],
+   "assembly": "BIW-P3-SIDE"
+  },
+  {
+   "part_no": "7320031",
+   "name": "side sill inner (EV)",
+   "platform": "P3",
+   "zone": "side",
+   "crash_load_case": "side_pole",
+   "material": "CR980Y1180T-DH",
+   "thickness_mm": 1.55,
+   "mass_kg": 5.04,
+   "reinforced": false,
+   "supplier_id": "S-2207",
+   "variants": [
+    "P3-ev"
+   ],
+   "assembly": "BIW-P3-SIDE"
+  },
+  {
+   "part_no": "7156032",
+   "name": "door impact beam",
+   "platform": "P3",
+   "zone": "side",
+   "crash_load_case": "side_mdb",
+   "material": "22MnB5",
+   "thickness_mm": 1.5,
+   "mass_kg": 2.3,
+   "reinforced": false,
+   "supplier_id": "S-1041",
+   "variants": [
+    "P3-sedan",
+    "P3-touring",
+    "P3-ev"
+   ],
+   "assembly": "BIW-P3-SIDE"
+  },
+  {
+   "part_no": "7431033",
+   "name": "front longitudinal member",
+   "platform": "P3",
+   "zone": "front",
+   "crash_load_case": "frontal_odb",
+   "material": "CR700Y980T-CP",
+   "thickness_mm": 1.85,
+   "mass_kg": 6.29,
+   "reinforced": true,
+   "supplier_id": "S-2207",
+   "variants": [
+    "P3-sedan",
+    "P3-touring",
+    "P3-ev"
+   ],
+   "assembly": "BIW-P3-FRONT"
+  },
+  {
+   "part_no": "7370034",
+   "name": "crash box",
+   "platform": "P3",
+   "zone": "front",
+   "crash_load_case": "frontal_odb",
+   "material": "HC340LA",
+   "thickness_mm": 2.5,
+   "mass_kg": 1.82,
+   "reinforced": false,
+   "supplier_id": "S-1041",
+   "variants": [
+    "P3-sedan",
+    "P3-touring",
+    "P3-ev"
+   ],
+   "assembly": "BIW-P3-FRONT"
+  },
+  {
+   "part_no": "7833035",
+   "name": "bumper carrier",
+   "platform": "P3",
+   "zone": "front",
+   "crash_load_case": "frontal_full",
+   "material": "EN AW-6082-T6",
+   "thickness_mm": 2.5,
+   "mass_kg": 2.9,
+   "reinforced": false,
+   "supplier_id": "S-5501",
+   "variants": [
+    "P3-sedan",
+    "P3-touring",
+    "P3-ev"
+   ],
+   "assembly": "BIW-P3-FRONT"
+  },
+  {
+   "part_no": "7636036",
+   "name": "rear longitudinal member",
+   "platform": "P3",
+   "zone": "rear",
+   "crash_load_case": "rear",
+   "material": "CR700Y980T-CP",
+   "thickness_mm": 1.7,
+   "mass_kg": 5.19,
+   "reinforced": false,
+   "supplier_id": "S-5501",
+   "variants": [
+    "P3-sedan",
+    "P3-touring"
+   ],
+   "assembly": "BIW-P3-REAR"
+  },
+  {
+   "part_no": "7485037",
+   "name": "rear longitudinal member (EV)",
+   "platform": "P3",
+   "zone": "rear",
+   "crash_load_case": "rear",
+   "material": "CR700Y980T-CP",
+   "thickness_mm": 1.7,
+   "mass_kg": 5.19,
+   "reinforced": false,
+   "supplier_id": "S-4120",
+   "variants": [
+    "P3-ev"
+   ],
+   "assembly": "BIW-P3-REAR"
+  },
+  {
+   "part_no": "7863038",
+   "name": "roof bow",
+   "platform": "P3",
+   "zone": "roof",
+   "crash_load_case": "roof",
+   "material": "CR980Y1180T-DH",
+   "thickness_mm": 1.55,
+   "mass_kg": 2.45,
+   "reinforced": false,
+   "supplier_id": "S-6630",
+   "variants": [
+    "P3-sedan",
+    "P3-touring",
+    "P3-ev"
+   ],
+   "assembly": "BIW-P3-ROOF"
+  },
+  {
+   "part_no": "7590039",
+   "name": "battery tray bracket",
+   "platform": "P3",
+   "zone": "underbody",
+   "crash_load_case": null,
+   "material": "HC340LA",
+   "thickness_mm": 1.5,
+   "mass_kg": 0.6,
+   "reinforced": false,
+   "supplier_id": "S-6630",
+   "variants": [
+    "P3-sedan",
+    "P3-touring",
+    "P3-ev"
+   ],
+   "assembly": "BIW-P3-UNDERBODY"
+  },
+  {
+   "part_no": "7375040",
+   "name": "wheelhouse cover",
+   "platform": "P3",
+   "zone": "body",
+   "crash_load_case": null,
+   "material": "DC04",
+   "thickness_mm": 0.8,
+   "mass_kg": 1.1,
+   "reinforced": false,
+   "supplier_id": "S-6630",
+   "variants": [
+    "P3-sedan",
+    "P3-touring",
+    "P3-ev"
+   ],
+   "assembly": "BIW-P3-BODY"
+  },
+  {
+   "part_no": "7419041",
+   "name": "parcel shelf support",
+   "platform": "P3",
+   "zone": "body",
+   "crash_load_case": null,
+   "material": "DC04",
+   "thickness_mm": 0.9,
+   "mass_kg": 0.7,
+   "reinforced": false,
+   "supplier_id": "S-1041",
+   "variants": [
+    "P3-sedan",
+    "P3-touring",
+    "P3-ev"
+   ],
+   "assembly": "BIW-P3-BODY"
+  },
+  {
+   "part_no": "7468042",
+   "name": "seat cross member bracket",
+   "platform": "P3",
+   "zone": "body",
+   "crash_load_case": null,
+   "material": "HC340LA",
+   "thickness_mm": 1.6,
+   "mass_kg": 0.9,
+   "reinforced": false,
+   "supplier_id": "S-2207",
+   "variants": [
+    "P3-sedan",
+    "P3-touring",
+    "P3-ev"
+   ],
+   "assembly": "BIW-P3-BODY"
+  }
+ ],
+ "materials": [
+  {
+   "id": "DC04",
+   "yield_mpa": 210,
+   "density": 7.85,
+   "class": "cold_formed_steel",
+   "approved": true
+  },
+  {
+   "id": "HC340LA",
+   "yield_mpa": 340,
+   "density": 7.85,
+   "class": "cold_formed_steel",
+   "approved": true
+  },
+  {
+   "id": "CR700Y980T-CP",
+   "yield_mpa": 700,
+   "density": 7.85,
+   "class": "cold_formed_steel",
+   "approved": true
+  },
+  {
+   "id": "CR980Y1180T-DH",
+   "yield_mpa": 980,
+   "density": 7.85,
+   "class": "cold_formed_steel",
+   "approved": true
+  },
+  {
+   "id": "22MnB5",
+   "yield_mpa": 1100,
+   "density": 7.85,
+   "class": "press_hardened",
+   "approved": true
+  },
+  {
+   "id": "EN AW-6082-T6",
+   "yield_mpa": 260,
+   "density": 2.7,
+   "class": "aluminium",
+   "approved": true
+  },
+  {
+   "id": "CR1180Y1500T-MS",
+   "yield_mpa": 1180,
+   "density": 7.85,
+   "class": "cold_formed_steel",
+   "approved": true
+  },
+  {
+   "id": "EN AW-7075-T6",
+   "yield_mpa": 480,
+   "density": 2.81,
+   "class": "aluminium",
+   "approved": false
+  }
+ ]
+}
