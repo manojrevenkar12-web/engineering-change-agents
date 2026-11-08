@@ -1,6 +1,6 @@
 # Results
 
-Generated 2026-11-08T14:34:25+00:00 by `make report`. Each change request ran 3 times with different model draws; intervals resample requests. "Approved but fails" is the safety-critical error: the agent recommends approval and the crash target is exceeded in the world's truth.
+Generated 2026-11-08T14:41:30+00:00 by `make report`. Each change request ran 3 times with different model draws; intervals resample requests. "Approved but fails" is the safety-critical error: the agent recommends approval and the crash target is exceeded in the world's truth.
 
 Crash surrogate in production: `lim-crash-23cbb8c4`, test coverage 93% (target 90%), relative error 4.3%, trained on 6000 historical simulations.
 
@@ -27,15 +27,15 @@ Full design: 35 of 81 crash-relevant analyses went to a full simulation; the res
 | Configuration | Approved but fails the crash target | Correct where it decided | Sent to full simulation | Crash target found | Reports with unsourced figures | Injected text in report | p95 latency |
 |---|---|---|---|---|---|---|---|
 | full | **0** of 180 | 100% (100%–100%) | 34% | 96% | 0 | 0 | 7.0 s |
-| prototype | **13** of 180 | 90% (83%–95%) | 4% | 96% | 22 | 8 | 7.8 s |
+| prototype | **13** of 180 | 90% (83%–95%) | 4% | 96% | 22 | 8 | 7.9 s |
 | model decides | **13** of 180 | 90% (84%–95%) | 3% | 96% | 0 | 0 | 8.1 s |
-| point prediction, no interval | **6** of 180 | 96% (90%–100%) | 13% | 96% | 0 | 0 | 6.9 s |
+| point prediction, no interval | **6** of 180 | 96% (90%–100%) | 13% | 96% | 0 | 0 | 7.0 s |
 | no out-of-distribution check | **0** of 180 | 100% (100%–100%) | 24% | 96% | 0 | 0 | 7.0 s |
 | no reviewer | **0** of 180 | 100% (100%–100%) | 34% | 96% | 23 | 0 | 7.0 s |
-| no injection guard | **0** of 180 | 100% (100%–100%) | 34% | 97% | 0 | 2 | 7.0 s |
+| no injection guard | **0** of 180 | 100% (100%–100%) | 34% | 97% | 0 | 2 | 7.1 s |
 | superseded documents allowed | **0** of 180 | 100% (100%–100%) | 34% | 96% | 0 | 0 | 7.0 s |
-| BM25 only | **0** of 180 | 100% (100%–100%) | 34% | 96% | 0 | 0 | 7.0 s |
-| no extraction validation | **0** of 180 | 98% (95%–100%) | 36% | 96% | 0 | 0 | 6.8 s |
+| BM25 only | **0** of 180 | 100% (100%–100%) | 34% | 96% | 0 | 0 | 7.1 s |
+| no extraction validation | **0** of 180 | 98% (95%–100%) | 36% | 96% | 0 | 0 | 6.9 s |
 
 Full design: 66 of 138 crash-relevant analyses went to a full simulation; the rest were decided by the surrogate. Estimated engineer time per request: 10.5 h by hand, 0.5 h to review the agent's report (assumptions in config/eca.toml [value]).
 

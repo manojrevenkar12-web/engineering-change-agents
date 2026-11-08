@@ -1,0 +1,43 @@
+name: ci
+on: [push, pull_request]
+jobs:
+  python:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -e ".[dev]"
+      - run: ruff check src tests scripts && ruff format --check src tests scripts
+      - name: The world is reproducible and the held-out pin holds
+        run: python scripts/build_world.py && git diff --exit-code data && PYTHONPATH=src python -c "from eca.heldout import check; check()"
+      - run: pytest -q
+      - name: Development results are reproducible
+        run: |
+          cp reports/development.json /tmp/committed.json
+          eca develop
+          python - <<'PY'
+          import json
+          old, new = json.load(open("/tmp/committed.json")), json.load(open("reports/development.json"))
+          for c, s in old["configs"].items():
+              assert new["configs"][c]["safety_misses"] == s["safety_misses"], c
+              assert abs(new["configs"][c]["accuracy_decided"]["value"] - s["accuracy_decided"]["value"]) < 1e-9, c
+          assert [c["passed"] for c in new["conformance"]] == [9, 9, 2]
+          PY
+  web:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: web
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+      - run: npm ci
+      - run: npx tsc --noEmit && npx eslint src test
+      - run: npx vitest run
+      - run: npm run build

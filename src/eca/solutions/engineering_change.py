@@ -477,8 +477,9 @@ class EngineeringChange:
         if part is None:
             text = f"The request could not be resolved: {c.get('unresolved')}. An engineer needs to review it."
             return {"summary": text, "spans": spans, "clock": t}
+        n = len(st["variants"])
         out = [
-            f"Part {part['part_no']} ({part['name']}) on {len(st['variants'])} variants: "
+            f"Part {part['part_no']} ({part['name']}) on {n} variant{'' if n == 1 else 's'}: "
             + ", ".join(v["variant"] for v in st["variants"])
             + "."
         ]
