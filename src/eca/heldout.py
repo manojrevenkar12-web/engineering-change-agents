@@ -7,8 +7,13 @@ import hashlib
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-FILES = ("data/requests_heldout.jsonl", "data/truth/heldout.jsonl", "data/plm.json", "data/tools.json",
-         "data/documents.json")
+FILES = (
+    "data/requests_heldout.jsonl",
+    "data/truth/heldout.jsonl",
+    "data/plm.json",
+    "data/tools.json",
+    "data/documents.json",
+)
 
 
 def fingerprint() -> str:

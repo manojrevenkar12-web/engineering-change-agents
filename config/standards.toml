@@ -1,0 +1,47 @@
+# Architecture standards for agentic solutions on the enterprise AI platform. `eca conformance` checks every
+# solution against them, from its code, its declared spec, its configuration and its MCP servers.
+
+[[standard]]
+id = "AS-01"
+title = "Every tool declares the scope it needs and whether it has a side effect"
+why = "Access reviews and least privilege start from what a tool can do, not from what an agent is told."
+
+[[standard]]
+id = "AS-02"
+title = "Code decides; models read and write"
+why = "A recommendation that changes a release follows rules an engineering change board can read and test."
+
+[[standard]]
+id = "AS-03"
+title = "Models are reached only through the platform client"
+why = "Cost, logging, data residency and model choice are governed in one place."
+
+[[standard]]
+id = "AS-04"
+title = "Every figure in user-facing text traces to a source"
+why = "An invented number in an engineering report is worse than no report."
+
+[[standard]]
+id = "AS-05"
+title = "Untrusted text is guarded before a model reads it"
+why = "Supplier notes and documents can carry instructions; they are data."
+
+[[standard]]
+id = "AS-06"
+title = "Domain-model predictions carry an interval and an input check"
+why = "A surrogate may decide only where it is calibrated and has seen similar inputs."
+
+[[standard]]
+id = "AS-07"
+title = "Releases need signatures from different people"
+why = "No agent releases a change; people with the required roles do."
+
+[[standard]]
+id = "AS-08"
+title = "Evaluated before production"
+why = "A solution ships with an evaluation suite, and its last run meets the safety thresholds."
+
+[[standard]]
+id = "AS-09"
+title = "Model names and prompts come from configuration"
+why = "Pinned, reviewable versions; no silent model changes in code."

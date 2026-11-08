@@ -43,15 +43,15 @@ fe_simulation_hours = 18  # one full finite-element crash run, wall clock
 
 [lim]
 model_version_prefix = "lim-crash"
-n_estimators = 300
-max_depth = 3
+n_estimators = 600
+max_depth = 4
 learning_rate = 0.06
 quantiles = [0.05, 0.95]
 calibration_share = 0.25
 test_share = 0.15
 alpha = 0.10                 # target miscoverage of the conformal interval
 promote_min_coverage = 0.88  # a model is promoted only if its test coverage reaches this
-promote_max_mae_mm = 4.0
+promote_max_mape = 0.06   # relative error: crash intrusion errors scale with the intrusion
 thickness_range_margin = 0.0  # inputs outside the training range are out of distribution
 
 [retrieval]
@@ -69,6 +69,8 @@ patterns = [
 
 [policy]
 schedule_weeks = 26  # a new special tool with a longer lead time than this is a schedule risk
+transfer_cost_share = 0.12  # moving an OEM-owned tool to a new supplier, share of its new cost
+transfer_weeks = 6
 
 [approval]
 crash_relevant = ["engineer", "safety_owner"]  # roles that must sign a crash-relevant change

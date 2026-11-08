@@ -1,0 +1,45 @@
+{
+ "models": [
+  {
+   "version": "lim-crash-23cbb8c4",
+   "trained_at": "2026-11-08T14:20:01+00:00",
+   "data_sha256": "23cbb8c428fb3a5ee8d3a8c3067496b8da53887a176e5afaeca86deebc4be322",
+   "rows": {
+    "fit": 3600,
+    "calibration": 1500,
+    "test": 900
+   },
+   "target_coverage": 0.9,
+   "test_coverage": 0.9256,
+   "test_mae_mm": 5.625,
+   "test_mape": 0.0428,
+   "median_interval_mm": 19.3,
+   "median_relative_interval": 0.2187,
+   "q_hat_log": 0.03142,
+   "envelope": {
+    "thickness_mm": [
+     0.9,
+     2.6
+    ],
+    "mass_kg": [
+     1500,
+     2600
+    ],
+    "materials": [
+     "22MnB5",
+     "CR700Y980T-CP",
+     "CR980Y1180T-DH",
+     "DC04",
+     "EN AW-6082-T6",
+     "HC340LA"
+    ]
+   },
+   "promoted": true,
+   "gates": {
+    "min_coverage": 0.88,
+    "max_mape": 0.06
+   }
+  }
+ ],
+ "production": "lim-crash-23cbb8c4"
+}

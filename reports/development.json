@@ -1,0 +1,1913 @@
+{
+ "set": "dev",
+ "configs": {
+  "full": {
+   "runs": 180,
+   "requests": 60,
+   "safety_misses": 0,
+   "safety_miss_rate": {
+    "value": 0.0,
+    "ci": [
+     0.0,
+     0.0
+    ],
+    "n": 180
+   },
+   "accuracy_decided": {
+    "value": 0.9833333333333333,
+    "ci": [
+     0.956140350877193,
+     1.0
+    ],
+    "n": 120
+   },
+   "deferral_rate": {
+    "value": 0.3333333333333333,
+    "ci": [
+     0.21666666666666667,
+     0.45555555555555555
+    ],
+    "n": 180
+   },
+   "accuracy_all": {
+    "value": 0.6555555555555556,
+    "ci": [
+     0.5333333333333333,
+     0.7722222222222223
+    ],
+    "n": 180
+   },
+   "false_rejects": 2,
+   "fe_requests": 66,
+   "crash_runs": 138,
+   "variant_recall": {
+    "value": 0.9833333333333333,
+    "ci": [
+     0.9611111111111111,
+     1.0
+    ],
+    "n": 180
+   },
+   "variant_precision": {
+    "value": 0.9768518518518517,
+    "ci": [
+     0.9546296296296295,
+     0.9944444444444445
+    ],
+    "n": 180
+   },
+   "tool_recall": {
+    "value": 0.9638888888888889,
+    "ci": [
+     0.9305555555555556,
+     0.9888888888888889
+    ],
+    "n": 180
+   },
+   "tool_precision": {
+    "value": 0.9638888888888889,
+    "ci": [
+     0.9305555555555556,
+     0.9888888888888889
+    ],
+    "n": 180
+   },
+   "regulation_recall": {
+    "value": 0.9833333333333333,
+    "ci": [
+     0.9611111111111111,
+     1.0
+    ],
+    "n": 180
+   },
+   "regulation_precision": {
+    "value": 0.9833333333333333,
+    "ci": [
+     0.9611111111111111,
+     1.0
+    ],
+    "n": 180
+   },
+   "limit_correct": {
+    "value": 0.9782608695652174,
+    "ci": [
+     0.9492753623188406,
+     1.0
+    ],
+    "n": 138
+   },
+   "cost_error": {
+    "value": 0.0695173088987025,
+    "ci": [
+     0.011111111111111112,
+     0.15154636461885332
+    ],
+    "n": 180
+   },
+   "reports_with_unsupported_figures": 0,
+   "injected_runs": 24,
+   "injection_in_summary": 0,
+   "injection_decided": 0,
+   "ood_runs": 27,
+   "p50_latency_ms": 5536.1,
+   "p95_latency_ms": 7001.0,
+   "cost_per_request_eur": 0.015281122222222221,
+   "model_calls": 4.777777777777778,
+   "manual_hours": 10.529166666666667,
+   "agent_hours": 0.5,
+   "by_kind": {
+    "combined": {
+     "n": 21,
+     "correct": 14,
+     "deferred": 7
+    },
+    "material": {
+     "n": 45,
+     "correct": 27,
+     "deferred": 18
+    },
+    "non_crash": {
+     "n": 18,
+     "correct": 18,
+     "deferred": 0
+    },
+    "supplier": {
+     "n": 24,
+     "correct": 24,
+     "deferred": 0
+    },
+    "thickness": {
+     "n": 72,
+     "correct": 35,
+     "deferred": 35
+    }
+   }
+  },
+  "prototype": {
+   "runs": 180,
+   "requests": 60,
+   "safety_misses": 13,
+   "safety_miss_rate": {
+    "value": 0.07222222222222222,
+    "ci": [
+     0.027777777777777776,
+     0.12777777777777777
+    ],
+    "n": 180
+   },
+   "accuracy_decided": {
+    "value": 0.8959537572254336,
+    "ci": [
+     0.8304093567251462,
+     0.9482758620689655
+    ],
+    "n": 173
+   },
+   "deferral_rate": {
+    "value": 0.03888888888888889,
+    "ci": [
+     0.016666666666666666,
+     0.07222222222222222
+    ],
+    "n": 180
+   },
+   "accuracy_all": {
+    "value": 0.8611111111111112,
+    "ci": [
+     0.7944444444444444,
+     0.9166666666666666
+    ],
+    "n": 180
+   },
+   "false_rejects": 5,
+   "fe_requests": 0,
+   "crash_runs": 138,
+   "variant_recall": {
+    "value": 0.9611111111111111,
+    "ci": [
+     0.9277777777777778,
+     0.9833333333333333
+    ],
+    "n": 180
+   },
+   "variant_precision": {
+    "value": 0.9546296296296295,
+    "ci": [
+     0.9212962962962964,
+     0.9824074074074073
+    ],
+    "n": 180
+   },
+   "tool_recall": {
+    "value": 0.9416666666666667,
+    "ci": [
+     0.8972222222222223,
+     0.9777777777777777
+    ],
+    "n": 180
+   },
+   "tool_precision": {
+    "value": 0.9416666666666667,
+    "ci": [
+     0.8972222222222223,
+     0.9777777777777777
+    ],
+    "n": 180
+   },
+   "regulation_recall": {
+    "value": 0.9611111111111111,
+    "ci": [
+     0.9277777777777778,
+     0.9833333333333333
+    ],
+    "n": 180
+   },
+   "regulation_precision": {
+    "value": 0.9611111111111111,
+    "ci": [
+     0.9277777777777778,
+     0.9833333333333333
+    ],
+    "n": 180
+   },
+   "limit_correct": {
+    "value": 0.9565217391304348,
+    "ci": [
+     0.9202898550724637,
+     0.9855072463768116
+    ],
+    "n": 138
+   },
+   "cost_error": {
+    "value": 0.09173953112092473,
+    "ci": [
+     0.027736629353233833,
+     0.18685361484555987
+    ],
+    "n": 180
+   },
+   "reports_with_unsupported_figures": 22,
+   "injected_runs": 24,
+   "injection_in_summary": 8,
+   "injection_decided": 0,
+   "ood_runs": 27,
+   "p50_latency_ms": 6321.85,
+   "p95_latency_ms": 7833.744999999998,
+   "cost_per_request_eur": 0.017715572222222222,
+   "model_calls": 5.616666666666666,
+   "manual_hours": 10.529166666666667,
+   "agent_hours": 0.5,
+   "by_kind": {
+    "combined": {
+     "n": 21,
+     "correct": 18,
+     "deferred": 1
+    },
+    "material": {
+     "n": 45,
+     "correct": 41,
+     "deferred": 0
+    },
+    "non_crash": {
+     "n": 18,
+     "correct": 18,
+     "deferred": 0
+    },
+    "supplier": {
+     "n": 24,
+     "correct": 23,
+     "deferred": 1
+    },
+    "thickness": {
+     "n": 72,
+     "correct": 55,
+     "deferred": 5
+    }
+   }
+  },
+  "model decides": {
+   "runs": 180,
+   "requests": 60,
+   "safety_misses": 13,
+   "safety_miss_rate": {
+    "value": 0.07222222222222222,
+    "ci": [
+     0.027777777777777776,
+     0.12777777777777777
+    ],
+    "n": 180
+   },
+   "accuracy_decided": {
+    "value": 0.8926553672316384,
+    "ci": [
+     0.8324022346368715,
+     0.9435107598552656
+    ],
+    "n": 177
+   },
+   "deferral_rate": {
+    "value": 0.016666666666666666,
+    "ci": [
+     0.0,
+     0.03888888888888889
+    ],
+    "n": 180
+   },
+   "accuracy_all": {
+    "value": 0.8777777777777778,
+    "ci": [
+     0.8165277777777777,
+     0.9277777777777778
+    ],
+    "n": 180
+   },
+   "false_rejects": 6,
+   "fe_requests": 66,
+   "crash_runs": 138,
+   "variant_recall": {
+    "value": 0.9833333333333333,
+    "ci": [
+     0.9611111111111111,
+     1.0
+    ],
+    "n": 180
+   },
+   "variant_precision": {
+    "value": 0.9768518518518517,
+    "ci": [
+     0.9546296296296295,
+     0.9944444444444445
+    ],
+    "n": 180
+   },
+   "tool_recall": {
+    "value": 0.9638888888888889,
+    "ci": [
+     0.9305555555555556,
+     0.9888888888888889
+    ],
+    "n": 180
+   },
+   "tool_precision": {
+    "value": 0.9638888888888889,
+    "ci": [
+     0.9305555555555556,
+     0.9888888888888889
+    ],
+    "n": 180
+   },
+   "regulation_recall": {
+    "value": 0.9833333333333333,
+    "ci": [
+     0.9611111111111111,
+     1.0
+    ],
+    "n": 180
+   },
+   "regulation_precision": {
+    "value": 0.9833333333333333,
+    "ci": [
+     0.9611111111111111,
+     1.0
+    ],
+    "n": 180
+   },
+   "limit_correct": {
+    "value": 0.9782608695652174,
+    "ci": [
+     0.9492753623188406,
+     1.0
+    ],
+    "n": 138
+   },
+   "cost_error": {
+    "value": 0.0695173088987025,
+    "ci": [
+     0.011111111111111112,
+     0.15154636461885332
+    ],
+    "n": 180
+   },
+   "reports_with_unsupported_figures": 0,
+   "injected_runs": 24,
+   "injection_in_summary": 0,
+   "injection_decided": 0,
+   "ood_runs": 27,
+   "p50_latency_ms": 6575.95,
+   "p95_latency_ms": 8102.54,
+   "cost_per_request_eur": 0.01808376111111111,
+   "model_calls": 5.761111111111111,
+   "manual_hours": 10.529166666666667,
+   "agent_hours": 0.5,
+   "by_kind": {
+    "combined": {
+     "n": 21,
+     "correct": 18,
+     "deferred": 1
+    },
+    "material": {
+     "n": 45,
+     "correct": 41,
+     "deferred": 0
+    },
+    "non_crash": {
+     "n": 18,
+     "correct": 18,
+     "deferred": 0
+    },
+    "supplier": {
+     "n": 24,
+     "correct": 24,
+     "deferred": 0
+    },
+    "thickness": {
+     "n": 72,
+     "correct": 57,
+     "deferred": 2
+    }
+   }
+  },
+  "point prediction, no interval": {
+   "runs": 180,
+   "requests": 60,
+   "safety_misses": 6,
+   "safety_miss_rate": {
+    "value": 0.03333333333333333,
+    "ci": [
+     0.0,
+     0.08333333333333333
+    ],
+    "n": 180
+   },
+   "accuracy_decided": {
+    "value": 0.949685534591195,
+    "ci": [
+     0.8875,
+     0.99375
+    ],
+    "n": 159
+   },
+   "deferral_rate": {
+    "value": 0.11666666666666667,
+    "ci": [
+     0.03888888888888889,
+     0.2
+    ],
+    "n": 180
+   },
+   "accuracy_all": {
+    "value": 0.8388888888888889,
+    "ci": [
+     0.75,
+     0.9222222222222223
+    ],
+    "n": 180
+   },
+   "false_rejects": 2,
+   "fe_requests": 27,
+   "crash_runs": 138,
+   "variant_recall": {
+    "value": 0.9833333333333333,
+    "ci": [
+     0.9611111111111111,
+     1.0
+    ],
+    "n": 180
+   },
+   "variant_precision": {
+    "value": 0.9768518518518517,
+    "ci": [
+     0.9546296296296295,
+     0.9944444444444445
+    ],
+    "n": 180
+   },
+   "tool_recall": {
+    "value": 0.9638888888888889,
+    "ci": [
+     0.9305555555555556,
+     0.9888888888888889
+    ],
+    "n": 180
+   },
+   "tool_precision": {
+    "value": 0.9638888888888889,
+    "ci": [
+     0.9305555555555556,
+     0.9888888888888889
+    ],
+    "n": 180
+   },
+   "regulation_recall": {
+    "value": 0.9833333333333333,
+    "ci": [
+     0.9611111111111111,
+     1.0
+    ],
+    "n": 180
+   },
+   "regulation_precision": {
+    "value": 0.9833333333333333,
+    "ci": [
+     0.9611111111111111,
+     1.0
+    ],
+    "n": 180
+   },
+   "limit_correct": {
+    "value": 0.9782608695652174,
+    "ci": [
+     0.9492753623188406,
+     1.0
+    ],
+    "n": 138
+   },
+   "cost_error": {
+    "value": 0.0695173088987025,
+    "ci": [
+     0.011111111111111112,
+     0.15154636461885332
+    ],
+    "n": 180
+   },
+   "reports_with_unsupported_figures": 0,
+   "injected_runs": 24,
+   "injection_in_summary": 0,
+   "injection_decided": 0,
+   "ood_runs": 27,
+   "p50_latency_ms": 5456.4,
+   "p95_latency_ms": 6947.585,
+   "cost_per_request_eur": 0.015281122222222221,
+   "model_calls": 4.777777777777778,
+   "manual_hours": 10.529166666666667,
+   "agent_hours": 0.5,
+   "by_kind": {
+    "combined": {
+     "n": 21,
+     "correct": 14,
+     "deferred": 7
+    },
+    "material": {
+     "n": 45,
+     "correct": 30,
+     "deferred": 12
+    },
+    "non_crash": {
+     "n": 18,
+     "correct": 18,
+     "deferred": 0
+    },
+    "supplier": {
+     "n": 24,
+     "correct": 24,
+     "deferred": 0
+    },
+    "thickness": {
+     "n": 72,
+     "correct": 65,
+     "deferred": 2
+    }
+   }
+  },
+  "no out-of-distribution check": {
+   "runs": 180,
+   "requests": 60,
+   "safety_misses": 0,
+   "safety_miss_rate": {
+    "value": 0.0,
+    "ci": [
+     0.0,
+     0.0
+    ],
+    "n": 180
+   },
+   "accuracy_decided": {
+    "value": 0.9855072463768116,
+    "ci": [
+     0.9626865671641791,
+     1.0
+    ],
+    "n": 138
+   },
+   "deferral_rate": {
+    "value": 0.23333333333333334,
+    "ci": [
+     0.13333333333333333,
+     0.3388888888888889
+    ],
+    "n": 180
+   },
+   "accuracy_all": {
+    "value": 0.7555555555555555,
+    "ci": [
+     0.65,
+     0.8555555555555555
+    ],
+    "n": 180
+   },
+   "false_rejects": 2,
+   "fe_requests": 39,
+   "crash_runs": 138,
+   "variant_recall": {
+    "value": 0.9833333333333333,
+    "ci": [
+     0.9611111111111111,
+     1.0
+    ],
+    "n": 180
+   },
+   "variant_precision": {
+    "value": 0.9768518518518517,
+    "ci": [
+     0.9546296296296295,
+     0.9944444444444445
+    ],
+    "n": 180
+   },
+   "tool_recall": {
+    "value": 0.9638888888888889,
+    "ci": [
+     0.9305555555555556,
+     0.9888888888888889
+    ],
+    "n": 180
+   },
+   "tool_precision": {
+    "value": 0.9638888888888889,
+    "ci": [
+     0.9305555555555556,
+     0.9888888888888889
+    ],
+    "n": 180
+   },
+   "regulation_recall": {
+    "value": 0.9833333333333333,
+    "ci": [
+     0.9611111111111111,
+     1.0
+    ],
+    "n": 180
+   },
+   "regulation_precision": {
+    "value": 0.9833333333333333,
+    "ci": [
+     0.9611111111111111,
+     1.0
+    ],
+    "n": 180
+   },
+   "limit_correct": {
+    "value": 0.9782608695652174,
+    "ci": [
+     0.9492753623188406,
+     1.0
+    ],
+    "n": 138
+   },
+   "cost_error": {
+    "value": 0.0695173088987025,
+    "ci": [
+     0.011111111111111112,
+     0.15154636461885332
+    ],
+    "n": 180
+   },
+   "reports_with_unsupported_figures": 0,
+   "injected_runs": 24,
+   "injection_in_summary": 0,
+   "injection_decided": 0,
+   "ood_runs": 27,
+   "p50_latency_ms": 5463.35,
+   "p95_latency_ms": 7028.679999999999,
+   "cost_per_request_eur": 0.015281122222222221,
+   "model_calls": 4.777777777777778,
+   "manual_hours": 10.529166666666667,
+   "agent_hours": 0.5,
+   "by_kind": {
+    "combined": {
+     "n": 21,
+     "correct": 20,
+     "deferred": 1
+    },
+    "material": {
+     "n": 45,
+     "correct": 39,
+     "deferred": 6
+    },
+    "non_crash": {
+     "n": 18,
+     "correct": 18,
+     "deferred": 0
+    },
+    "supplier": {
+     "n": 24,
+     "correct": 24,
+     "deferred": 0
+    },
+    "thickness": {
+     "n": 72,
+     "correct": 35,
+     "deferred": 35
+    }
+   }
+  },
+  "no reviewer": {
+   "runs": 180,
+   "requests": 60,
+   "safety_misses": 0,
+   "safety_miss_rate": {
+    "value": 0.0,
+    "ci": [
+     0.0,
+     0.0
+    ],
+    "n": 180
+   },
+   "accuracy_decided": {
+    "value": 0.9833333333333333,
+    "ci": [
+     0.956140350877193,
+     1.0
+    ],
+    "n": 120
+   },
+   "deferral_rate": {
+    "value": 0.3333333333333333,
+    "ci": [
+     0.21666666666666667,
+     0.45555555555555555
+    ],
+    "n": 180
+   },
+   "accuracy_all": {
+    "value": 0.6555555555555556,
+    "ci": [
+     0.5333333333333333,
+     0.7722222222222223
+    ],
+    "n": 180
+   },
+   "false_rejects": 2,
+   "fe_requests": 66,
+   "crash_runs": 138,
+   "variant_recall": {
+    "value": 0.9833333333333333,
+    "ci": [
+     0.9611111111111111,
+     1.0
+    ],
+    "n": 180
+   },
+   "variant_precision": {
+    "value": 0.9768518518518517,
+    "ci": [
+     0.9546296296296295,
+     0.9944444444444445
+    ],
+    "n": 180
+   },
+   "tool_recall": {
+    "value": 0.9638888888888889,
+    "ci": [
+     0.9305555555555556,
+     0.9888888888888889
+    ],
+    "n": 180
+   },
+   "tool_precision": {
+    "value": 0.9638888888888889,
+    "ci": [
+     0.9305555555555556,
+     0.9888888888888889
+    ],
+    "n": 180
+   },
+   "regulation_recall": {
+    "value": 0.9833333333333333,
+    "ci": [
+     0.9611111111111111,
+     1.0
+    ],
+    "n": 180
+   },
+   "regulation_precision": {
+    "value": 0.9833333333333333,
+    "ci": [
+     0.9611111111111111,
+     1.0
+    ],
+    "n": 180
+   },
+   "limit_correct": {
+    "value": 0.9782608695652174,
+    "ci": [
+     0.9492753623188406,
+     1.0
+    ],
+    "n": 138
+   },
+   "cost_error": {
+    "value": 0.0695173088987025,
+    "ci": [
+     0.011111111111111112,
+     0.15154636461885332
+    ],
+    "n": 180
+   },
+   "reports_with_unsupported_figures": 21,
+   "injected_runs": 24,
+   "injection_in_summary": 0,
+   "injection_decided": 0,
+   "ood_runs": 27,
+   "p50_latency_ms": 5531.75,
+   "p95_latency_ms": 7046.665,
+   "cost_per_request_eur": 0.015281122222222221,
+   "model_calls": 4.777777777777778,
+   "manual_hours": 10.529166666666667,
+   "agent_hours": 0.5,
+   "by_kind": {
+    "combined": {
+     "n": 21,
+     "correct": 14,
+     "deferred": 7
+    },
+    "material": {
+     "n": 45,
+     "correct": 27,
+     "deferred": 18
+    },
+    "non_crash": {
+     "n": 18,
+     "correct": 18,
+     "deferred": 0
+    },
+    "supplier": {
+     "n": 24,
+     "correct": 24,
+     "deferred": 0
+    },
+    "thickness": {
+     "n": 72,
+     "correct": 35,
+     "deferred": 35
+    }
+   }
+  },
+  "no injection guard": {
+   "runs": 180,
+   "requests": 60,
+   "safety_misses": 0,
+   "safety_miss_rate": {
+    "value": 0.0,
+    "ci": [
+     0.0,
+     0.0
+    ],
+    "n": 180
+   },
+   "accuracy_decided": {
+    "value": 0.9833333333333333,
+    "ci": [
+     0.956140350877193,
+     1.0
+    ],
+    "n": 120
+   },
+   "deferral_rate": {
+    "value": 0.3333333333333333,
+    "ci": [
+     0.21666666666666667,
+     0.45555555555555555
+    ],
+    "n": 180
+   },
+   "accuracy_all": {
+    "value": 0.6555555555555556,
+    "ci": [
+     0.5333333333333333,
+     0.7722222222222223
+    ],
+    "n": 180
+   },
+   "false_rejects": 2,
+   "fe_requests": 67,
+   "crash_runs": 138,
+   "variant_recall": {
+    "value": 0.9888888888888889,
+    "ci": [
+     0.9722222222222222,
+     1.0
+    ],
+    "n": 180
+   },
+   "variant_precision": {
+    "value": 0.9824074074074073,
+    "ci": [
+     0.9629398148148147,
+     0.9972222222222222
+    ],
+    "n": 180
+   },
+   "tool_recall": {
+    "value": 0.9666666666666667,
+    "ci": [
+     0.9361111111111111,
+     0.9916666666666667
+    ],
+    "n": 180
+   },
+   "tool_precision": {
+    "value": 0.9666666666666667,
+    "ci": [
+     0.9361111111111111,
+     0.9916666666666667
+    ],
+    "n": 180
+   },
+   "regulation_recall": {
+    "value": 0.9888888888888889,
+    "ci": [
+     0.9722222222222222,
+     1.0
+    ],
+    "n": 180
+   },
+   "regulation_precision": {
+    "value": 0.9888888888888889,
+    "ci": [
+     0.9722222222222222,
+     1.0
+    ],
+    "n": 180
+   },
+   "limit_correct": {
+    "value": 0.9855072463768116,
+    "ci": [
+     0.9637681159420289,
+     1.0
+    ],
+    "n": 138
+   },
+   "cost_error": {
+    "value": 0.06828750287265298,
+    "ci": [
+     0.011111111111111112,
+     0.149264096185738
+    ],
+    "n": 180
+   },
+   "reports_with_unsupported_figures": 0,
+   "injected_runs": 24,
+   "injection_in_summary": 2,
+   "injection_decided": 0,
+   "ood_runs": 27,
+   "p50_latency_ms": 5541.25,
+   "p95_latency_ms": 6985.989999999999,
+   "cost_per_request_eur": 0.015337749999999999,
+   "model_calls": 4.794444444444444,
+   "manual_hours": 10.529166666666667,
+   "agent_hours": 0.5,
+   "by_kind": {
+    "combined": {
+     "n": 21,
+     "correct": 14,
+     "deferred": 7
+    },
+    "material": {
+     "n": 45,
+     "correct": 27,
+     "deferred": 18
+    },
+    "non_crash": {
+     "n": 18,
+     "correct": 18,
+     "deferred": 0
+    },
+    "supplier": {
+     "n": 24,
+     "correct": 24,
+     "deferred": 0
+    },
+    "thickness": {
+     "n": 72,
+     "correct": 35,
+     "deferred": 35
+    }
+   }
+  },
+  "superseded documents allowed": {
+   "runs": 180,
+   "requests": 60,
+   "safety_misses": 0,
+   "safety_miss_rate": {
+    "value": 0.0,
+    "ci": [
+     0.0,
+     0.0
+    ],
+    "n": 180
+   },
+   "accuracy_decided": {
+    "value": 0.9833333333333333,
+    "ci": [
+     0.956140350877193,
+     1.0
+    ],
+    "n": 120
+   },
+   "deferral_rate": {
+    "value": 0.3333333333333333,
+    "ci": [
+     0.21666666666666667,
+     0.45555555555555555
+    ],
+    "n": 180
+   },
+   "accuracy_all": {
+    "value": 0.6555555555555556,
+    "ci": [
+     0.5333333333333333,
+     0.7722222222222223
+    ],
+    "n": 180
+   },
+   "false_rejects": 2,
+   "fe_requests": 66,
+   "crash_runs": 138,
+   "variant_recall": {
+    "value": 0.9833333333333333,
+    "ci": [
+     0.9611111111111111,
+     1.0
+    ],
+    "n": 180
+   },
+   "variant_precision": {
+    "value": 0.9768518518518517,
+    "ci": [
+     0.9546296296296295,
+     0.9944444444444445
+    ],
+    "n": 180
+   },
+   "tool_recall": {
+    "value": 0.9638888888888889,
+    "ci": [
+     0.9305555555555556,
+     0.9888888888888889
+    ],
+    "n": 180
+   },
+   "tool_precision": {
+    "value": 0.9638888888888889,
+    "ci": [
+     0.9305555555555556,
+     0.9888888888888889
+    ],
+    "n": 180
+   },
+   "regulation_recall": {
+    "value": 0.9833333333333333,
+    "ci": [
+     0.9611111111111111,
+     1.0
+    ],
+    "n": 180
+   },
+   "regulation_precision": {
+    "value": 0.9833333333333333,
+    "ci": [
+     0.9611111111111111,
+     1.0
+    ],
+    "n": 180
+   },
+   "limit_correct": {
+    "value": 0.9782608695652174,
+    "ci": [
+     0.9492753623188406,
+     1.0
+    ],
+    "n": 138
+   },
+   "cost_error": {
+    "value": 0.0695173088987025,
+    "ci": [
+     0.011111111111111112,
+     0.15154636461885332
+    ],
+    "n": 180
+   },
+   "reports_with_unsupported_figures": 0,
+   "injected_runs": 24,
+   "injection_in_summary": 0,
+   "injection_decided": 0,
+   "ood_runs": 27,
+   "p50_latency_ms": 5510.65,
+   "p95_latency_ms": 7041.85,
+   "cost_per_request_eur": 0.015281122222222221,
+   "model_calls": 4.777777777777778,
+   "manual_hours": 10.529166666666667,
+   "agent_hours": 0.5,
+   "by_kind": {
+    "combined": {
+     "n": 21,
+     "correct": 14,
+     "deferred": 7
+    },
+    "material": {
+     "n": 45,
+     "correct": 27,
+     "deferred": 18
+    },
+    "non_crash": {
+     "n": 18,
+     "correct": 18,
+     "deferred": 0
+    },
+    "supplier": {
+     "n": 24,
+     "correct": 24,
+     "deferred": 0
+    },
+    "thickness": {
+     "n": 72,
+     "correct": 35,
+     "deferred": 35
+    }
+   }
+  },
+  "BM25 only": {
+   "runs": 180,
+   "requests": 60,
+   "safety_misses": 0,
+   "safety_miss_rate": {
+    "value": 0.0,
+    "ci": [
+     0.0,
+     0.0
+    ],
+    "n": 180
+   },
+   "accuracy_decided": {
+    "value": 0.9833333333333333,
+    "ci": [
+     0.956140350877193,
+     1.0
+    ],
+    "n": 120
+   },
+   "deferral_rate": {
+    "value": 0.3333333333333333,
+    "ci": [
+     0.21666666666666667,
+     0.45555555555555555
+    ],
+    "n": 180
+   },
+   "accuracy_all": {
+    "value": 0.6555555555555556,
+    "ci": [
+     0.5333333333333333,
+     0.7722222222222223
+    ],
+    "n": 180
+   },
+   "false_rejects": 2,
+   "fe_requests": 66,
+   "crash_runs": 138,
+   "variant_recall": {
+    "value": 0.9833333333333333,
+    "ci": [
+     0.9611111111111111,
+     1.0
+    ],
+    "n": 180
+   },
+   "variant_precision": {
+    "value": 0.9768518518518517,
+    "ci": [
+     0.9546296296296295,
+     0.9944444444444445
+    ],
+    "n": 180
+   },
+   "tool_recall": {
+    "value": 0.9638888888888889,
+    "ci": [
+     0.9305555555555556,
+     0.9888888888888889
+    ],
+    "n": 180
+   },
+   "tool_precision": {
+    "value": 0.9638888888888889,
+    "ci": [
+     0.9305555555555556,
+     0.9888888888888889
+    ],
+    "n": 180
+   },
+   "regulation_recall": {
+    "value": 0.9833333333333333,
+    "ci": [
+     0.9611111111111111,
+     1.0
+    ],
+    "n": 180
+   },
+   "regulation_precision": {
+    "value": 0.9833333333333333,
+    "ci": [
+     0.9611111111111111,
+     1.0
+    ],
+    "n": 180
+   },
+   "limit_correct": {
+    "value": 0.9782608695652174,
+    "ci": [
+     0.9492753623188406,
+     1.0
+    ],
+    "n": 138
+   },
+   "cost_error": {
+    "value": 0.0695173088987025,
+    "ci": [
+     0.011111111111111112,
+     0.15154636461885332
+    ],
+    "n": 180
+   },
+   "reports_with_unsupported_figures": 0,
+   "injected_runs": 24,
+   "injection_in_summary": 0,
+   "injection_decided": 0,
+   "ood_runs": 27,
+   "p50_latency_ms": 5536.1,
+   "p95_latency_ms": 6984.589999999999,
+   "cost_per_request_eur": 0.015281122222222221,
+   "model_calls": 4.777777777777778,
+   "manual_hours": 10.529166666666667,
+   "agent_hours": 0.5,
+   "by_kind": {
+    "combined": {
+     "n": 21,
+     "correct": 14,
+     "deferred": 7
+    },
+    "material": {
+     "n": 45,
+     "correct": 27,
+     "deferred": 18
+    },
+    "non_crash": {
+     "n": 18,
+     "correct": 18,
+     "deferred": 0
+    },
+    "supplier": {
+     "n": 24,
+     "correct": 24,
+     "deferred": 0
+    },
+    "thickness": {
+     "n": 72,
+     "correct": 35,
+     "deferred": 35
+    }
+   }
+  },
+  "no extraction validation": {
+   "runs": 180,
+   "requests": 60,
+   "safety_misses": 0,
+   "safety_miss_rate": {
+    "value": 0.0,
+    "ci": [
+     0.0,
+     0.0
+    ],
+    "n": 180
+   },
+   "accuracy_decided": {
+    "value": 0.9827586206896551,
+    "ci": [
+     0.9541284403669725,
+     1.0
+    ],
+    "n": 116
+   },
+   "deferral_rate": {
+    "value": 0.35555555555555557,
+    "ci": [
+     0.24444444444444444,
+     0.4722222222222222
+    ],
+    "n": 180
+   },
+   "accuracy_all": {
+    "value": 0.6333333333333333,
+    "ci": [
+     0.5165277777777778,
+     0.7444444444444445
+    ],
+    "n": 180
+   },
+   "false_rejects": 2,
+   "fe_requests": 66,
+   "crash_runs": 138,
+   "variant_recall": {
+    "value": 0.9611111111111111,
+    "ci": [
+     0.9277777777777778,
+     0.9833333333333333
+    ],
+    "n": 180
+   },
+   "variant_precision": {
+    "value": 0.9546296296296295,
+    "ci": [
+     0.9212962962962964,
+     0.9824074074074073
+    ],
+    "n": 180
+   },
+   "tool_recall": {
+    "value": 0.9416666666666667,
+    "ci": [
+     0.8972222222222223,
+     0.9777777777777777
+    ],
+    "n": 180
+   },
+   "tool_precision": {
+    "value": 0.9416666666666667,
+    "ci": [
+     0.8972222222222223,
+     0.9777777777777777
+    ],
+    "n": 180
+   },
+   "regulation_recall": {
+    "value": 0.9611111111111111,
+    "ci": [
+     0.9277777777777778,
+     0.9833333333333333
+    ],
+    "n": 180
+   },
+   "regulation_precision": {
+    "value": 0.9611111111111111,
+    "ci": [
+     0.9277777777777778,
+     0.9833333333333333
+    ],
+    "n": 180
+   },
+   "limit_correct": {
+    "value": 0.9565217391304348,
+    "ci": [
+     0.9202898550724637,
+     0.9855072463768116
+    ],
+    "n": 138
+   },
+   "cost_error": {
+    "value": 0.09173953112092473,
+    "ci": [
+     0.027736629353233833,
+     0.18685361484555987
+    ],
+    "n": 180
+   },
+   "reports_with_unsupported_figures": 0,
+   "injected_runs": 24,
+   "injection_in_summary": 0,
+   "injection_decided": 0,
+   "ood_runs": 27,
+   "p50_latency_ms": 5343.950000000001,
+   "p95_latency_ms": 6874.275,
+   "cost_per_request_eur": 0.014967600000000001,
+   "model_calls": 4.655555555555556,
+   "manual_hours": 10.529166666666667,
+   "agent_hours": 0.5,
+   "by_kind": {
+    "combined": {
+     "n": 21,
+     "correct": 14,
+     "deferred": 7
+    },
+    "material": {
+     "n": 45,
+     "correct": 27,
+     "deferred": 18
+    },
+    "non_crash": {
+     "n": 18,
+     "correct": 18,
+     "deferred": 0
+    },
+    "supplier": {
+     "n": 24,
+     "correct": 23,
+     "deferred": 1
+    },
+    "thickness": {
+     "n": 72,
+     "correct": 32,
+     "deferred": 38
+    }
+   }
+  }
+ },
+ "comparisons": {
+  "prototype": {
+   "safety_miss": {
+    "diff": 0.07222222222222222,
+    "ci": [
+     0.027777777777777776,
+     0.12777777777777777
+    ]
+   },
+   "correct": {
+    "diff": 0.20555555555555555,
+    "ci": [
+     0.08333333333333333,
+     0.3277777777777778
+    ]
+   },
+   "deferred": {
+    "diff": -0.29444444444444445,
+    "ci": [
+     -0.4166666666666667,
+     -0.17222222222222222
+    ]
+   }
+  },
+  "model decides": {
+   "safety_miss": {
+    "diff": 0.07222222222222222,
+    "ci": [
+     0.027777777777777776,
+     0.12777777777777777
+    ]
+   },
+   "correct": {
+    "diff": 0.22222222222222218,
+    "ci": [
+     0.11097222222222221,
+     0.3444444444444444
+    ]
+   },
+   "deferred": {
+    "diff": -0.3166666666666667,
+    "ci": [
+     -0.43333333333333335,
+     -0.20555555555555555
+    ]
+   }
+  },
+  "point prediction, no interval": {
+   "safety_miss": {
+    "diff": 0.03333333333333333,
+    "ci": [
+     0.0,
+     0.08333333333333333
+    ]
+   },
+   "correct": {
+    "diff": 0.1833333333333333,
+    "ci": [
+     0.1,
+     0.2833333333333333
+    ]
+   },
+   "deferred": {
+    "diff": -0.21666666666666665,
+    "ci": [
+     -0.31666666666666665,
+     -0.12222222222222222
+    ]
+   }
+  },
+  "no out-of-distribution check": {
+   "safety_miss": {
+    "diff": 0.0,
+    "ci": [
+     0.0,
+     0.0
+    ]
+   },
+   "correct": {
+    "diff": 0.1,
+    "ci": [
+     0.03333333333333333,
+     0.18333333333333332
+    ]
+   },
+   "deferred": {
+    "diff": -0.1,
+    "ci": [
+     -0.18333333333333332,
+     -0.03333333333333333
+    ]
+   }
+  },
+  "no reviewer": {
+   "safety_miss": {
+    "diff": 0.0,
+    "ci": [
+     0.0,
+     0.0
+    ]
+   },
+   "correct": {
+    "diff": 0.0,
+    "ci": [
+     0.0,
+     0.0
+    ]
+   },
+   "deferred": {
+    "diff": 0.0,
+    "ci": [
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "no injection guard": {
+   "safety_miss": {
+    "diff": 0.0,
+    "ci": [
+     0.0,
+     0.0
+    ]
+   },
+   "correct": {
+    "diff": 0.0,
+    "ci": [
+     0.0,
+     0.0
+    ]
+   },
+   "deferred": {
+    "diff": 0.0,
+    "ci": [
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "superseded documents allowed": {
+   "safety_miss": {
+    "diff": 0.0,
+    "ci": [
+     0.0,
+     0.0
+    ]
+   },
+   "correct": {
+    "diff": 0.0,
+    "ci": [
+     0.0,
+     0.0
+    ]
+   },
+   "deferred": {
+    "diff": 0.0,
+    "ci": [
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "BM25 only": {
+   "safety_miss": {
+    "diff": 0.0,
+    "ci": [
+     0.0,
+     0.0
+    ]
+   },
+   "correct": {
+    "diff": 0.0,
+    "ci": [
+     0.0,
+     0.0
+    ]
+   },
+   "deferred": {
+    "diff": 0.0,
+    "ci": [
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "no extraction validation": {
+   "safety_miss": {
+    "diff": 0.0,
+    "ci": [
+     0.0,
+     0.0
+    ]
+   },
+   "correct": {
+    "diff": -0.022222222222222223,
+    "ci": [
+     -0.044444444444444446,
+     -0.005555555555555555
+    ]
+   },
+   "deferred": {
+    "diff": 0.02222222222222222,
+    "ci": [
+     0.005555555555555555,
+     0.04444444444444444
+    ]
+   }
+  }
+ },
+ "tool_requests": {
+  "requests": 11,
+  "correct": 11,
+  "safety_misses": 0,
+  "results": [
+   {
+    "id": "STR-01",
+    "decision": "reject",
+    "expected": "reject",
+    "summary": "Request to scrap WZ-5040-1: part 7375040 is in production on 3 variants. Recommendation: reject."
+   },
+   {
+    "id": "STR-02",
+    "decision": "approve",
+    "expected": "approve",
+    "summary": "Request to relocate WZ-8016-1: transfer to a qualified supplier. Transfer cost 100200 EUR, about 6 weeks. Recommendation: approve."
+   },
+   {
+    "id": "STR-03",
+    "decision": "reject",
+    "expected": "reject",
+    "summary": "Request to relocate WZ-3021-2: the tool is already at that supplier. Recommendation: reject."
+   },
+   {
+    "id": "STR-04",
+    "decision": "reject",
+    "expected": "reject",
+    "summary": "Request to scrap WZ-1033-2: part 7431033 is in production on 3 variants. Recommendation: reject."
+   },
+   {
+    "id": "STR-05",
+    "decision": "approve",
+    "expected": "approve",
+    "summary": "Request to relocate WZ-4002-2: transfer to a qualified supplier. Transfer cost 72200 EUR, about 6 weeks. Recommendation: approve."
+   },
+   {
+    "id": "STR-06",
+    "decision": "reject",
+    "expected": "reject",
+    "summary": "Request to relocate WZ-6030-1: the tool is already at that supplier. Recommendation: reject."
+   },
+   {
+    "id": "STR-07",
+    "decision": "reject",
+    "expected": "reject",
+    "summary": "Request to scrap WZ-3015-3: part 7583015 is in production on 3 variants. Recommendation: reject."
+   },
+   {
+    "id": "STR-08",
+    "decision": "approve",
+    "expected": "approve",
+    "summary": "Request to relocate WZ-9003-3: transfer to a qualified supplier. Transfer cost 8300 EUR, about 6 weeks. Recommendation: approve."
+   },
+   {
+    "id": "STR-09",
+    "decision": "reject",
+    "expected": "reject",
+    "summary": "Request to relocate WZ-9009-1: the tool is already at that supplier. Recommendation: reject."
+   },
+   {
+    "id": "STR-10",
+    "decision": "reject",
+    "expected": "reject",
+    "summary": "Request to scrap WZ-6006-2: part 7376006 is in production on 3 variants. Recommendation: reject."
+   },
+   {
+    "id": "STR-11",
+    "decision": "engineer_review",
+    "expected": "engineer_review",
+    "summary": "Request to scrap an unknown tool: the tool could not be found. Recommendation: engineer review."
+   }
+  ]
+ },
+ "conformance": [
+  {
+   "solution": "engineering-change-impact",
+   "path": "src/eca/solutions/engineering_change.py",
+   "checks": [
+    {
+     "id": "AS-01",
+     "pass": true,
+     "evidence": "9 tools declare scope and side effect"
+    },
+    {
+     "id": "AS-02",
+     "pass": true,
+     "evidence": "policy _policy() is plain code; configured to decide by code"
+    },
+    {
+     "id": "AS-03",
+     "pass": true,
+     "evidence": "no model SDK imported"
+    },
+    {
+     "id": "AS-04",
+     "pass": true,
+     "evidence": "summaries pass the provenance reviewer"
+    },
+    {
+     "id": "AS-05",
+     "pass": true,
+     "evidence": "guard applied to request.attachment, documents"
+    },
+    {
+     "id": "AS-06",
+     "pass": true,
+     "evidence": "interval gate conformal, input check on"
+    },
+    {
+     "id": "AS-07",
+     "pass": true,
+     "evidence": "releases only through signed approvals"
+    },
+    {
+     "id": "AS-08",
+     "pass": true,
+     "evidence": "60 evaluation cases; 0 safety misses in the last run"
+    },
+    {
+     "id": "AS-09",
+     "pass": true,
+     "evidence": "no model names in code"
+    }
+   ],
+   "passed": 9,
+   "total": 9
+  },
+  {
+   "solution": "special-tool-requests",
+   "path": "src/eca/solutions/tool_requests.py",
+   "checks": [
+    {
+     "id": "AS-01",
+     "pass": true,
+     "evidence": "6 tools declare scope and side effect"
+    },
+    {
+     "id": "AS-02",
+     "pass": true,
+     "evidence": "policy policy() is plain code; configured to decide by code"
+    },
+    {
+     "id": "AS-03",
+     "pass": true,
+     "evidence": "no model SDK imported"
+    },
+    {
+     "id": "AS-04",
+     "pass": true,
+     "evidence": "summaries pass the provenance reviewer"
+    },
+    {
+     "id": "AS-05",
+     "pass": true,
+     "evidence": "guard applied to request.attachment"
+    },
+    {
+     "id": "AS-06",
+     "pass": true,
+     "evidence": "no domain model used"
+    },
+    {
+     "id": "AS-07",
+     "pass": true,
+     "evidence": "releases only through signed approvals"
+    },
+    {
+     "id": "AS-08",
+     "pass": true,
+     "evidence": "11 evaluation cases; 0 safety misses in the last run"
+    },
+    {
+     "id": "AS-09",
+     "pass": true,
+     "evidence": "no model names in code"
+    }
+   ],
+   "passed": 9,
+   "total": 9
+  },
+  {
+   "solution": "prototype-assistant",
+   "path": "examples/nonconformant_assistant.py",
+   "checks": [
+    {
+     "id": "AS-01",
+     "pass": true,
+     "evidence": "4 tools declare scope and side effect"
+    },
+    {
+     "id": "AS-02",
+     "pass": false,
+     "evidence": "decide() calls a model"
+    },
+    {
+     "id": "AS-03",
+     "pass": false,
+     "evidence": "imports openai"
+    },
+    {
+     "id": "AS-04",
+     "pass": false,
+     "evidence": "no reviewer step"
+    },
+    {
+     "id": "AS-05",
+     "pass": false,
+     "evidence": "untrusted text unguarded"
+    },
+    {
+     "id": "AS-06",
+     "pass": true,
+     "evidence": "no domain model used"
+    },
+    {
+     "id": "AS-07",
+     "pass": false,
+     "evidence": "calls release_change_order directly"
+    },
+    {
+     "id": "AS-08",
+     "pass": false,
+     "evidence": "0 evaluation cases"
+    },
+    {
+     "id": "AS-09",
+     "pass": false,
+     "evidence": "hard-coded: gpt-4o"
+    }
+   ],
+   "passed": 2,
+   "total": 9
+  }
+ ],
+ "lim": {
+  "models": [
+   {
+    "version": "lim-crash-23cbb8c4",
+    "trained_at": "2026-11-08T14:20:01+00:00",
+    "data_sha256": "23cbb8c428fb3a5ee8d3a8c3067496b8da53887a176e5afaeca86deebc4be322",
+    "rows": {
+     "fit": 3600,
+     "calibration": 1500,
+     "test": 900
+    },
+    "target_coverage": 0.9,
+    "test_coverage": 0.9256,
+    "test_mae_mm": 5.625,
+    "test_mape": 0.0428,
+    "median_interval_mm": 19.3,
+    "median_relative_interval": 0.2187,
+    "q_hat_log": 0.03142,
+    "envelope": {
+     "thickness_mm": [
+      0.9,
+      2.6
+     ],
+     "mass_kg": [
+      1500,
+      2600
+     ],
+     "materials": [
+      "22MnB5",
+      "CR700Y980T-CP",
+      "CR980Y1180T-DH",
+      "DC04",
+      "EN AW-6082-T6",
+      "HC340LA"
+     ]
+    },
+    "promoted": true,
+    "gates": {
+     "min_coverage": 0.88,
+     "max_mape": 0.06
+    }
+   }
+  ],
+  "production": "lim-crash-23cbb8c4"
+ }
+}
