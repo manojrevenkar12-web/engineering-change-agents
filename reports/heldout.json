@@ -1,0 +1,1585 @@
+{
+ "set": "heldout",
+ "fingerprint": "df1043f52d59775f5b75acf7f6ec7f3559e04fc49240c7a3a977802da8f520af",
+ "configs": {
+  "full": {
+   "runs": 120,
+   "requests": 40,
+   "safety_misses": 1,
+   "safety_miss_rate": {
+    "value": 0.008333333333333333,
+    "ci": [
+     0.0,
+     0.025
+    ],
+    "n": 120
+   },
+   "accuracy_decided": {
+    "value": 0.9888888888888889,
+    "ci": [
+     0.9666666666666667,
+     1.0
+    ],
+    "n": 90
+   },
+   "deferral_rate": {
+    "value": 0.25,
+    "ci": [
+     0.125,
+     0.375
+    ],
+    "n": 120
+   },
+   "accuracy_all": {
+    "value": 0.7416666666666667,
+    "ci": [
+     0.6083333333333333,
+     0.875
+    ],
+    "n": 120
+   },
+   "false_rejects": 0,
+   "fe_requests": 35,
+   "crash_runs": 81,
+   "variant_recall": {
+    "value": 0.9916666666666667,
+    "ci": [
+     0.975,
+     1.0
+    ],
+    "n": 120
+   },
+   "variant_precision": {
+    "value": 0.9708333333333333,
+    "ci": [
+     0.9444444444444444,
+     0.9944444444444444
+    ],
+    "n": 120
+   },
+   "tool_recall": {
+    "value": 0.9458333333333333,
+    "ci": [
+     0.8958333333333334,
+     0.9875
+    ],
+    "n": 120
+   },
+   "tool_precision": {
+    "value": 0.9458333333333333,
+    "ci": [
+     0.8958333333333334,
+     0.9875
+    ],
+    "n": 120
+   },
+   "regulation_recall": {
+    "value": 0.9833333333333333,
+    "ci": [
+     0.9583333333333334,
+     1.0
+    ],
+    "n": 120
+   },
+   "regulation_precision": {
+    "value": 0.9791666666666666,
+    "ci": [
+     0.95,
+     1.0
+    ],
+    "n": 120
+   },
+   "limit_correct": {
+    "value": 0.9629629629629629,
+    "ci": [
+     0.9135802469135802,
+     1.0
+    ],
+    "n": 81
+   },
+   "cost_error": {
+    "value": 0.06864389013980654,
+    "ci": [
+     0.016666666666666666,
+     0.13693222563328256
+    ],
+    "n": 120
+   },
+   "reports_with_unsupported_figures": 0,
+   "injected_runs": 6,
+   "injection_in_summary": 0,
+   "injection_decided": 0,
+   "ood_runs": 9,
+   "p50_latency_ms": 5346.6,
+   "p95_latency_ms": 6916.365,
+   "cost_per_request_eur": 0.015042558333333334,
+   "model_calls": 4.7,
+   "manual_hours": 10.3375,
+   "agent_hours": 0.5,
+   "by_kind": {
+    "material": {
+     "n": 24,
+     "correct": 18,
+     "deferred": 6
+    },
+    "non_crash": {
+     "n": 21,
+     "correct": 21,
+     "deferred": 0
+    },
+    "supplier": {
+     "n": 18,
+     "correct": 18,
+     "deferred": 0
+    },
+    "thickness": {
+     "n": 57,
+     "correct": 32,
+     "deferred": 24
+    }
+   }
+  },
+  "prototype": {
+   "runs": 120,
+   "requests": 40,
+   "safety_misses": 13,
+   "safety_miss_rate": {
+    "value": 0.10833333333333334,
+    "ci": [
+     0.03333333333333333,
+     0.19166666666666668
+    ],
+    "n": 120
+   },
+   "accuracy_decided": {
+    "value": 0.8782608695652174,
+    "ci": [
+     0.789461612747465,
+     0.9572649572649573
+    ],
+    "n": 115
+   },
+   "deferral_rate": {
+    "value": 0.041666666666666664,
+    "ci": [
+     0.008333333333333333,
+     0.09166666666666666
+    ],
+    "n": 120
+   },
+   "accuracy_all": {
+    "value": 0.8416666666666667,
+    "ci": [
+     0.75,
+     0.9333333333333333
+    ],
+    "n": 120
+   },
+   "false_rejects": 1,
+   "fe_requests": 0,
+   "crash_runs": 81,
+   "variant_recall": {
+    "value": 0.9583333333333334,
+    "ci": [
+     0.9083333333333333,
+     0.9916666666666667
+    ],
+    "n": 120
+   },
+   "variant_precision": {
+    "value": 0.9375,
+    "ci": [
+     0.8902777777777778,
+     0.9763888888888889
+    ],
+    "n": 120
+   },
+   "tool_recall": {
+    "value": 0.9208333333333333,
+    "ci": [
+     0.8583333333333333,
+     0.9709374999999995
+    ],
+    "n": 120
+   },
+   "tool_precision": {
+    "value": 0.9208333333333333,
+    "ci": [
+     0.8583333333333333,
+     0.9709374999999995
+    ],
+    "n": 120
+   },
+   "regulation_recall": {
+    "value": 0.95,
+    "ci": [
+     0.9,
+     0.9833333333333333
+    ],
+    "n": 120
+   },
+   "regulation_precision": {
+    "value": 0.9458333333333333,
+    "ci": [
+     0.9,
+     0.9833333333333333
+    ],
+    "n": 120
+   },
+   "limit_correct": {
+    "value": 0.9382716049382716,
+    "ci": [
+     0.8765432098765432,
+     0.9876543209876543
+    ],
+    "n": 81
+   },
+   "cost_error": {
+    "value": 0.09029144548301407,
+    "ci": [
+     0.03084288899506291,
+     0.16453133235269013
+    ],
+    "n": 120
+   },
+   "reports_with_unsupported_figures": 8,
+   "injected_runs": 6,
+   "injection_in_summary": 1,
+   "injection_decided": 0,
+   "ood_runs": 9,
+   "p50_latency_ms": 6146.8,
+   "p95_latency_ms": 7915.115,
+   "cost_per_request_eur": 0.01740760833333333,
+   "model_calls": 5.516666666666667,
+   "manual_hours": 10.3375,
+   "agent_hours": 0.5,
+   "by_kind": {
+    "material": {
+     "n": 24,
+     "correct": 19,
+     "deferred": 0
+    },
+    "non_crash": {
+     "n": 21,
+     "correct": 21,
+     "deferred": 0
+    },
+    "supplier": {
+     "n": 18,
+     "correct": 16,
+     "deferred": 2
+    },
+    "thickness": {
+     "n": 57,
+     "correct": 45,
+     "deferred": 3
+    }
+   }
+  },
+  "model decides": {
+   "runs": 120,
+   "requests": 40,
+   "safety_misses": 15,
+   "safety_miss_rate": {
+    "value": 0.125,
+    "ci": [
+     0.041666666666666664,
+     0.21666666666666667
+    ],
+    "n": 120
+   },
+   "accuracy_decided": {
+    "value": 0.865546218487395,
+    "ci": [
+     0.7666666666666667,
+     0.9495798319327731
+    ],
+    "n": 119
+   },
+   "deferral_rate": {
+    "value": 0.008333333333333333,
+    "ci": [
+     0.0,
+     0.025
+    ],
+    "n": 120
+   },
+   "accuracy_all": {
+    "value": 0.8583333333333333,
+    "ci": [
+     0.7583333333333333,
+     0.9416666666666667
+    ],
+    "n": 120
+   },
+   "false_rejects": 1,
+   "fe_requests": 35,
+   "crash_runs": 81,
+   "variant_recall": {
+    "value": 0.9916666666666667,
+    "ci": [
+     0.975,
+     1.0
+    ],
+    "n": 120
+   },
+   "variant_precision": {
+    "value": 0.9708333333333333,
+    "ci": [
+     0.9444444444444444,
+     0.9944444444444444
+    ],
+    "n": 120
+   },
+   "tool_recall": {
+    "value": 0.9458333333333333,
+    "ci": [
+     0.8958333333333334,
+     0.9875
+    ],
+    "n": 120
+   },
+   "tool_precision": {
+    "value": 0.9458333333333333,
+    "ci": [
+     0.8958333333333334,
+     0.9875
+    ],
+    "n": 120
+   },
+   "regulation_recall": {
+    "value": 0.9833333333333333,
+    "ci": [
+     0.9583333333333334,
+     1.0
+    ],
+    "n": 120
+   },
+   "regulation_precision": {
+    "value": 0.9791666666666666,
+    "ci": [
+     0.95,
+     1.0
+    ],
+    "n": 120
+   },
+   "limit_correct": {
+    "value": 0.9629629629629629,
+    "ci": [
+     0.9135802469135802,
+     1.0
+    ],
+    "n": 81
+   },
+   "cost_error": {
+    "value": 0.06864389013980654,
+    "ci": [
+     0.016666666666666666,
+     0.13693222563328256
+    ],
+    "n": 120
+   },
+   "reports_with_unsupported_figures": 0,
+   "injected_runs": 6,
+   "injection_in_summary": 0,
+   "injection_decided": 0,
+   "ood_runs": 9,
+   "p50_latency_ms": 6397.7,
+   "p95_latency_ms": 8090.834999999999,
+   "cost_per_request_eur": 0.017868866666666663,
+   "model_calls": 5.691666666666666,
+   "manual_hours": 10.3375,
+   "agent_hours": 0.5,
+   "by_kind": {
+    "material": {
+     "n": 24,
+     "correct": 19,
+     "deferred": 0
+    },
+    "non_crash": {
+     "n": 21,
+     "correct": 21,
+     "deferred": 0
+    },
+    "supplier": {
+     "n": 18,
+     "correct": 18,
+     "deferred": 0
+    },
+    "thickness": {
+     "n": 57,
+     "correct": 45,
+     "deferred": 1
+    }
+   }
+  },
+  "point prediction, no interval": {
+   "runs": 120,
+   "requests": 40,
+   "safety_misses": 13,
+   "safety_miss_rate": {
+    "value": 0.10833333333333334,
+    "ci": [
+     0.025,
+     0.20833333333333334
+    ],
+    "n": 120
+   },
+   "accuracy_decided": {
+    "value": 0.8793103448275862,
+    "ci": [
+     0.7758620689655172,
+     0.9655172413793104
+    ],
+    "n": 116
+   },
+   "deferral_rate": {
+    "value": 0.03333333333333333,
+    "ci": [
+     0.0,
+     0.1
+    ],
+    "n": 120
+   },
+   "accuracy_all": {
+    "value": 0.85,
+    "ci": [
+     0.7416666666666667,
+     0.9416666666666667
+    ],
+    "n": 120
+   },
+   "false_rejects": 1,
+   "fe_requests": 9,
+   "crash_runs": 81,
+   "variant_recall": {
+    "value": 0.9916666666666667,
+    "ci": [
+     0.975,
+     1.0
+    ],
+    "n": 120
+   },
+   "variant_precision": {
+    "value": 0.9708333333333333,
+    "ci": [
+     0.9444444444444444,
+     0.9944444444444444
+    ],
+    "n": 120
+   },
+   "tool_recall": {
+    "value": 0.9458333333333333,
+    "ci": [
+     0.8958333333333334,
+     0.9875
+    ],
+    "n": 120
+   },
+   "tool_precision": {
+    "value": 0.9458333333333333,
+    "ci": [
+     0.8958333333333334,
+     0.9875
+    ],
+    "n": 120
+   },
+   "regulation_recall": {
+    "value": 0.9833333333333333,
+    "ci": [
+     0.9583333333333334,
+     1.0
+    ],
+    "n": 120
+   },
+   "regulation_precision": {
+    "value": 0.9791666666666666,
+    "ci": [
+     0.95,
+     1.0
+    ],
+    "n": 120
+   },
+   "limit_correct": {
+    "value": 0.9629629629629629,
+    "ci": [
+     0.9135802469135802,
+     1.0
+    ],
+    "n": 81
+   },
+   "cost_error": {
+    "value": 0.06864389013980654,
+    "ci": [
+     0.016666666666666666,
+     0.13693222563328256
+    ],
+    "n": 120
+   },
+   "reports_with_unsupported_figures": 0,
+   "injected_runs": 6,
+   "injection_in_summary": 0,
+   "injection_decided": 0,
+   "ood_runs": 9,
+   "p50_latency_ms": 5212.049999999999,
+   "p95_latency_ms": 6971.5599999999995,
+   "cost_per_request_eur": 0.015042558333333334,
+   "model_calls": 4.7,
+   "manual_hours": 10.3375,
+   "agent_hours": 0.5,
+   "by_kind": {
+    "material": {
+     "n": 24,
+     "correct": 18,
+     "deferred": 3
+    },
+    "non_crash": {
+     "n": 21,
+     "correct": 21,
+     "deferred": 0
+    },
+    "supplier": {
+     "n": 18,
+     "correct": 18,
+     "deferred": 0
+    },
+    "thickness": {
+     "n": 57,
+     "correct": 45,
+     "deferred": 1
+    }
+   }
+  },
+  "no out-of-distribution check": {
+   "runs": 120,
+   "requests": 40,
+   "safety_misses": 1,
+   "safety_miss_rate": {
+    "value": 0.008333333333333333,
+    "ci": [
+     0.0,
+     0.025
+    ],
+    "n": 120
+   },
+   "accuracy_decided": {
+    "value": 0.989247311827957,
+    "ci": [
+     0.967741935483871,
+     1.0
+    ],
+    "n": 93
+   },
+   "deferral_rate": {
+    "value": 0.225,
+    "ci": [
+     0.1,
+     0.35
+    ],
+    "n": 120
+   },
+   "accuracy_all": {
+    "value": 0.7666666666666667,
+    "ci": [
+     0.6416666666666667,
+     0.8916666666666667
+    ],
+    "n": 120
+   },
+   "false_rejects": 0,
+   "fe_requests": 26,
+   "crash_runs": 81,
+   "variant_recall": {
+    "value": 0.9916666666666667,
+    "ci": [
+     0.975,
+     1.0
+    ],
+    "n": 120
+   },
+   "variant_precision": {
+    "value": 0.9708333333333333,
+    "ci": [
+     0.9444444444444444,
+     0.9944444444444444
+    ],
+    "n": 120
+   },
+   "tool_recall": {
+    "value": 0.9458333333333333,
+    "ci": [
+     0.8958333333333334,
+     0.9875
+    ],
+    "n": 120
+   },
+   "tool_precision": {
+    "value": 0.9458333333333333,
+    "ci": [
+     0.8958333333333334,
+     0.9875
+    ],
+    "n": 120
+   },
+   "regulation_recall": {
+    "value": 0.9833333333333333,
+    "ci": [
+     0.9583333333333334,
+     1.0
+    ],
+    "n": 120
+   },
+   "regulation_precision": {
+    "value": 0.9791666666666666,
+    "ci": [
+     0.95,
+     1.0
+    ],
+    "n": 120
+   },
+   "limit_correct": {
+    "value": 0.9629629629629629,
+    "ci": [
+     0.9135802469135802,
+     1.0
+    ],
+    "n": 81
+   },
+   "cost_error": {
+    "value": 0.06864389013980654,
+    "ci": [
+     0.016666666666666666,
+     0.13693222563328256
+    ],
+    "n": 120
+   },
+   "reports_with_unsupported_figures": 0,
+   "injected_runs": 6,
+   "injection_in_summary": 0,
+   "injection_decided": 0,
+   "ood_runs": 9,
+   "p50_latency_ms": 5319.7,
+   "p95_latency_ms": 6913.135,
+   "cost_per_request_eur": 0.015042558333333334,
+   "model_calls": 4.7,
+   "manual_hours": 10.3375,
+   "agent_hours": 0.5,
+   "by_kind": {
+    "material": {
+     "n": 24,
+     "correct": 21,
+     "deferred": 3
+    },
+    "non_crash": {
+     "n": 21,
+     "correct": 21,
+     "deferred": 0
+    },
+    "supplier": {
+     "n": 18,
+     "correct": 18,
+     "deferred": 0
+    },
+    "thickness": {
+     "n": 57,
+     "correct": 32,
+     "deferred": 24
+    }
+   }
+  },
+  "no reviewer": {
+   "runs": 120,
+   "requests": 40,
+   "safety_misses": 1,
+   "safety_miss_rate": {
+    "value": 0.008333333333333333,
+    "ci": [
+     0.0,
+     0.025
+    ],
+    "n": 120
+   },
+   "accuracy_decided": {
+    "value": 0.9888888888888889,
+    "ci": [
+     0.9666666666666667,
+     1.0
+    ],
+    "n": 90
+   },
+   "deferral_rate": {
+    "value": 0.25,
+    "ci": [
+     0.125,
+     0.375
+    ],
+    "n": 120
+   },
+   "accuracy_all": {
+    "value": 0.7416666666666667,
+    "ci": [
+     0.6083333333333333,
+     0.875
+    ],
+    "n": 120
+   },
+   "false_rejects": 0,
+   "fe_requests": 35,
+   "crash_runs": 81,
+   "variant_recall": {
+    "value": 0.9916666666666667,
+    "ci": [
+     0.975,
+     1.0
+    ],
+    "n": 120
+   },
+   "variant_precision": {
+    "value": 0.9708333333333333,
+    "ci": [
+     0.9444444444444444,
+     0.9944444444444444
+    ],
+    "n": 120
+   },
+   "tool_recall": {
+    "value": 0.9458333333333333,
+    "ci": [
+     0.8958333333333334,
+     0.9875
+    ],
+    "n": 120
+   },
+   "tool_precision": {
+    "value": 0.9458333333333333,
+    "ci": [
+     0.8958333333333334,
+     0.9875
+    ],
+    "n": 120
+   },
+   "regulation_recall": {
+    "value": 0.9833333333333333,
+    "ci": [
+     0.9583333333333334,
+     1.0
+    ],
+    "n": 120
+   },
+   "regulation_precision": {
+    "value": 0.9791666666666666,
+    "ci": [
+     0.95,
+     1.0
+    ],
+    "n": 120
+   },
+   "limit_correct": {
+    "value": 0.9629629629629629,
+    "ci": [
+     0.9135802469135802,
+     1.0
+    ],
+    "n": 81
+   },
+   "cost_error": {
+    "value": 0.06864389013980654,
+    "ci": [
+     0.016666666666666666,
+     0.13693222563328256
+    ],
+    "n": 120
+   },
+   "reports_with_unsupported_figures": 6,
+   "injected_runs": 6,
+   "injection_in_summary": 0,
+   "injection_decided": 0,
+   "ood_runs": 9,
+   "p50_latency_ms": 5345.65,
+   "p95_latency_ms": 6913.135,
+   "cost_per_request_eur": 0.015042558333333334,
+   "model_calls": 4.7,
+   "manual_hours": 10.3375,
+   "agent_hours": 0.5,
+   "by_kind": {
+    "material": {
+     "n": 24,
+     "correct": 18,
+     "deferred": 6
+    },
+    "non_crash": {
+     "n": 21,
+     "correct": 21,
+     "deferred": 0
+    },
+    "supplier": {
+     "n": 18,
+     "correct": 18,
+     "deferred": 0
+    },
+    "thickness": {
+     "n": 57,
+     "correct": 32,
+     "deferred": 24
+    }
+   }
+  },
+  "no injection guard": {
+   "runs": 120,
+   "requests": 40,
+   "safety_misses": 1,
+   "safety_miss_rate": {
+    "value": 0.008333333333333333,
+    "ci": [
+     0.0,
+     0.025
+    ],
+    "n": 120
+   },
+   "accuracy_decided": {
+    "value": 0.9888888888888889,
+    "ci": [
+     0.9666666666666667,
+     1.0
+    ],
+    "n": 90
+   },
+   "deferral_rate": {
+    "value": 0.25,
+    "ci": [
+     0.125,
+     0.375
+    ],
+    "n": 120
+   },
+   "accuracy_all": {
+    "value": 0.7416666666666667,
+    "ci": [
+     0.6083333333333333,
+     0.875
+    ],
+    "n": 120
+   },
+   "false_rejects": 0,
+   "fe_requests": 36,
+   "crash_runs": 81,
+   "variant_recall": {
+    "value": 1.0,
+    "ci": [
+     1.0,
+     1.0
+    ],
+    "n": 120
+   },
+   "variant_precision": {
+    "value": 0.9791666666666666,
+    "ci": [
+     0.9583333333333334,
+     0.9958333333333333
+    ],
+    "n": 120
+   },
+   "tool_recall": {
+    "value": 0.9541666666666667,
+    "ci": [
+     0.9041666666666667,
+     0.9916666666666667
+    ],
+    "n": 120
+   },
+   "tool_precision": {
+    "value": 0.9541666666666667,
+    "ci": [
+     0.9041666666666667,
+     0.9916666666666667
+    ],
+    "n": 120
+   },
+   "regulation_recall": {
+    "value": 0.9916666666666667,
+    "ci": [
+     0.975,
+     1.0
+    ],
+    "n": 120
+   },
+   "regulation_precision": {
+    "value": 0.9875,
+    "ci": [
+     0.9666666666666667,
+     1.0
+    ],
+    "n": 120
+   },
+   "limit_correct": {
+    "value": 0.9753086419753086,
+    "ci": [
+     0.9382716049382716,
+     1.0
+    ],
+    "n": 81
+   },
+   "cost_error": {
+    "value": 0.06031055680647321,
+    "ci": [
+     0.008333333333333333,
+     0.12799011481752293
+    ],
+    "n": 120
+   },
+   "reports_with_unsupported_figures": 0,
+   "injected_runs": 6,
+   "injection_in_summary": 1,
+   "injection_decided": 0,
+   "ood_runs": 9,
+   "p50_latency_ms": 5405.75,
+   "p95_latency_ms": 6948.035,
+   "cost_per_request_eur": 0.015117683333333335,
+   "model_calls": 4.725,
+   "manual_hours": 10.3375,
+   "agent_hours": 0.5,
+   "by_kind": {
+    "material": {
+     "n": 24,
+     "correct": 18,
+     "deferred": 6
+    },
+    "non_crash": {
+     "n": 21,
+     "correct": 21,
+     "deferred": 0
+    },
+    "supplier": {
+     "n": 18,
+     "correct": 18,
+     "deferred": 0
+    },
+    "thickness": {
+     "n": 57,
+     "correct": 32,
+     "deferred": 24
+    }
+   }
+  },
+  "superseded documents allowed": {
+   "runs": 120,
+   "requests": 40,
+   "safety_misses": 1,
+   "safety_miss_rate": {
+    "value": 0.008333333333333333,
+    "ci": [
+     0.0,
+     0.025
+    ],
+    "n": 120
+   },
+   "accuracy_decided": {
+    "value": 0.9888888888888889,
+    "ci": [
+     0.9666666666666667,
+     1.0
+    ],
+    "n": 90
+   },
+   "deferral_rate": {
+    "value": 0.25,
+    "ci": [
+     0.125,
+     0.375
+    ],
+    "n": 120
+   },
+   "accuracy_all": {
+    "value": 0.7416666666666667,
+    "ci": [
+     0.6083333333333333,
+     0.875
+    ],
+    "n": 120
+   },
+   "false_rejects": 0,
+   "fe_requests": 35,
+   "crash_runs": 81,
+   "variant_recall": {
+    "value": 0.9916666666666667,
+    "ci": [
+     0.975,
+     1.0
+    ],
+    "n": 120
+   },
+   "variant_precision": {
+    "value": 0.9708333333333333,
+    "ci": [
+     0.9444444444444444,
+     0.9944444444444444
+    ],
+    "n": 120
+   },
+   "tool_recall": {
+    "value": 0.9458333333333333,
+    "ci": [
+     0.8958333333333334,
+     0.9875
+    ],
+    "n": 120
+   },
+   "tool_precision": {
+    "value": 0.9458333333333333,
+    "ci": [
+     0.8958333333333334,
+     0.9875
+    ],
+    "n": 120
+   },
+   "regulation_recall": {
+    "value": 0.9833333333333333,
+    "ci": [
+     0.9583333333333334,
+     1.0
+    ],
+    "n": 120
+   },
+   "regulation_precision": {
+    "value": 0.9791666666666666,
+    "ci": [
+     0.95,
+     1.0
+    ],
+    "n": 120
+   },
+   "limit_correct": {
+    "value": 0.9629629629629629,
+    "ci": [
+     0.9135802469135802,
+     1.0
+    ],
+    "n": 81
+   },
+   "cost_error": {
+    "value": 0.06864389013980654,
+    "ci": [
+     0.016666666666666666,
+     0.13693222563328256
+    ],
+    "n": 120
+   },
+   "reports_with_unsupported_figures": 0,
+   "injected_runs": 6,
+   "injection_in_summary": 0,
+   "injection_decided": 0,
+   "ood_runs": 9,
+   "p50_latency_ms": 5354.1,
+   "p95_latency_ms": 6916.365,
+   "cost_per_request_eur": 0.015042558333333334,
+   "model_calls": 4.7,
+   "manual_hours": 10.3375,
+   "agent_hours": 0.5,
+   "by_kind": {
+    "material": {
+     "n": 24,
+     "correct": 18,
+     "deferred": 6
+    },
+    "non_crash": {
+     "n": 21,
+     "correct": 21,
+     "deferred": 0
+    },
+    "supplier": {
+     "n": 18,
+     "correct": 18,
+     "deferred": 0
+    },
+    "thickness": {
+     "n": 57,
+     "correct": 32,
+     "deferred": 24
+    }
+   }
+  },
+  "BM25 only": {
+   "runs": 120,
+   "requests": 40,
+   "safety_misses": 1,
+   "safety_miss_rate": {
+    "value": 0.008333333333333333,
+    "ci": [
+     0.0,
+     0.025
+    ],
+    "n": 120
+   },
+   "accuracy_decided": {
+    "value": 0.9888888888888889,
+    "ci": [
+     0.9666666666666667,
+     1.0
+    ],
+    "n": 90
+   },
+   "deferral_rate": {
+    "value": 0.25,
+    "ci": [
+     0.125,
+     0.375
+    ],
+    "n": 120
+   },
+   "accuracy_all": {
+    "value": 0.7416666666666667,
+    "ci": [
+     0.6083333333333333,
+     0.875
+    ],
+    "n": 120
+   },
+   "false_rejects": 0,
+   "fe_requests": 35,
+   "crash_runs": 81,
+   "variant_recall": {
+    "value": 0.9916666666666667,
+    "ci": [
+     0.975,
+     1.0
+    ],
+    "n": 120
+   },
+   "variant_precision": {
+    "value": 0.9708333333333333,
+    "ci": [
+     0.9444444444444444,
+     0.9944444444444444
+    ],
+    "n": 120
+   },
+   "tool_recall": {
+    "value": 0.9458333333333333,
+    "ci": [
+     0.8958333333333334,
+     0.9875
+    ],
+    "n": 120
+   },
+   "tool_precision": {
+    "value": 0.9458333333333333,
+    "ci": [
+     0.8958333333333334,
+     0.9875
+    ],
+    "n": 120
+   },
+   "regulation_recall": {
+    "value": 0.9833333333333333,
+    "ci": [
+     0.9583333333333334,
+     1.0
+    ],
+    "n": 120
+   },
+   "regulation_precision": {
+    "value": 0.9791666666666666,
+    "ci": [
+     0.95,
+     1.0
+    ],
+    "n": 120
+   },
+   "limit_correct": {
+    "value": 0.9629629629629629,
+    "ci": [
+     0.9135802469135802,
+     1.0
+    ],
+    "n": 81
+   },
+   "cost_error": {
+    "value": 0.06864389013980654,
+    "ci": [
+     0.016666666666666666,
+     0.13693222563328256
+    ],
+    "n": 120
+   },
+   "reports_with_unsupported_figures": 0,
+   "injected_runs": 6,
+   "injection_in_summary": 0,
+   "injection_decided": 0,
+   "ood_runs": 9,
+   "p50_latency_ms": 5339.45,
+   "p95_latency_ms": 7015.62,
+   "cost_per_request_eur": 0.015042558333333334,
+   "model_calls": 4.7,
+   "manual_hours": 10.3375,
+   "agent_hours": 0.5,
+   "by_kind": {
+    "material": {
+     "n": 24,
+     "correct": 18,
+     "deferred": 6
+    },
+    "non_crash": {
+     "n": 21,
+     "correct": 21,
+     "deferred": 0
+    },
+    "supplier": {
+     "n": 18,
+     "correct": 18,
+     "deferred": 0
+    },
+    "thickness": {
+     "n": 57,
+     "correct": 32,
+     "deferred": 24
+    }
+   }
+  },
+  "no extraction validation": {
+   "runs": 120,
+   "requests": 40,
+   "safety_misses": 1,
+   "safety_miss_rate": {
+    "value": 0.008333333333333333,
+    "ci": [
+     0.0,
+     0.025
+    ],
+    "n": 120
+   },
+   "accuracy_decided": {
+    "value": 0.9886363636363636,
+    "ci": [
+     0.9655172413793104,
+     1.0
+    ],
+    "n": 88
+   },
+   "deferral_rate": {
+    "value": 0.26666666666666666,
+    "ci": [
+     0.13333333333333333,
+     0.4
+    ],
+    "n": 120
+   },
+   "accuracy_all": {
+    "value": 0.725,
+    "ci": [
+     0.5916666666666667,
+     0.8583333333333333
+    ],
+    "n": 120
+   },
+   "false_rejects": 0,
+   "fe_requests": 33,
+   "crash_runs": 81,
+   "variant_recall": {
+    "value": 0.9583333333333334,
+    "ci": [
+     0.9083333333333333,
+     0.9916666666666667
+    ],
+    "n": 120
+   },
+   "variant_precision": {
+    "value": 0.9375,
+    "ci": [
+     0.8902777777777778,
+     0.9763888888888889
+    ],
+    "n": 120
+   },
+   "tool_recall": {
+    "value": 0.9208333333333333,
+    "ci": [
+     0.8583333333333333,
+     0.9709374999999995
+    ],
+    "n": 120
+   },
+   "tool_precision": {
+    "value": 0.9208333333333333,
+    "ci": [
+     0.8583333333333333,
+     0.9709374999999995
+    ],
+    "n": 120
+   },
+   "regulation_recall": {
+    "value": 0.95,
+    "ci": [
+     0.9,
+     0.9833333333333333
+    ],
+    "n": 120
+   },
+   "regulation_precision": {
+    "value": 0.9458333333333333,
+    "ci": [
+     0.9,
+     0.9833333333333333
+    ],
+    "n": 120
+   },
+   "limit_correct": {
+    "value": 0.9382716049382716,
+    "ci": [
+     0.8765432098765432,
+     0.9876543209876543
+    ],
+    "n": 81
+   },
+   "cost_error": {
+    "value": 0.09029144548301407,
+    "ci": [
+     0.03084288899506291,
+     0.16453133235269013
+    ],
+    "n": 120
+   },
+   "reports_with_unsupported_figures": 0,
+   "injected_runs": 6,
+   "injection_in_summary": 0,
+   "injection_decided": 0,
+   "ood_runs": 9,
+   "p50_latency_ms": 5092.1,
+   "p95_latency_ms": 6711.45,
+   "cost_per_request_eur": 0.014673058333333332,
+   "model_calls": 4.558333333333334,
+   "manual_hours": 10.3375,
+   "agent_hours": 0.5,
+   "by_kind": {
+    "material": {
+     "n": 24,
+     "correct": 18,
+     "deferred": 6
+    },
+    "non_crash": {
+     "n": 21,
+     "correct": 21,
+     "deferred": 0
+    },
+    "supplier": {
+     "n": 18,
+     "correct": 16,
+     "deferred": 2
+    },
+    "thickness": {
+     "n": 57,
+     "correct": 32,
+     "deferred": 24
+    }
+   }
+  }
+ },
+ "comparisons": {
+  "prototype": {
+   "safety_miss": {
+    "diff": 0.09999999999999999,
+    "ci": [
+     0.025,
+     0.19166666666666665
+    ]
+   },
+   "correct": {
+    "diff": 0.09999999999999999,
+    "ci": [
+     -5.551115123125783e-18,
+     0.21666666666666665
+    ]
+   },
+   "deferred": {
+    "diff": -0.20833333333333334,
+    "ci": [
+     -0.3416666666666667,
+     -0.08333333333333334
+    ]
+   }
+  },
+  "model decides": {
+   "safety_miss": {
+    "diff": 0.11666666666666665,
+    "ci": [
+     0.03333333333333333,
+     0.20854166666666554
+    ]
+   },
+   "correct": {
+    "diff": 0.11666666666666665,
+    "ci": [
+     0.016666666666666666,
+     0.225
+    ]
+   },
+   "deferred": {
+    "diff": -0.2416666666666667,
+    "ci": [
+     -0.375,
+     -0.11666666666666667
+    ]
+   }
+  },
+  "point prediction, no interval": {
+   "safety_miss": {
+    "diff": 0.1,
+    "ci": [
+     0.025,
+     0.2
+    ]
+   },
+   "correct": {
+    "diff": 0.10833333333333332,
+    "ci": [
+     0.025,
+     0.20833333333333331
+    ]
+   },
+   "deferred": {
+    "diff": -0.2166666666666667,
+    "ci": [
+     -0.3416666666666667,
+     -0.1
+    ]
+   }
+  },
+  "no out-of-distribution check": {
+   "safety_miss": {
+    "diff": 0.0,
+    "ci": [
+     0.0,
+     0.0
+    ]
+   },
+   "correct": {
+    "diff": 0.025,
+    "ci": [
+     0.0,
+     0.075
+    ]
+   },
+   "deferred": {
+    "diff": -0.025,
+    "ci": [
+     -0.075,
+     0.0
+    ]
+   }
+  },
+  "no reviewer": {
+   "safety_miss": {
+    "diff": 0.0,
+    "ci": [
+     0.0,
+     0.0
+    ]
+   },
+   "correct": {
+    "diff": 0.0,
+    "ci": [
+     0.0,
+     0.0
+    ]
+   },
+   "deferred": {
+    "diff": 0.0,
+    "ci": [
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "no injection guard": {
+   "safety_miss": {
+    "diff": 0.0,
+    "ci": [
+     0.0,
+     0.0
+    ]
+   },
+   "correct": {
+    "diff": 0.0,
+    "ci": [
+     0.0,
+     0.0
+    ]
+   },
+   "deferred": {
+    "diff": 0.0,
+    "ci": [
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "superseded documents allowed": {
+   "safety_miss": {
+    "diff": 0.0,
+    "ci": [
+     0.0,
+     0.0
+    ]
+   },
+   "correct": {
+    "diff": 0.0,
+    "ci": [
+     0.0,
+     0.0
+    ]
+   },
+   "deferred": {
+    "diff": 0.0,
+    "ci": [
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "BM25 only": {
+   "safety_miss": {
+    "diff": 0.0,
+    "ci": [
+     0.0,
+     0.0
+    ]
+   },
+   "correct": {
+    "diff": 0.0,
+    "ci": [
+     0.0,
+     0.0
+    ]
+   },
+   "deferred": {
+    "diff": 0.0,
+    "ci": [
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "no extraction validation": {
+   "safety_miss": {
+    "diff": 0.0,
+    "ci": [
+     0.0,
+     0.0
+    ]
+   },
+   "correct": {
+    "diff": -0.01666666666666667,
+    "ci": [
+     -0.04166666666666667,
+     0.0
+    ]
+   },
+   "deferred": {
+    "diff": 0.016666666666666666,
+    "ci": [
+     0.0,
+     0.041666666666666664
+    ]
+   }
+  }
+ }
+}
